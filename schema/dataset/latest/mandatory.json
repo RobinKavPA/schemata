@@ -12,9 +12,14 @@
     "issued",
     "modified",
     "summary",
-    "accessibility"
+    "documentation",
+    "coverage",
+    "provenance",
+    "accessibility",
+    "enrichmentAndLinkage",
+    "observations"
   ],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "identifier": {
       "$id": "#/properties/identifier",
@@ -130,7 +135,6 @@
         "version",
         "url"
       ],
-      "additionalProperties": false,
       "properties": {
         "version": {
           "$id": "#/definitions/revision/version",
@@ -151,9 +155,10 @@
         "abstract",
         "publisher",
         "contactPoint",
-        "keywords"
+        "keywords",
+        "alternateIdentifiers",
+        "doiName"
       ],
-      "additionalProperties": false,
       "properties": {
         "title": {
           "$id": "#/summary/title",
@@ -190,9 +195,10 @@
           "$comment": "Conforms to spec, but this MAY be an an object of organisation. https://schema.org/publisher",
           "title": "Dataset publisher",
           "description": "This is the organisation responsible for running or supporting the data access request process, as well as publishing and maintaining the metadata. In most this will be the same as the HDR UK Organisation (Hub or Alliance Member). However, in some cases this will be different i.e. Tissue Directory are an HDR UK Gateway organisation but coordinate activities across a number of data publishers i.e. Cambridge Blood and Stem Cell Biobank.",
-          "allOf": [
+          "anyOf": [
             {
-              "$ref": "#/definitions/organisation"
+              "$ref": "#/definitions/member",
+              "additionalProperties": false
             }
           ]
         },
@@ -218,15 +224,12 @@
           "description": "Please provide relevant and specific keywords that can improve the SEO of your dataset as a comma separated list. Notes: Onboarding portal will suggest keywords based on title, abstract and description. We are compiling a standardised list of keywords and synonyms across datasets to make filtering easier for users.",
           "type": "array",
           "items": {
-            "description": "Please provide a link to any active projects that are using the dataset.",
             "allOf": [
               {
                 "$ref": "#/definitions/eightyCharacters"
               }
             ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          }
         },
         "alternateIdentifiers": {
           "$id": "#/summary/alternateIdentifiers",
@@ -235,15 +238,12 @@
           "description": "Alternate dataset identifiers or local identifiers",
           "type": "array",
           "items": {
-            "description": "Please provide a link to any active projects that are using the dataset.",
             "allOf": [
               {
-                "$ref": "#/definitions/shortDescription"
+                "$ref": "#/definitions/eightyCharacters"
               }
             ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          }
         },
         "doiName": {
           "$id": "#/summary/doiName",
@@ -266,6 +266,8 @@
       "type": "object",
       "required": [
         "name",
+        "logo",
+        "description",
         "contactPoint"
       ],
       "title": "Organisation Metadata",
@@ -325,9 +327,31 @@
               "$ref": "#/definitions/emailAddress"
             }
           ]
-        },
+        }
+      }
+    },
+    "member": {
+      "$id": "#/definitions/member",
+      "type": "object",
+      "required": [
+        "name",
+        "logo",
+        "description",
+        "contactPoint"
+        "memberOf",
+        "accessRights",
+        "dataUseLimitation",
+        "dataUseRequirements",
+        "accessService"
+      ],
+      "allOf": [
+        {
+          "$ref": "#/definitions/organisation"
+        }
+      ],
+      "properties": {
         "memberOf": {
-          "$id": "#/organisation/memberOf",
+          "$id": "#/member/memberOf",
           "title": "Organisation Membership",
           "description": "Please indicate if the organisation is an Alliance Member or a Hub.",
           "$comment": "https://schema.org/memberOf",
@@ -338,7 +362,7 @@
           ]
         },
         "accessRights": {
-          "$id": "#/organisation/accessRights",
+          "$id": "#/member/accessRights",
           "title": "Organisation Default Access Rights",
           "$comment": "dct:access_rights",
           "description": "The URL of a webpage where the data access request process and/or guidance is provided. If there is more than one access process i.e. industry vs academic please provide both. If such a resource or the underlying process doesn’t exist, please provide “In Progress”, until both the process and the documentation are ready.",
@@ -402,7 +426,7 @@
           "minItems": 1
         },
         "dataUseRequirements": {
-          "$id": "#/member/dataUseRequirements",
+          "$id": "#/properties/member/dataUseRequirements",
           "title": "Data Use Requirements",
           "description": "Please indicate fit here are any additional conditions set for use if any, multiple requirements may be provided. Please ensure that these restrictions are documented in access rights information.",
           "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
@@ -421,7 +445,11 @@
     },
     "documentation": {
       "$id": "#/definitions/member",
-      "additionalProperties": false,
+      "required": [
+        "description",
+        "associatedMedia",
+        "isPartOf"
+      ],
       "properties": {
         "description": {
           "$id": "#/properties/documentation/description",
@@ -486,7 +514,13 @@
     },
     "coverage": {
       "$id": "#/definitions/coverage",
-      "additionalProperties": false,
+      "required": [
+        "spatial",
+        "typicalAgeRange",
+        "physicalSampleAvailability",
+        "followup",
+        "pathway"
+      ],
       "properties": {
         "spatial": {
           "$id": "#/properties/coverage/spatial",
@@ -524,19 +558,15 @@
             "BONE MARROW"
           ],
           "description": "Availability of physical samples associated with the dataset. If samples are available, please indicate the types of samples that are available. More than one type may be provided. If sample are not yet available, please provide “AVAILABILITY TO BE CONFIRMED”. If samples are not available, then please provide “NOT AVAILABLE”.",
-          "anyOf": [
-            {
-              "$ref": "#/definitions/commaSeparatedValues"
-            },
-            {
-              "type": "array",
-              "contains": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
                 "$ref": "#/definitions/physicalSampleAvailability"
-              },
-              "uniqueItems": true,
-              "minItems": 1
-            }
-          ]
+              }
+            ]
+          }
+
         },
         "followup": {
           "$id": "#/properties/coverage/followup",
@@ -566,9 +596,9 @@
     "provenance": {
       "$id": "#/definitions/provenance",
       "required": [
+        "origin",
         "temporal"
       ],
-      "additionalProperties": false,
       "properties": {
         "origin": {
           "$id": "#/definitions/provenance/origin",
@@ -590,7 +620,11 @@
     },
     "origin": {
       "$id": "#/definitions/origin",
-      "additionalProperties": false,
+      "required": [
+        "purpose",
+        "source",
+        "collectionSituation"
+      ],
       "properties": {
         "purpose": {
           "$id": "#/properties/provenance/origin/purpose",
@@ -636,14 +670,16 @@
         }
       }
     },
+
     "temporal": {
       "$id": "#/definitions/temporal",
       "required": [
         "accrualPeriodicity",
+        "distributionReleaseDate",
+        "endDate",
         "timeLag",
         "startDate"
       ],
-      "additionalProperties": false,
       "properties": {
         "accrualPeriodicity": {
           "$id": "#/properties/provenance/temporal/accrualPeriodicity",
@@ -727,9 +763,10 @@
     "accessibility": {
       "$id": "#/definitions/accessibility",
       "required": [
-        "access"
+        "access",
+        "usage",
+        "formatAndStandards"
       ],
-      "additionalProperties": false,
       "properties": {
         "usage": {
           "$id": "#/definitions/accessibility/usage",
@@ -739,13 +776,13 @@
         },
         "access": {
           "$id": "#/definitions/accessibility/access",
-          "title": "Access",
+          "title": "Usage",
           "description": "This section includes information about data access",
           "$ref": "#/definitions/access"
         },
         "formatAndStandards": {
           "$id": "#/definitions/accessibility/formatAndStandards",
-          "title": "Format and Standards",
+          "title": "Usage",
           "description": "Section includes technical attributes for language vocabularies, sizes etc. and gives researchers facts about and processing the underlying data in the dataset.",
           "$ref": "#/definitions/formatAndStandards"
         }
@@ -753,88 +790,89 @@
     },
     "usage": {
       "$id": "#/definitions/usage",
-      "additionalProperties": false,
-      "properties": {
-        "dataUseLimitation": {
-          "$id": "#/properties/accessibility/usage/dataUseLimitation",
-          "title": "Data Use Limitation",
-          "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
-          "description": "Please provide an indication of consent permissions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. NOTE: we have extended the DUO to include a value for NO LINKAGE",
-          "type": "array",
-          "items": {
-            "description": "Please provide a link to any active projects that are using the dataset.",
-            "allOf": [
-              {
-                "$ref": "#/definitions/dataUseLimitation"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
-        },
-        "dataUseRequirements": {
-          "$id": "#/properties/accessibility/usage/dataUseRequirements",
-          "title": "Data Use Requirements",
-          "description": "Please indicate fit here are any additional conditions set for use if any, multiple requirements may be provided. Please ensure that these restrictions are documented in access rights information.",
-          "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/dataUseRequirements"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
-        },
-        "resourceCreator": {
-          "$id": "#/properties/accessibility/usage/resourceCreator",
-          "type": "string",
-          "title": "Citation Requirements",
-          "$comment": "dct:creator",
-          "description": "Please provide the text that you would like included as part of any citation that credits this dataset. This is typically just the name of the publisher.   No employee details should be provided."
-        },
-        "investigations": {
-          "title": "Investigations",
-          "$comment": "No standard identified",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/url"
-              }
-            ]
-          }
-        },
-        "isReferencedBy": {
-          "title": "Citations",
-          "$comment": "dct:isReferencedBy ",
-          "description": "Please provide the keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced. Please provide multiple entries, or if you are using a csv upload please provide them as a tab separated list. [Author] ([Year]) [Title] . [DOI] . [Source]",
-          "anyOf": [
+      "dataUseLimitation": {
+        "$id": "#/properties/accessibility/usage/dataUseLimitation",
+        "title": "Data Use Limitation",
+        "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
+        "description": "Please provide an indication of consent permissions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. NOTE: we have extended the DUO to include a value for NO LINKAGE",
+        "type": "array",
+        "items": {
+          "description": "Please provide a link to any active projects that are using the dataset.",
+          "allOf": [
             {
-              "$ref": "#/definitions/doi"
-            },
+              "$ref": "#/definitions/dataUseLimitation"
+            }
+          ]
+        },
+        "uniqueItems": true,
+        "minItems": 1
+      },
+      "dataUseRequirements": {
+        "$id": "#/properties/accessibility/usage/dataUseRequirements",
+        "title": "Data Use Requirements",
+        "description": "Please indicate fit here are any additional conditions set for use if any, multiple requirements may be provided. Please ensure that these restrictions are documented in access rights information.",
+        "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
+        "type": "array",
+        "items": {
+          "description": "Please provide a link to any active projects that are using the dataset.",
+          "allOf": [
             {
-              "type": "array",
-              "items": [
-                {
-                  "$ref": "#/definitions/doi"
-                }
-              ]
+              "$ref": "#/definitions/dataUseRequirements"
+            }
+          ]
+        },
+        "uniqueItems": true,
+        "minItems": 1
+      },
+      "resourceCreator": {
+        "$id": "#/properties/accessibility/usage/resourceCreator",
+        "type": "string",
+        "title": "Citation Requirements",
+        "$comment": "dct:creator",
+        "description": "Please provide the text that you would like included as part of any citation that credits this dataset. This is typically just the name of the publisher.   No employee details should be provided."
+      },
+      "investigations": {
+        "title": "Investigations",
+        "$comment": "No standard identified",
+        "type": "array",
+        "items": {
+          "description": "Please provide a link to any active projects that are using the dataset.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/url"
             }
           ]
         }
+      },
+      "isReferencedBy": {
+        "title": "Citations",
+        "$comment": "dct:isReferencedBy ",
+        "description": "Please provide the keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced. Please provide multiple entries, or if you are using a csv upload please provide them as a tab separated list. [Author] ([Year]) [Title] . [DOI] . [Source]",
+        "anyOf": [
+          {
+            "$ref": "#/definitions/doi"
+          },
+          {
+            "type": "array",
+            "items": [
+              {
+                "$ref": "#/definitions/doi"
+              }
+            ]
+          }
+        ]
       }
     },
     "access": {
       "$id": "#/definitions/access",
       "required": [
         "accessRights",
+        "accessService",
+        "deliveryLeadTime",
         "jurisdiction",
-        "dataController"
+        "dataController",
+        "dataProcessor"
       ],
-      "additionalProperties": false,
       "properties": {
         "accessRights": {
           "$id": "#/properties/accessibility/access/accessRights",
@@ -923,74 +961,83 @@
       }
     },
     "formatAndStandards": {
-      "$id": "#/definitions/formatAndStandards",
-      "additionalProperties": false,
-      "properties": {
-        "vocabularyEncodingScheme": {
-          "$id": "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme",
-          "title": "Controlled Vocabulary",
-          "$comment": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/dcam/VocabularyEncodingScheme",
-          "default": "LOCAL",
-          "description": "List any relevant terminologies / ontologies / controlled vocabularies, such as ICD 10 Codes, NHS Data Dictionary National Codes or SNOMED CT International, that are being used by the dataset. If the controlled vocabularies are local standards, please make that explicit. If you are using a standard that has not been included in the list, please use “other” and contact support desk to ask for an addition. Notes: More than one vocabulary may be provided.",
-          "type": "array",
-          "items": {
-            "allOf": [
+        "$id": "#/definitions/formatAndStandards",
+        "required": [
+          "vocabularyEncodingScheme",
+          "conformsTo",
+          "language",
+          "format"
+        ],
+        "properties": {
+          "vocabularyEncodingScheme": {
+            "$id": "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme",
+            "title": "Controlled Vocabulary",
+            "$comment": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/dcam/VocabularyEncodingScheme",
+            "default": "LOCAL",
+            "description": "List any relevant terminologies / ontologies / controlled vocabularies, such as ICD 10 Codes, NHS Data Dictionary National Codes or SNOMED CT International, that are being used by the dataset. If the controlled vocabularies are local standards, please make that explicit. If you are using a standard that has not been included in the list, please use “other” and contact support desk to ask for an addition. Notes: More than one vocabulary may be provided.",
+            "type": "array",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/controlledVocabulary"
+                }
+              ]
+            },
+            "minItems": 0
+          },
+          "conformsTo": {
+            "$id": "#/properties/accessibility/formatAndStandards/conformsTo",
+            "title": "Conforms To",
+            "$comment": "dct:conformsTo",
+            "default": "LOCAL",
+            "description": "List standardised data models that the dataset has been stored in or transformed to, such as OMOP or FHIR. If the data is only available in a local format, please make that explicit. If you are using a standard that has not been included in the list, please use “other” and contact support desk to ask for an addition.",
+            "type": "array",
+            "items": [
               {
-                "$ref": "#/definitions/controlledVocabulary"
+                "$ref": "#/definitions/standardisedDataModels"
               }
             ]
           },
-          "minItems": 0
-        },
-        "conformsTo": {
-          "$id": "#/properties/accessibility/formatAndStandards/conformsTo",
-          "title": "Conforms To",
-          "$comment": "dct:conformsTo",
-          "default": "LOCAL",
-          "description": "List standardised data models that the dataset has been stored in or transformed to, such as OMOP or FHIR. If the data is only available in a local format, please make that explicit. If you are using a standard that has not been included in the list, please use “other” and contact support desk to ask for an addition.",
-          "type": "array",
-          "items": [
-            {
-              "$ref": "#/definitions/standardisedDataModels"
-            }
-          ]
-        },
-        "language": {
-          "$id": "#/properties/accessibility/formatAndStandards/language",
-          "title": "Language",
-          "description": "This should list all the languages in which the dataset metadata and underlying data is made available.",
-          "default": "en",
-          "$comment": "dct:language. FIXME: Conforms to spec, but may be a list of strings given cardinality 1:*. Validate against external list of languages. Resources defined by the Library of Congress (ISO 639-1, ISO 639-2) SHOULD be used.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/language"
-              }
-            ]
+          "language": {
+            "$id": "#/properties/accessibility/formatAndStandards/language",
+            "title": "Language",
+            "description": "This should list all the languages in which the dataset metadata and underlying data is made available.",
+            "default": "en",
+            "$comment": "dct:language. FIXME: Conforms to spec, but may be a list of strings given cardinality 1:*. Validate against external list of languages. Resources defined by the Library of Congress (ISO 639-1, ISO 639-2) SHOULD be used.",
+            "type": "array",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/language"
+                }
+              ]
+            },
+            "minItems": 1
           },
-          "minItems": 1
-        },
-        "format": {
-          "$id": "#/properties/accessibility/formatAndStandards/format",
-          "title": "Format",
-          "description": "If multiple formats are available please specify. See application, audio, image, message, model, multipart, text, video, https://www.iana.org/assignments/media-types/media-types.xhtml Note: If your file format is not included in the current list of formats, please indicate other. If you are using the HOP you will be directed to a service desk page where you can request your additional format. If not please go to: https://metadata.atlassian.net/servicedesk/customer/portal/4 to request your format.",
-          "$comment": "http://purl.org/dc/terms/format ",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/format"
-              }
-            ]
-          },
-          "minItems": 1
+          "format": {
+            "$id": "#/properties/accessibility/formatAndStandards/format",
+            "title": "Format",
+            "description": "If multiple formats are available please specify. See application, audio, image, message, model, multipart, text, video, https://www.iana.org/assignments/media-types/media-types.xhtml Note: If your file format is not included in the current list of formats, please indicate other. If you are using the HOP you will be directed to a service desk page where you can request your additional format. If not please go to: https://metadata.atlassian.net/servicedesk/customer/portal/4 to request your format.",
+            "$comment": "http://purl.org/dc/terms/format ",
+            "type": "array",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/format"
+                }
+              ]
+            },
+            "minItems": 1
+          }
         }
-      }
-    },
+      },
     "enrichmentAndLinkage": {
       "$id": "#/definitions/enrichmentAndLinkage",
-      "additionalProperties": false,
+      "required": [
+        "qualifiedRelation",
+        "derivation",
+        "tools"
+      ],
       "properties": {
         "qualifiedRelation": {
           "$id": "#/properties/enrichmentAndLinkage/qualifiedRelation",
@@ -1042,9 +1089,9 @@
         "observedNode",
         "measuredValue",
         "observationDate",
+        "disambiguatingDescription",
         "measuredProperty"
       ],
-      "additionalProperties": false,
       "properties": {
         "observedNode": {
           "$id": "#/properties/observation/observedNode",
@@ -1131,11 +1178,6 @@
     "emailAddress": {
       "type": "string",
       "format": "email"
-    },
-    "shortDescription": {
-      "type": "string",
-      "minLength": 2,
-      "maxLength": 1000
     },
     "description": {
       "type": "string",

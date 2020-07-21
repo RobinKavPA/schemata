@@ -204,7 +204,7 @@ definitions:
             UK Gateway organisation but coordinate activities across a number of data publishers
             i.e. Cambridge Blood and Stem Cell Biobank.
           allOf:
-            - "$ref": "#/definitions/organisation"
+            - "$ref": "#/definitions/member"
 
         contactPoint:
           "$id": "#/summary/contactPoint"
@@ -283,7 +283,6 @@ definitions:
         "$comment": https://schema.org/identifier
         allOf:
         - "$ref": "#/definitions/url"
-
       name:
         "$id": "#/organisation/name"
         title: Organisation Name
@@ -291,7 +290,6 @@ definitions:
         "$comment": https://schema.org/name
         allOf:
         - "$ref": "#/definitions/eightyCharacters"
-
       logo:
         "$id": "#/organisation/logo"
         title: Organisation Logo
@@ -300,7 +298,6 @@ definitions:
         "$comment": https://schema.org/logo
         allOf:
         - "$ref": "#/definitions/url"
-
       description:
         "$id": "#/organisation/description"
         title: Organisation Description
@@ -308,7 +305,6 @@ definitions:
         "$comment": https://schema.org/description
         allOf:
         - "$ref": "#/definitions/description"
-
       contactPoint:
         "$id": "#/organisation/contactPoint"
         title: Organisation Contact Point
@@ -317,8 +313,64 @@ definitions:
         allOf:
         - "$ref": "#/definitions/emailAddress"
 
+  member:
+    "$id": "#/definitions/member"
+    type: object
+    required:
+      - name
+      - contactPoint
+      - memberOf
+      - accessRights
+      - dataUseLimitation
+      - dataUseRequirements
+      - accessService
+    additionalProperties: false
+    properties:
+      identifier:
+        "$id": "#/member/identifier"
+        title: Organisation Identifier
+        description: "Please provide a Grid.ac identifier (see https://www.grid.ac/institutes)
+            for your organisation. If your organisation does not have a Grid.ac identifier please
+            use the “suggest and institute” function here: https://www.grid.ac/institutes#"
+        "$comment": https://schema.org/identifier
+        allOf:
+          - "$ref": "#/definitions/url"
+
+      name:
+        "$id": "#/member/name"
+        title: Organisation Name
+        description: Name of the organisation
+        "$comment": https://schema.org/name
+        allOf:
+        - "$ref": "#/definitions/eightyCharacters"
+
+      logo:
+        "$id": "#/member/logo"
+        title: Organisation Logo
+        description: Please provide a logo associated with the Gateway Organisation using a
+            valid URL. The following formats will be accepted .jpg, .png or .svg.
+        "$comment": https://schema.org/logo
+        allOf:
+         - "$ref": "#/definitions/url"
+
+      description:
+        "$id": "#/member/description"
+        title: Organisation Description
+        description: Please provide a URL that describes the organisation.
+        "$comment": https://schema.org/description
+        allOf:
+        - "$ref": "#/definitions/description"
+
+      contactPoint:
+        "$id": "#/member/contactPoint"
+        title: Organisation Contact Point
+        description: An explanation about the purpose of this instance.
+        "$comment": https://schema.org/contactPoint
+        allOf:
+        - "$ref": "#/definitions/emailAddress"
+
       memberOf:
-        "$id": "#/organisation/memberOf"
+        "$id": "#/member/memberOf"
         title: Organisation Membership
         description: Please indicate if the organisation is an Alliance Member or a Hub.
         "$comment": https://schema.org/memberOf
@@ -326,7 +378,7 @@ definitions:
         - "$ref": "#/definitions/memberOf"
 
       accessRights:
-        "$id": "#/organisation/accessRights"
+        "$id": "#/member/accessRights"
         title: Organisation Default Access Rights
         "$comment": dct:access_rights
         description: The URL of a webpage where the data access request process and/or
