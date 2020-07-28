@@ -331,12 +331,8 @@ definitions:
         "$comment": dct:access_rights
         description: The URL of a webpage where the data access request process and/or
             guidance is provided. If there is more than one access process i.e. industry
-            vs academic please provide both. If such a resource or the underlying process
-            doesn’t exist, please provide “In Progress”, until both the process and the
-            documentation are ready.
+            vs academic please provide both.
         anyOf:
-          - type: string
-            pattern: "^In Progress$"
           - type: string
             format: uri
           - type: array
@@ -464,9 +460,8 @@ definitions:
         description: The geographical area covered by the dataset. It is recommended that links are to entries in a well-maintained gazetteer such as https://www.geonames.org/ or https://what3words.com/daring.lion.race.
         examples:
         - 'https://www.geonames.org/2635167/united-kingdom-of-great-britain-and-northern-ireland.html'
-        anyOf:
+        allOf:
         - "$ref": "#/definitions/url"
-        - type: string
 
       typicalAgeRange:
         "$id": "#/properties/coverage/typicalAgeRange"
@@ -717,10 +712,11 @@ definitions:
 
       resourceCreator:
         "$id": "#/properties/accessibility/usage/resourceCreator"
-        type: string
         title: Citation Requirements
         "$comment": dct:creator
         description: Please provide the text that you would like included as part of any citation that credits this dataset. This is typically just the name of the publisher.   No employee details should be provided.
+        allOf:
+          - "$ref": "#/definitions/shortDescription"
 
       investigations:
         title: Investigations
@@ -822,6 +818,11 @@ definitions:
   formatAndStandards:
     "$id": "#/definitions/formatAndStandards"
     additionalProperties: false
+    required:
+    - vocabularyEncodingScheme
+    - conformsTo
+    - language
+    - format
     properties:
       vocabularyEncodingScheme:
         "$id": "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme"
@@ -978,16 +979,19 @@ definitions:
         "$comment": https://schema.org/observationDate
         default: release date
         description: Please provide the date of the observation
-        type: string
-        format: date
+        anyOf:
+        - type: string
+          format: date
+        - type: string
+          format: date-time
 
       measuredProperty:
-        "$id": "#/properties/observation/observationDate"
+        "$id": "#/properties/observation/measuredProperty"
         title: Measured Property
         "$comment": https://schema.org/measuredProperty
         default: COUNT
         description: Initially this will be defaulted to "COUNT"
-        anyOf:
+        allOf:
         - type: string
           enum:
           - COUNT
@@ -1027,12 +1031,12 @@ definitions:
 
   description:
     type: string
-    minLength: 5
+    minLength: 2
     maxLength: 3000
 
   longDescription:
     type: string
-    minLength: 5
+    minLength: 2
     maxLength: 5000
 
   commaSeparatedValues:
@@ -1045,7 +1049,7 @@ definitions:
 
   ageRange:
     type: string
-    pattern: "/(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])/"
+    pattern: "(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])"
 
   format:
     "$comment": 'FIXME: Conforms to spec, but may be a list of strings given cardinality
@@ -1225,6 +1229,9 @@ definitions:
     - SENTINEL
     - PCORNET
     - CDISC
+    - NHS DATA DICTIONARY
+    - NHS SCOTLAND DATA DICTIONARY
+    - NHS WALES DATA DICTIONARY
     - LOCAL
     - OTHER
 
@@ -1238,6 +1245,8 @@ definitions:
     - SNOMED RT
     - DM PLUS D
     - NHS NATIONAL CODES
+    - NHS SCOTLAND NATIONAL CODES
+    - NHS WALES NATIONAL CODES
     - ODS
     - LOINC
     - ICD10
