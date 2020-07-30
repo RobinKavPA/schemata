@@ -22,8 +22,11 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 | Value          | Explanation |
 | :------------- | ----------- |
 | `"STATIC"`     |             |
-| `"ANNUAL"`     |             |
+| `"IRREGULAR"`  |             |
+| `"CONTINUOUS"` |             |
 | `"BIENNIAL"`   |             |
+| `"ANNUAL"`     |             |
+| `"BIANNUAL"`   |             |
 | `"QUARTERLY"`  |             |
 | `"BIMONTHLY"`  |             |
 | `"MONTHLY"`    |             |
@@ -31,5 +34,4 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 | `"WEEKLY"`     |             |
 | `"SEMIWEEKLY"` |             |
 | `"DAILY"`      |             |
-| `"IRREGULAR"`  |             |
-| `"CONTINUOUS"` |             |
+| `"OTHER"`      |             |

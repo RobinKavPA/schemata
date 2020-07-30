@@ -1,30 +1,32 @@
 # Dataset identifier Schema
 
 ```txt
-#/properties/id#/properties/id
+#/properties/identifier#/properties/identifier
 ```
 
-Dataset identifier
+System dataset identifier
 
+
+> <http://purl.org/dc/terms/identifier>
+>
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | -------------------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json\*](../../../schema/dataset/latest/dataset.schema.json "open original schema") |
 
-## id Type
+## identifier Type
 
-`string` ([Dataset identifier](dataset-properties-dataset-identifier.md))
+merged type ([Dataset identifier](dataset-properties-dataset-identifier.md))
 
-## id Constraints
+any of
 
-**maximum length**: the maximum number of characters for this string is: `36`
+-   [Untitled undefined type in HDR UK Dataset](dataset-properties-dataset-identifier-anyof-0.md "check type definition")
+-   [Untitled string in HDR UK Dataset](dataset-properties-dataset-identifier-anyof-1.md "check type definition")
 
-**minimum length**: the minimum number of characters for this string is: `36`
+## identifier Examples
 
-**pattern**: the string must match the following regular expression: 
-
-```regexp
-^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+```json
+[
+  "226fb3f1-4471-400a-8c39-2b66d46a39b6"
+]
 ```
-
-[try pattern](https://regexr.com/?expression=%5E%5Ba-fA-F0-9%5D%7B8%7D-%5Ba-fA-F0-9%5D%7B4%7D-%5Ba-fA-F0-9%5D%7B4%7D-%5Ba-fA-F0-9%5D%7B4%7D-%5Ba-fA-F0-9%5D%7B12%7D%24 "try regular expression with regexr.com")

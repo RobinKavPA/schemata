@@ -216,34 +216,46 @@
           "$comment": "dcat:keyword. May be an array of strings or comma seperated list.",
           "title": "Keywords",
           "description": "Please provide relevant and specific keywords that can improve the SEO of your dataset as a comma separated list. Notes: Onboarding portal will suggest keywords based on title, abstract and description. We are compiling a standardised list of keywords and synonyms across datasets to make filtering easier for users.",
-          "type": "array",
-          "items": {
-            "description": "Please provide a link to any active projects that are using the dataset.",
-            "allOf": [
-              {
-                "$ref": "#/definitions/eightyCharacters"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/eightyCharacters"
+                  }
+                ]
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         },
         "alternateIdentifiers": {
           "$id": "#/summary/alternateIdentifiers",
           "$comment": "DATA-CITE alternate-identifiers used. Note, will support comma separated list for backwards compatibility with other systems",
           "title": "Alternate dataset identifiers",
           "description": "Alternate dataset identifiers or local identifiers",
-          "type": "array",
-          "items": {
-            "description": "Please provide a link to any active projects that are using the dataset.",
-            "allOf": [
-              {
-                "$ref": "#/definitions/shortDescription"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/shortDescription"
+                  }
+                ]
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         },
         "doiName": {
           "$id": "#/summary/doiName",
@@ -386,32 +398,46 @@
           "title": "Data Use Limitation",
           "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
           "description": "Please provide an indication of consent permissions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Notes: where there are existing data-sharing arrangements such as the HDR UK HUB data sharing agreement or the NIHR HIC data sharing agreement this should be indicated within access rights. This value will be used as terms for all datasets submitted by the organisation. However, there will be the opportunity to overwrite this value for each dataset.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/dataUseLimitation"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/dataUseLimitation"
+                  }
+                ]
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         },
         "dataUseRequirements": {
           "$id": "#/member/dataUseRequirements",
           "title": "Data Use Requirements",
           "description": "Please indicate fit here are any additional conditions set for use if any, multiple requirements may be provided. Please ensure that these restrictions are documented in access rights information.",
           "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/dataUseRequirements"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/dataUseRequirements"
+                  }
+                ]
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         }
       }
     },
@@ -438,16 +464,23 @@
             "PDF Document that describes study protocol"
           ],
           "description": "Please provide any media associated with the Gateway Organisation using a valid URI for the content. This is an opportunity to provide additional context that could be useful for researchers wanting to understand more about the dataset and its relevance to their research question. The following formats will be accepted .jpg, .png or .svg, .pdf, .xslx or .docx. Note: media asset can be hosted by the organisation or uploaded using the onboarding portal.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/url"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/url"
+                  }
+                ]
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         },
         "isPartOf": {
           "$id": "#/properties/documentation/isPartOf",
@@ -458,25 +491,32 @@
             "Hospital Episodes Statistics datasets (A&E, APC, OP, AC MSDS)."
           ],
           "description": "Please complete only if the dataset is part of a group or family",
-          "type": "array",
-          "items": {
-            "anyOf": [
-              {
-                "$ref": "#/definitions/url"
-              },
-              {
-                "$ref": "#/definitions/eightyCharacters"
-              },
-              {
-                "type": "string",
-                "enum": [
-                  "NOT APPLICABLE"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "#/definitions/url"
+                  },
+                  {
+                    "$ref": "#/definitions/eightyCharacters"
+                  },
+                  {
+                    "type": "string",
+                    "enum": [
+                      "NOT APPLICABLE"
+                    ]
+                  }
                 ]
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         }
       }
     },
@@ -590,42 +630,63 @@
           "title": "Purpose",
           "$comment": "https://ddialliance.org/Specification/DDI-Lifecycle/3.3/XMLSchema/FieldLevelDocumentation/",
           "description": "Pleases indicate the purpose(s) that the dataset was collected.",
-          "type": "array",
-          "items": [
+          "anyOf": [
             {
-              "$ref": "#/definitions/purpose"
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": [
+                {
+                  "$ref": "#/definitions/purpose"
+                }
+              ],
+              "uniqueItems": true,
+              "minItems": 1
             }
-          ],
-          "uniqueItems": true,
-          "minItems": 1
+          ]
         },
         "source": {
           "$id": "#/properties/provenance/origin/source",
           "title": "Source",
           "$comment": "https://dublincore.org/specifications/dublin-core/dcmi-terms/#source",
           "description": "Pleases indicate the source of the data extraction",
-          "type": "array",
-          "items": [
+          "anyOf": [
             {
-              "$ref": "#/definitions/source"
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": [
+                {
+                  "$ref": "#/definitions/source"
+                }
+              ],
+              "uniqueItems": true,
+              "minItems": 1
             }
-          ],
-          "uniqueItems": true,
-          "minItems": 1
+          ]
         },
         "collectionSituation": {
           "$id": "#/properties/provenance/origin/collectionSituation",
           "title": "Setting",
           "$comment": "https://ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/",
           "description": "Pleases indicate the setting(s) where data was collected. Multiple settings may be provided",
-          "type": "array",
-          "items": [
+          "anyOf": [
             {
-              "$ref": "#/definitions/setting"
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": [
+                {
+                  "$ref": "#/definitions/setting"
+                }
+              ],
+              "uniqueItems": true,
+              "minItems": 1
             }
-          ],
-          "uniqueItems": true,
-          "minItems": 1
+          ]
         }
       }
     },
@@ -753,33 +814,46 @@
           "title": "Data Use Limitation",
           "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
           "description": "Please provide an indication of consent permissions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. NOTE: we have extended the DUO to include a value for NO LINKAGE",
-          "type": "array",
-          "items": {
-            "description": "Please provide a link to any active projects that are using the dataset.",
-            "allOf": [
-              {
-                "$ref": "#/definitions/dataUseLimitation"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/dataUseLimitation"
+                  }
+                ]
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         },
         "dataUseRequirements": {
           "$id": "#/properties/accessibility/usage/dataUseRequirements",
           "title": "Data Use Requirements",
           "description": "Please indicate fit here are any additional conditions set for use if any, multiple requirements may be provided. Please ensure that these restrictions are documented in access rights information.",
           "$comment": "https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/dataUseRequirements"
-              }
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/dataUseRequirements"
+                  }
+                ]
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          ]
         },
         "resourceCreator": {
           "$id": "#/properties/accessibility/usage/resourceCreator",
@@ -795,14 +869,21 @@
         "investigations": {
           "title": "Investigations",
           "$comment": "No standard identified",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/url"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/url"
+                  }
+                ]
               }
-            ]
-          }
+            }
+          ]
         },
         "isReferencedBy": {
           "title": "Citations",
@@ -886,14 +967,21 @@
           "default": "GB-ENG",
           "$comment": "http://purl.org/dc/terms/Jurisdiction FIXME: Add ISO 3166-2 Subdivision code pattern",
           "description": "Please use country code from ISO 3166-1 country codes and the associated ISO 3166-2 for regions, cities, states etc. for the country/state under whose laws the data subjects’ data is collected, processed and stored.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/isocountrycode"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/isocountrycode"
+                  }
+                ]
               }
-            ]
-          }
+            }
+          ]
         },
         "dataController": {
           "$id": "#/properties/accessibility/access/dataController",
@@ -935,15 +1023,22 @@
           "$comment": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/dcam/VocabularyEncodingScheme",
           "default": "LOCAL",
           "description": "List any relevant terminologies / ontologies / controlled vocabularies, such as ICD 10 Codes, NHS Data Dictionary National Codes or SNOMED CT International, that are being used by the dataset. If the controlled vocabularies are local standards, please make that explicit. If you are using a standard that has not been included in the list, please use “other” and contact support desk to ask for an addition. Notes: More than one vocabulary may be provided.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/controlledVocabulary"
-              }
-            ]
-          },
-          "minItems": 0
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/controlledVocabulary"
+                  }
+                ]
+              },
+              "minItems": 0
+            }
+          ]
         },
         "conformsTo": {
           "$id": "#/properties/accessibility/formatAndStandards/conformsTo",
@@ -951,10 +1046,17 @@
           "$comment": "dct:conformsTo",
           "default": "LOCAL",
           "description": "List standardised data models that the dataset has been stored in or transformed to, such as OMOP or FHIR. If the data is only available in a local format, please make that explicit. If you are using a standard that has not been included in the list, please use “other” and contact support desk to ask for an addition.",
-          "type": "array",
-          "items": [
+          "anyOf": [
             {
-              "$ref": "#/definitions/standardisedDataModels"
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": [
+                {
+                  "$ref": "#/definitions/standardisedDataModels"
+                }
+              ]
             }
           ]
         },
@@ -964,30 +1066,44 @@
           "description": "This should list all the languages in which the dataset metadata and underlying data is made available.",
           "default": "en",
           "$comment": "dct:language. FIXME: Conforms to spec, but may be a list of strings given cardinality 1:*. Validate against external list of languages. Resources defined by the Library of Congress (ISO 639-1, ISO 639-2) SHOULD be used.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/language"
-              }
-            ]
-          },
-          "minItems": 1
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/language"
+                  }
+                ]
+              },
+              "minItems": 1
+            }
+          ]
         },
         "format": {
           "$id": "#/properties/accessibility/formatAndStandards/format",
           "title": "Format",
           "description": "If multiple formats are available please specify. See application, audio, image, message, model, multipart, text, video, https://www.iana.org/assignments/media-types/media-types.xhtml Note: If your file format is not included in the current list of formats, please indicate other. If you are using the HOP you will be directed to a service desk page where you can request your additional format. If not please go to: https://metadata.atlassian.net/servicedesk/customer/portal/4 to request your format.",
-          "$comment": "http://purl.org/dc/terms/format ",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/format"
-              }
-            ]
-          },
-          "minItems": 1
+          "$comment": "http://purl.org/dc/terms/format",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/format"
+                  }
+                ]
+              },
+              "minItems": 1
+            }
+          ]
         }
       }
     },
@@ -1000,42 +1116,63 @@
           "title": "Linked Datasets",
           "$comment": "dcat:qualifiedRelation",
           "description": "If applicable, please provide the DOI of other datasets that have previously been linked to this dataset and their availability. If no DOI is available, please provide the title of the datasets that can be linked, where possible using the same title of a dataset previously onboarded to the HOP. Note: If all the datasets from Gateway organisation can be linked please indicate “ALL” and the onboarding portal will automate linkage across the datasets submitted.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/url"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/url"
+                  }
+                ]
               }
-            ]
-          }
+            }
+          ]
         },
         "derivation": {
           "title": "Derivations",
           "$comment": "prov:Derivation",
           "description": "Indicate if derived datasets or predefined extracts are available and the type of derivation available. Notes. Single or multiple dimensions can be provided as a derived extract alongside the dataset.",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/abstractText"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/abstractText"
+                  }
+                ]
               }
-            ]
-          }
+            }
+          ]
         },
         "tools": {
           "$id": "#/properties/enrichmentAndLinkage/tools",
           "title": "Tools",
           "$comment": "No standard identified. We encourage users to adopt a model along the lines of https://www.ga4gh.org/news/tool-registry-service-api-enabling-an-interoperable-library-of-genomics-analysis-tools/",
           "description": "Please provide the URL of any analysis tools or models that have been created for this dataset and are available for further use. Multiple tools may be provided. Note: We encourage users to adopt a model along the lines of https://www.ga4gh.org/news/tool-registry-service-api-enabling-an-interoperable-library-of-genomics-analysis-tools/",
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "#/definitions/url"
-              }
-            ]
-          },
-          "minItems": 0
+          "anyOf": [
+            {
+              "$ref": "#/definitions/commaSeparatedValues"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/url"
+                  }
+                ]
+              },
+              "minItems": 0
+            }
+          ]
         }
       }
     },
