@@ -1,10 +1,14 @@
 {
-  "identifier": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954",
+  "identifier": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954/latest",
   "version": "0.0.4",
   "revisions": [
     {
       "version": "0.0.4",
-      "url": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954"
+      "url": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954/0.0.4"
+    },
+    {
+      "version": "0.0.3",
+      "url": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954/0.0.3"
     }
   ],
   "issued": "2020-01-23T20:27:58.049Z",
@@ -112,7 +116,7 @@
         "en"
       ],
       "format": [
-        "SQL"
+        "application/sql"
       ]
     }
   },
