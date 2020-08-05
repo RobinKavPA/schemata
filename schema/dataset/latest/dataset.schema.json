@@ -200,7 +200,7 @@
           "$id": "#/summary/contactPoint",
           "title": "Contact Point",
           "$comment": "dcat:contactPoint",
-          "default": "Defaulted to the contact point of the primary organisation of the user",
+          "default": "Defaulted to the contact point of the primary organisation of the user however, can be overridden for specific datasets",
           "examples": [
             "SAILDatabank@swansea.ac.uk"
           ],
@@ -330,11 +330,21 @@
         "contactPoint": {
           "$id": "#/organisation/contactPoint",
           "title": "Organisation Contact Point",
-          "description": "An explanation about the purpose of this instance.",
+          "description": "Organisation contact point(s)",
           "$comment": "https://schema.org/contactPoint",
-          "allOf": [
+          "anyOf": [
             {
               "$ref": "#/definitions/emailAddress"
+            },
+            {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/emailAddress"
+                  }
+                ]
+              }
             }
           ]
         },
@@ -386,7 +396,18 @@
           "examples": [
             "https://cnfl.extge.co.uk/display/GERE/Research+Environment+User+Guide"
           ],
-          "description": "Please provide a brief description of the data access environment that is currently available to researchers. If no environment is currently available, please indicate the current plans and timelines when the data will be made available through an access environment or process. Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite his value for each dataset",
+          "description": "Please provide a brief description of the data access services that are available including: environment that is currently available to researchers;additional consultancy and services;any indication of costs associated. If no environment is currently available, please indicate the current plans and timelines when and how data will be made available to researchers Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite this value for each dataset.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/longDescription"
+            }
+          ]
+        },
+        "accessRequestCost": {
+          "$id": "#/member/accessRequestCost",
+          "title": "Organisation Access Request Cost",
+          "$comment": "No standard identified",
+          "description": "Please provide link(s) to a webpage detailing the cost, or an indication of the range/calculation of costs, for processing a data access request.\nDefinition: Indication of cost (in GBP) for processing each data access request by the data custodian.",
           "allOf": [
             {
               "$ref": "#/definitions/longDescription"
@@ -943,7 +964,7 @@
           "examples": [
             "https://cnfl.extge.co.uk/display/GERE/Research+Environment+User+Guide"
           ],
-          "description": "Please provide a brief description of the environment where data can be accessed by researchers. If no environment is currently available, please indicate the current plans and timelines when the data will be made available through an access environment or process. Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite his value for each dataset.",
+          "description": "Please provide a brief description of the data access services that are available including: environment that is currently available to researchers;additional consultancy and services;any indication of costs associated. If no environment is currently available, please indicate the current plans and timelines when and how data will be made available to researchers Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite this value for each dataset.",
           "allOf": [
             {
               "$ref": "#/definitions/longDescription"
