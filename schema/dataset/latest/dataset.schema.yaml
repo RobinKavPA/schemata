@@ -372,9 +372,7 @@ definitions:
         "$id": "#/member/accessRequestCost"
         title: Organisation Access Request Cost
         "$comment": No standard identified
-        description: "Please provide link(s) to a webpage detailing the cost, or an indication of the range/calculation of costs, for processing a data access request.
-
-                      Definition: Indication of cost (in GBP) for processing each data access request by the data custodian."
+        description: "Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian."
         allOf:
           - "$ref": "#/definitions/longDescription"
 
@@ -803,6 +801,14 @@ definitions:
                       Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite this value for each dataset.'
         allOf:
         - "$ref": "#/definitions/longDescription"
+
+      accessRequestCost:
+        "$id": "#/member/accessRequestCost"
+        title: Organisation Access Request Cost
+        "$comment": No standard identified
+        description: "Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian."
+        allOf:
+          - "$ref": "#/definitions/longDescription"
 
       deliveryLeadTime:
         "$id": "#/properties/accessibility/access/deliveryLeadTime"
