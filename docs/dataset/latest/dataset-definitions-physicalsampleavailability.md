@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 | `"BONE MARROW"`                  |             |
 | `"CANCER CELL LINES"`            |             |
 | `"CORE BIOPSY"`                  |             |
-| `"CDNA/MRNA"`                    |             |
+| `"CDNA OR MRNA"`                 |             |
 | `"DNA"`                          |             |
 | `"FAECES"`                       |             |
 | `"IMMORTALIZED CELL LINES"`      |             |
@@ -42,3 +42,4 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 | `"URINE"`                        |             |
 | `"WHOLE BLOOD"`                  |             |
 | `"AVAILABILITY TO BE CONFIRMED"` |             |
+| `"OTHER"`                        |             |

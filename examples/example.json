@@ -1,5 +1,5 @@
 {
-  "identifier": "https://a.gidzZ0DVn1YIyI3YFR0HOCau.P",
+  "identifier": "https://a.gidzZ0DVn1YIyI3YFR0HOCau.PJXOWuGISVxmOnVCIHoPEv0B+P",
   "version": "070845093.0411190.581991339",
   "revisions": [
     {
@@ -14,7 +14,7 @@
     "abstract": "anim minim id magna",
     "publisher": {
       "memberOf": "HUB",
-      "accessRights": "http://daasfasd.co",
+      "accessRights": "blah@blah.com",
       "deliveryLeadTime": "LESS 1 WEEK",
       "dataUseLimitation": ["GENERAL RESEARCH USE"],
       "dataUseRequirements": ["COLLABORATION REQUIRED"],
@@ -37,16 +37,17 @@
     "description": "Ut Lorem pariatur et",
     "associatedMedia": [
       "http://NzQbkGeDiXxbnwicdcwCcBZPe.hfPj5vJvFsroUn",
-      "http://AVa.cohLBIeQutGe28Vsp5q.zoW6PFmn5",
+      "http://AVa.cohLBIeQutGe28Vsp5q,zoW6PFmn5",
       "https://OQsHkhQdjsqnvPl.ecvyppRYLJSSw"
     ],
     "isPartOf": [
-      "in amet in non incididunt"
+      "in amet in non incididunt",
+      "NOT APPLICABLE"
     ]
   },
   "coverage": {
     "spatial": "https://jpVdVUhbgXhlyKf.nnyyax1vJIrFncXFvjnqijgMnCqXSO",
-    "typicalAgeRange": "0-5",
+    "typicalAgeRange": "/150-5/",
     "physicalSampleAvailability": [
       "SWABS",
       "SERUM",
@@ -100,7 +101,10 @@
       "resourceCreator": "ea laboris aliqua labore voluptate",
       "investigations": [
         "https://GqRXfiSnUncTCgoKxevVzrdUN.mpiwFBV8MAFrIM2zodgXJQV.",
-        "http://xmxHPpiVwRTkZM.qqqhYc1gjjMMch4W-g6AtZMXTlxsm8E80"
+        "http://qnOMKOV.jxfnwrD,PeXuUsJqBW9vJFdFs1hcGApyFk,f+pT+W5,TEbvUD.+QBQukoKrUeBnz0.im7PhN",
+        "http://xmxHPpiVwRTkZM.qqqhYc1gjjMMch4W-g6AtZMXTlxsm8E80",
+        "https://sThbgSZMrxdbvVhNkkNQlrpdOOPcE.yoZ43ubdB3W6-tiTTumeNhyo,u3aVOvIgzSe64Aa6ejExr4Q",
+        "http://aaBlT.zdqyZfca5uG0k4FYA+jPXuQ45VzeM.TcYJ98OPPhM,vjyCG5fe43bEOWUUp6jL15+WQ7l6mFKY9sYJW"
       ],
       "isReferencedBy": [
         "10r9547505/e.VJuruUR"
@@ -127,8 +131,12 @@
   },
   "enrichmentAndLinkage": {
     "qualifiedRelation": [
-      "http://kEfMFG.pgXz22W-K.DYBAbyxHGwACL.eUTwSFV.rF1w2f3tN4RD", "http://PXeoVoZOTYAcSei.ehrfAFg",
-      "https://MGxSmSaWlYboYhP.sjbKWF4UeWMMbJaY1UBPRy"],
+      "http://kEfMFG.pgXz22W-K.DYBAbyxHGwACL.eUTwSFV.rF1w2f3tN4RD",
+      "http://PXeoVoZOTYAcSei.ehrfAFmzn,5J1HtBHsAmMWRBYGy1LQSIiS4XPngcOgNdNBrC2GhUOJ81+4g",
+      "https://MGxSmSaWlYboYhP.sjbKWF4UeWMMbJaY1UBPRy",
+      "http://Couy.yfykW-BUKcbst5Xyr2UD,MAziheXBNh11.hn82QCWJpTauM397RlIG98GynfuFItWL85DJn73rr",
+      "https://yuPJvGVPGKcyLlCSXxPYSXRgn.doixax+ioOk56XjwFYDLBnlkeSZ0k7+hUG"
+    ],
     "derivation": [
       "sintproident laborum amet dolore incididunt",
       "ut sunt tempor",
