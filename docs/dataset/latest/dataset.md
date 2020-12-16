@@ -29,7 +29,7 @@ HDR UK Dataset Schema
 | [coverage](#coverage)                         | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-coverage.md "\#/definitions/coverage#/properties/coverage")                                       |
 | [provenance](#provenance)                     | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-provenance.md "\#/definitions/provenance#/properties/provenance")                                 |
 | [accessibility](#accessibility)               | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-properties-accessibility.md "\#/definitions/accessibility#/properties/accessibility")                        |
-| [enrichmentAndLinkage](#enrichmentAndLinkage) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-enrichment-and-linkage.md "\#/definitions/enrichmentAndLinkage#/properties/enrichmentAndLinkage") |
+| [enrichmentAndLinkage](#enrichmentandlinkage) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-enrichment-and-linkage.md "\#/definitions/enrichmentAndLinkage#/properties/enrichmentAndLinkage") |
 | [observations](#observations)                 | `array`       | Optional | cannot be null | [HDR UK Dataset](dataset-properties-observations.md "\#/properties/observations#/properties/observations")                            |
 
 ## identifier
@@ -287,10 +287,10 @@ Reference this group by using
 {"$ref":"#/definitions/revision#/definitions/revision"}
 ```
 
-| Property            | Type          | Required | Nullable       | Defined by                                                                                                                                      |
-| :------------------ | ------------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [version](#version) | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-version.md "\#/definitions/revision/version#/definitions/revision/properties/version") |
-| [url](#url)         | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-url.md "\#/definitions/revision/url#/definitions/revision/properties/url")             |
+| Property              | Type          | Required | Nullable       | Defined by                                                                                                                                      |
+| :-------------------- | ------------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [version](#version-1) | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-version.md "\#/definitions/revision/version#/definitions/revision/properties/version") |
+| [url](#url)           | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-url.md "\#/definitions/revision/url#/definitions/revision/properties/url")             |
 
 ### version
 
@@ -337,10 +337,10 @@ Reference this group by using
 | [title](#title)                               | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-title.md "\#/summary/title#/definitions/summary/properties/title")                                                       |
 | [abstract](#abstract)                         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-dataset-abstract.md "\#/summary/abstract#/definitions/summary/properties/abstract")                                      |
 | [publisher](#publisher)                       | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-dataset-publisher.md "\#/summary/publisher#/definitions/summary/properties/publisher")                                   |
-| [contactPoint](#contactPoint)                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-contact-point.md "\#/summary/contactPoint#/definitions/summary/properties/contactPoint")                                 |
+| [contactPoint](#contactpoint)                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-contact-point.md "\#/summary/contactPoint#/definitions/summary/properties/contactPoint")                                 |
 | [keywords](#keywords)                         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-keywords.md "\#/summary/keywords#/definitions/summary/properties/keywords")                                              |
-| [alternateIdentifiers](#alternateIdentifiers) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "\#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers") |
-| [doiName](#doiName)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier.md "\#/summary/doiName#/definitions/summary/properties/doiName")                               |
+| [alternateIdentifiers](#alternateidentifiers) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "\#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers") |
+| [doiName](#doiname)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier.md "\#/summary/doiName#/definitions/summary/properties/doiName")                               |
 
 ### title
 
@@ -549,18 +549,18 @@ Reference this group by using
 
 | Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                                      |
 | :------------------------------------------ | ------ | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [identifier](#identifier)                   | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-identifier.md "\#/organisation/identifier#/definitions/organisation/properties/identifier")                  |
+| [identifier](#identifier-1)                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-identifier.md "\#/organisation/identifier#/definitions/organisation/properties/identifier")                  |
 | [name](#name)                               | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-name.md "\#/organisation/name#/definitions/organisation/properties/name")                                    |
 | [logo](#logo)                               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-logo.md "\#/organisation/logo#/definitions/organisation/properties/logo")                                    |
 | [description](#description)                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-description.md "\#/organisation/description#/definitions/organisation/properties/description")               |
-| [contactPoint](#contactPoint)               | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-contact-point.md "\#/organisation/contactPoint#/definitions/organisation/properties/contactPoint")           |
-| [memberOf](#memberOf)                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-membership.md "\#/organisation/memberOf#/definitions/organisation/properties/memberOf")                      |
-| [accessRights](#accessRights)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights.md "\#/organisation/accessRights#/definitions/organisation/properties/accessRights")   |
-| [deliveryLeadTime](#deliveryLeadTime)       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-access-request-duration.md "\#/member/deliveryLeadTime#/definitions/organisation/properties/deliveryLeadTime")            |
-| [accessService](#accessService)             | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-service.md "\#/member/accessService#/definitions/organisation/properties/accessService")              |
-| [accessRequestCost](#accessRequestCost)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost.md "\#/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost") |
-| [dataUseLimitation](#dataUseLimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-limitation.md "\#/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation")              |
-| [dataUseRequirements](#dataUseRequirements) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-requirements.md "\#/member/dataUseRequirements#/definitions/organisation/properties/dataUseRequirements")        |
+| [contactPoint](#contactpoint-1)             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-contact-point.md "\#/organisation/contactPoint#/definitions/organisation/properties/contactPoint")           |
+| [memberOf](#memberof)                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-membership.md "\#/organisation/memberOf#/definitions/organisation/properties/memberOf")                      |
+| [accessRights](#accessrights)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights.md "\#/organisation/accessRights#/definitions/organisation/properties/accessRights")   |
+| [deliveryLeadTime](#deliveryleadtime)       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-access-request-duration.md "\#/member/deliveryLeadTime#/definitions/organisation/properties/deliveryLeadTime")            |
+| [accessService](#accessservice)             | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-service.md "\#/member/accessService#/definitions/organisation/properties/accessService")              |
+| [accessRequestCost](#accessrequestcost)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost.md "\#/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost") |
+| [dataUseLimitation](#datauselimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-limitation.md "\#/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation")              |
+| [dataUseRequirements](#datauserequirements) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-requirements.md "\#/member/dataUseRequirements#/definitions/organisation/properties/dataUseRequirements")        |
 
 ### identifier
 
@@ -858,9 +858,9 @@ Reference this group by using
 
 | Property                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                             |
 | :---------------------------------- | ------ | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [description](#description)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-description.md "\#/properties/documentation/description#/definitions/documentation/properties/description")              |
-| [associatedMedia](#associatedMedia) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-associated-media.md "\#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia") |
-| [isPartOf](#isPartOf)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-group.md "\#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")                          |
+| [description](#description-1)       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-description.md "\#/properties/documentation/description#/definitions/documentation/properties/description")              |
+| [associatedMedia](#associatedmedia) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-associated-media.md "\#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia") |
+| [isPartOf](#ispartof)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-group.md "\#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")                          |
 
 ### description
 
@@ -964,8 +964,8 @@ Reference this group by using
 | Property                                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                |
 | :-------------------------------------------------------- | ------ | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [spatial](#spatial)                                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage.md "\#/properties/coverage/spatial#/definitions/coverage/properties/spatial")                                                |
-| [typicalAgeRange](#typicalAgeRange)                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-age-range.md "\#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")                                          |
-| [physicalSampleAvailability](#physicalSampleAvailability) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability.md "\#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability") |
+| [typicalAgeRange](#typicalagerange)                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-age-range.md "\#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")                                          |
+| [physicalSampleAvailability](#physicalsampleavailability) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability.md "\#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability") |
 | [followup](#followup)                                     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-followup.md "\#/properties/coverage/followup#/definitions/coverage/properties/followup")                                                         |
 | [pathway](#pathway)                                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-pathway.md "\#/properties/coverage/pathway#/definitions/coverage/properties/pathway")                                                            |
 
@@ -1170,7 +1170,7 @@ Reference this group by using
 | :------------------------------------------ | ------ | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [purpose](#purpose)                         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-purpose.md "\#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")                         |
 | [source](#source)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-source.md "\#/properties/provenance/origin/source#/definitions/origin/properties/source")                            |
-| [collectionSituation](#collectionSituation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "\#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
+| [collectionSituation](#collectionsituation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "\#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
 
 ### purpose
 
@@ -1254,11 +1254,11 @@ Reference this group by using
 
 | Property                                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                                     |
 | :-------------------------------------------------- | ------ | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [accrualPeriodicity](#accrualPeriodicity)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-periodicity.md "\#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")            |
-| [distributionReleaseDate](#distributionReleaseDate) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-release-date.md "\#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate") |
-| [startDate](#startDate)                             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-start-date.md "\#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")                               |
-| [endDate](#endDate)                                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-end-date.md "\#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")                                     |
-| [timeLag](#timeLag)                                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-time-lag.md "\#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")                                     |
+| [accrualPeriodicity](#accrualperiodicity)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-periodicity.md "\#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")            |
+| [distributionReleaseDate](#distributionreleasedate) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-release-date.md "\#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate") |
+| [startDate](#startdate)                             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-start-date.md "\#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")                               |
+| [endDate](#enddate)                                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-end-date.md "\#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")                                     |
+| [timeLag](#timelag)                                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-time-lag.md "\#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")                                     |
 
 ### accrualPeriodicity
 
@@ -1391,7 +1391,7 @@ Reference this group by using
 | :---------------------------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [usage](#usage)                           | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-usage.md "\#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")                                          |
 | [access](#access)                         | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-access.md "\#/definitions/accessibility/access#/definitions/accessibility/properties/access")                                       |
-| [formatAndStandards](#formatAndStandards) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "\#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
+| [formatAndStandards](#formatandstandards) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "\#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
 
 ### usage
 
@@ -1449,13 +1449,13 @@ Reference this group by using
 {"$ref":"#/definitions/usage#/definitions/usage"}
 ```
 
-| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                                |
-| :------------------------------------------ | ------ | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [dataUseLimitation](#dataUseLimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "\#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
-| [dataUseRequirements](#dataUseRequirements) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "\#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
-| [resourceCreator](#resourceCreator)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "\#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
-| [investigations](#investigations)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-investigations.md "\#/definitions/usage#/definitions/usage/properties/investigations")                                              |
-| [isReferencedBy](#isReferencedBy)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "\#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
+| Property                                      | Type   | Required | Nullable       | Defined by                                                                                                                                                                                |
+| :-------------------------------------------- | ------ | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [dataUseLimitation](#datauselimitation-1)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "\#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
+| [dataUseRequirements](#datauserequirements-1) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "\#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
+| [resourceCreator](#resourcecreator)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "\#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
+| [investigations](#investigations)             | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-investigations.md "\#/definitions/usage#/definitions/usage/properties/investigations")                                              |
+| [isReferencedBy](#isreferencedby)             | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "\#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
 
 ### dataUseLimitation
 
@@ -1584,15 +1584,15 @@ Reference this group by using
 {"$ref":"#/definitions/access#/definitions/access"}
 ```
 
-| Property                                | Type   | Required | Nullable       | Defined by                                                                                                                                                                               |
-| :-------------------------------------- | ------ | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [accessRights](#accessRights)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-rights.md "\#/properties/accessibility/access/accessRights#/definitions/access/properties/accessRights")                   |
-| [accessService](#accessService)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-service.md "\#/properties/accessibility/access/accessService#/definitions/access/properties/accessService")                |
-| [accessRequestCost](#accessRequestCost) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-organisation-access-request-cost.md "\#/member/accessRequestCost#/definitions/access/properties/accessRequestCost")               |
-| [deliveryLeadTime](#deliveryLeadTime)   | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-request-duration.md "\#/properties/accessibility/access/deliveryLeadTime#/definitions/access/properties/deliveryLeadTime") |
-| [jurisdiction](#jurisdiction)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-jurisdiction.md "\#/properties/accessibility/access/jurisdiction#/definitions/access/properties/jurisdiction")                    |
-| [dataController](#dataController)       | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-data-controller.md "\#/properties/accessibility/access/dataController#/definitions/access/properties/dataController")             |
-| [dataProcessor](#dataProcessor)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-data-processor.md "\#/properties/accessibility/access/dataProcessor#/definitions/access/properties/dataProcessor")                |
+| Property                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                               |
+| :---------------------------------------- | ------ | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [accessRights](#accessrights-1)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-rights.md "\#/properties/accessibility/access/accessRights#/definitions/access/properties/accessRights")                   |
+| [accessService](#accessservice-1)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-service.md "\#/properties/accessibility/access/accessService#/definitions/access/properties/accessService")                |
+| [accessRequestCost](#accessrequestcost-1) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-organisation-access-request-cost.md "\#/member/accessRequestCost#/definitions/access/properties/accessRequestCost")               |
+| [deliveryLeadTime](#deliveryleadtime-1)   | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-request-duration.md "\#/properties/accessibility/access/deliveryLeadTime#/definitions/access/properties/deliveryLeadTime") |
+| [jurisdiction](#jurisdiction)             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-jurisdiction.md "\#/properties/accessibility/access/jurisdiction#/definitions/access/properties/jurisdiction")                    |
+| [dataController](#datacontroller)         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-data-controller.md "\#/properties/accessibility/access/dataController#/definitions/access/properties/dataController")             |
+| [dataProcessor](#dataprocessor)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-data-processor.md "\#/properties/accessibility/access/dataProcessor#/definitions/access/properties/dataProcessor")                |
 
 ### accessRights
 
@@ -1782,8 +1782,8 @@ Reference this group by using
 
 | Property                                              | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                                                 |
 | :---------------------------------------------------- | ------ | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [vocabularyEncodingScheme](#vocabularyEncodingScheme) | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary.md "\#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme#/definitions/formatAndStandards/properties/vocabularyEncodingScheme") |
-| [conformsTo](#conformsTo)                             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to.md "\#/properties/accessibility/formatAndStandards/conformsTo#/definitions/formatAndStandards/properties/conformsTo")                                       |
+| [vocabularyEncodingScheme](#vocabularyencodingscheme) | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary.md "\#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme#/definitions/formatAndStandards/properties/vocabularyEncodingScheme") |
+| [conformsTo](#conformsto)                             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to.md "\#/properties/accessibility/formatAndStandards/conformsTo#/definitions/formatAndStandards/properties/conformsTo")                                       |
 | [language](#language)                                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-language.md "\#/properties/accessibility/formatAndStandards/language#/definitions/formatAndStandards/properties/language")                                              |
 | [format](#format)                                     | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-format.md "\#/properties/accessibility/formatAndStandards/format#/definitions/formatAndStandards/properties/format")                                                    |
 
@@ -1917,7 +1917,7 @@ Reference this group by using
 
 | Property                                | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                     |
 | :-------------------------------------- | ------ | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [qualifiedRelation](#qualifiedRelation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "\#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation") |
+| [qualifiedRelation](#qualifiedrelation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "\#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation") |
 | [derivation](#derivation)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations.md "\#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")                             |
 | [tools](#tools)                         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools.md "\#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")                                   |
 
@@ -2003,11 +2003,11 @@ Reference this group by using
 
 | Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                     |
 | :------------------------------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [observedNode](#observedNode)                           | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-statistical-population.md "\#/properties/observation/observedNode#/definitions/observation/properties/observedNode")                               |
-| [measuredValue](#measuredValue)                         | `integer` | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-value.md "\#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")                                     |
-| [disambiguatingDescription](#disambiguatingDescription) | Merged    | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description.md "\#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription") |
-| [observationDate](#observationDate)                     | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-observation-date.md "\#/properties/observation/observationDate#/definitions/observation/properties/observationDate")                               |
-| [measuredProperty](#measuredProperty)                   | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-property.md "\#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")                            |
+| [observedNode](#observednode)                           | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-statistical-population.md "\#/properties/observation/observedNode#/definitions/observation/properties/observedNode")                               |
+| [measuredValue](#measuredvalue)                         | `integer` | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-value.md "\#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")                                     |
+| [disambiguatingDescription](#disambiguatingdescription) | Merged    | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description.md "\#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription") |
+| [observationDate](#observationdate)                     | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-observation-date.md "\#/properties/observation/observationDate#/definitions/observation/properties/observationDate")                               |
+| [measuredProperty](#measuredproperty)                   | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-property.md "\#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")                            |
 
 ### observedNode
 

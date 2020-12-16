@@ -19,11 +19,11 @@ unknown
 
 | Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                                |
 | :------------------------------------------ | ------ | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [dataUseLimitation](#dataUseLimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "\#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
-| [dataUseRequirements](#dataUseRequirements) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "\#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
-| [resourceCreator](#resourceCreator)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "\#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
+| [dataUseLimitation](#datauselimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "\#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
+| [dataUseRequirements](#datauserequirements) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "\#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
+| [resourceCreator](#resourcecreator)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "\#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
 | [investigations](#investigations)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-investigations.md "\#/definitions/usage#/definitions/usage/properties/investigations")                                              |
-| [isReferencedBy](#isReferencedBy)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "\#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
+| [isReferencedBy](#isreferencedby)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "\#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
 
 ## dataUseLimitation
 

@@ -21,7 +21,7 @@ unknown
 | :------------------------------------------ | ------ | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [purpose](#purpose)                         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-purpose.md "\#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")                         |
 | [source](#source)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-source.md "\#/properties/provenance/origin/source#/definitions/origin/properties/source")                            |
-| [collectionSituation](#collectionSituation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "\#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
+| [collectionSituation](#collectionsituation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "\#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
 
 ## purpose
 

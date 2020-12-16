@@ -20,8 +20,8 @@ unknown ([Documentation](dataset-properties-documentation.md))
 | Property                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                             |
 | :---------------------------------- | ------ | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [description](#description)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-description.md "\#/properties/documentation/description#/definitions/documentation/properties/description")              |
-| [associatedMedia](#associatedMedia) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-associated-media.md "\#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia") |
-| [isPartOf](#isPartOf)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-group.md "\#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")                          |
+| [associatedMedia](#associatedmedia) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-associated-media.md "\#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia") |
+| [isPartOf](#ispartof)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-group.md "\#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")                          |
 
 ## description
 

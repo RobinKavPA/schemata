@@ -21,7 +21,7 @@ unknown ([Accessibility](dataset-properties-accessibility.md))
 | :---------------------------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [usage](#usage)                           | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-usage.md "\#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")                                          |
 | [access](#access)                         | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-access.md "\#/definitions/accessibility/access#/definitions/accessibility/properties/access")                                       |
-| [formatAndStandards](#formatAndStandards) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "\#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
+| [formatAndStandards](#formatandstandards) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "\#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
 
 ## usage
 

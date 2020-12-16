@@ -22,10 +22,10 @@ unknown ([Summary](dataset-properties-summary.md))
 | [title](#title)                               | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-title.md "\#/summary/title#/definitions/summary/properties/title")                                                       |
 | [abstract](#abstract)                         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-dataset-abstract.md "\#/summary/abstract#/definitions/summary/properties/abstract")                                      |
 | [publisher](#publisher)                       | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-dataset-publisher.md "\#/summary/publisher#/definitions/summary/properties/publisher")                                   |
-| [contactPoint](#contactPoint)                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-contact-point.md "\#/summary/contactPoint#/definitions/summary/properties/contactPoint")                                 |
+| [contactPoint](#contactpoint)                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-contact-point.md "\#/summary/contactPoint#/definitions/summary/properties/contactPoint")                                 |
 | [keywords](#keywords)                         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-keywords.md "\#/summary/keywords#/definitions/summary/properties/keywords")                                              |
-| [alternateIdentifiers](#alternateIdentifiers) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "\#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers") |
-| [doiName](#doiName)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier.md "\#/summary/doiName#/definitions/summary/properties/doiName")                               |
+| [alternateIdentifiers](#alternateidentifiers) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "\#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers") |
+| [doiName](#doiname)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier.md "\#/summary/doiName#/definitions/summary/properties/doiName")                               |
 
 ## title
 
