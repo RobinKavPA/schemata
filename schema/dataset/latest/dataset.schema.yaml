@@ -230,8 +230,7 @@ definitions:
               will suggest keywords based on title, abstract and description. We are compiling
               a standardised list of keywords and synonyms across datasets to make filtering
               easier for users.'
-          anyOf:
-          - "$ref": "#/definitions/commaSeparatedValues"
+          allOf:
           - type: array
             items:
               allOf:
@@ -244,8 +243,7 @@ definitions:
           "$comment": 'DATA-CITE alternate-identifiers used. Note, will support comma separated list for backwards compatibility with other systems'
           title: Alternate dataset identifiers
           description: Alternate dataset identifiers or local identifiers
-          anyOf:
-          - "$ref": "#/definitions/commaSeparatedValues"
+          allOf:
           - type: array
             items:
               allOf:
@@ -387,8 +385,7 @@ definitions:
               this should be indicated within access rights. This value will be used as terms for
               all datasets submitted by the organisation. However, there will be the opportunity
               to overwrite this value for each dataset."
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -403,8 +400,7 @@ definitions:
               for use if any, multiple requirements may be provided. Please ensure that
               these restrictions are documented in access rights information.
         "$comment": https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -437,8 +433,7 @@ definitions:
                 formats will be accepted .jpg, .png or .svg, .pdf, .xslx or .docx. Note:
                 media asset can be hosted by the organisation or uploaded using the onboarding
                 portal.'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
            allOf:
@@ -454,8 +449,7 @@ definitions:
         examples:
         - Hospital Episodes Statistics datasets (A&E, APC, OP, AC MSDS).
         description: Please complete only if the dataset is part of a group or family
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
            anyOf:
@@ -503,8 +497,7 @@ definitions:
           available. More than one type may be provided. If sample are not yet available,
           please provide “AVAILABILITY TO BE CONFIRMED”. If samples are not available,
           then please provide “NOT AVAILABLE”.
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           contains:
             "$ref": "#/definitions/physicalSampleAvailability"
@@ -558,8 +551,7 @@ definitions:
         title: Purpose
         "$comment": https://ddialliance.org/Specification/DDI-Lifecycle/3.3/XMLSchema/FieldLevelDocumentation/
         description: Pleases indicate the purpose(s) that the dataset was collected.
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
           - "$ref": "#/definitions/purpose"
@@ -571,8 +563,7 @@ definitions:
         title: Source
         "$comment": https://dublincore.org/specifications/dublin-core/dcmi-terms/#source
         description: Pleases indicate the source of the data extraction
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
           - "$ref": "#/definitions/source"
@@ -710,8 +701,7 @@ definitions:
         and/or materials, and relates to the purposes for which datasets and/or
         material might be removed, stored or used. NOTE: we have extended the DUO
         to include a value for NO LINKAGE'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -726,8 +716,7 @@ definitions:
           for use if any, multiple requirements may be provided. Please ensure that
           these restrictions are documented in access rights information.
         "$comment": https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -746,8 +735,7 @@ definitions:
       investigations:
         title: Investigations
         "$comment": No standard identified
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -825,8 +813,7 @@ definitions:
         description: 'Please use country code from ISO 3166-1 country codes and the associated
               ISO 3166-2 for regions, cities, states etc. for the country/state under whose
               laws the data subjects’ data is collected, processed and stored.'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -869,8 +856,7 @@ definitions:
                   If you are using a standard that has not been included in the list, please
                   use “other” and contact support desk to ask for an addition. Notes: More
                   than one vocabulary may be provided.'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -889,8 +875,7 @@ definitions:
         in a local format, please make that explicit. If you are using a standard
         that has not been included in the list, please use “other” and contact support
         desk to ask for an addition.'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
            - "$ref": "#/definitions/standardisedDataModels"
@@ -904,8 +889,7 @@ definitions:
         "$comment": 'dct:language. FIXME: Conforms to spec, but may be a list of strings given cardinality
         1:*. Validate against external list of languages. Resources defined by the Library
         of Congress (ISO 639-1, ISO 639-2) SHOULD be used.'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -925,8 +909,7 @@ definitions:
         please go to: https://metadata.atlassian.net/servicedesk/customer/portal/4
         to request your format.'
         "$comment": 'http://purl.org/dc/terms/format'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -985,8 +968,7 @@ definitions:
                     have been created for this dataset and are available for further use.
                     Multiple tools may be provided. Note: We encourage users to adopt a model
                     along the lines of https://www.ga4gh.org/news/tool-registry-service-api-enabling-an-interoperable-library-of-genomics-analysis-tools/'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -1098,10 +1080,6 @@ definitions:
     type: string
     minLength: 2
     maxLength: 5000
-
-  commaSeparatedValues:
-    type: string
-    pattern: "([^,]+)"
 
   doi:
     type: string
