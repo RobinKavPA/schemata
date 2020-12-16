@@ -27,8 +27,7 @@ properties:
     description: System dataset identifier
     anyOf:
     - "$ref": "#/definitions/uuidv4"
-    - type: string
-      format: uri
+    - "$ref": "#/definitions/url"
 
   version:
     "$id": "#/properties/version"
@@ -334,13 +333,10 @@ definitions:
         description: The URL of a webpage where the data access request process and/or
             guidance is provided. If there is more than one access process i.e. industry
             vs academic please provide both.
-        anyOf:
-          - type: string
-            format: uri
+        allOf:
           - type: array
             items:
-              type: string
-              format: uri
+              "$ref": "#/definitions/url"
 
       deliveryLeadTime:
         "$id": "#/member/deliveryLeadTime"
@@ -436,8 +432,9 @@ definitions:
         allOf:
         - type: array
           items:
-           allOf:
+           anyOf:
             - "$ref": "#/definitions/url"
+            - "$ref": "#/definitions/notapplicable"
           uniqueItems: true
           minItems: 1
 
@@ -455,9 +452,7 @@ definitions:
            anyOf:
             - "$ref": "#/definitions/url"
             - "$ref": "#/definitions/eightyCharacters"
-            - type: string
-              enum:
-              - NOT APPLICABLE
+            - "$ref": "#/definitions/notapplicable"
           uniqueItems: true
           minItems: 1
 
@@ -474,7 +469,11 @@ definitions:
         examples:
         - 'https://www.geonames.org/2635167/united-kingdom-of-great-britain-and-northern-ireland.html'
         allOf:
-        - "$ref": "#/definitions/url"
+        - type: array
+          contains:
+            "$ref": "#/definitions/url"
+          uniqueItems: true
+          minItems: 1
 
       typicalAgeRange:
         "$id": "#/properties/coverage/typicalAgeRange"
@@ -499,8 +498,10 @@ definitions:
           then please provide “NOT AVAILABLE”.
         allOf:
         - type: array
-          contains:
-            "$ref": "#/definitions/physicalSampleAvailability"
+          items:
+            anyOf:
+            - "$ref": "#/definitions/physicalSampleAvailability"
+            - "$ref": "#/definitions/notapplicable"
           uniqueItems: true
           minItems: 1
 
@@ -511,8 +512,9 @@ definitions:
         default: UNKNOWN
         description: If known, what is the typical time span that a patient appears
           in the dataset (follow up period)
-        allOf:
+        anyOf:
         - "$ref": "#/definitions/followup"
+        - "$ref": "#/definitions/notapplicable"
 
       pathway:
         "$id": "#/properties/coverage/pathway"
@@ -524,8 +526,9 @@ definitions:
             or area, a single tier of care, linked across two tiers (e.g. primary and
             secondary care), or an integrated care record covering the whole patient
             pathway.
-        allOf:
+        anyOf:
         - "$ref": "#/definitions/description"
+        - "$ref": "#/definitions/notapplicable"
 
   provenance:
     "$id": "#/definitions/provenance"
@@ -554,7 +557,9 @@ definitions:
         allOf:
         - type: array
           items:
-          - "$ref": "#/definitions/purpose"
+            anyOf:
+            - "$ref": "#/definitions/purpose"
+            - "$ref": "#/definitions/notapplicable"
           uniqueItems: true
           minItems: 1
 
@@ -566,7 +571,9 @@ definitions:
         allOf:
         - type: array
           items:
-          - "$ref": "#/definitions/source"
+            anyOf:
+            - "$ref": "#/definitions/source"
+            - "$ref": "#/definitions/notapplicable"
           uniqueItems: true
           minItems: 1
 
@@ -579,7 +586,9 @@ definitions:
         allOf:
         - type: array
           items:
-          - "$ref": "#/definitions/setting"
+            anyOf:
+            - "$ref": "#/definitions/setting"
+            - "$ref": "#/definitions/notapplicable"
           uniqueItems: true
           minItems: 1
 
@@ -738,8 +747,9 @@ definitions:
         allOf:
         - type: array
           items:
-            allOf:
+            anyOf:
             - "$ref": "#/definitions/url"
+            - "$ref": "#/definitions/notapplicable"
 
       isReferencedBy:
         title: Citations
@@ -749,11 +759,12 @@ definitions:
           to existing resources where the dataset has been used or referenced. Please
           provide multiple entries, or if you are using a csv upload please provide
           them as a tab separated list. 
-        anyOf:
-          - "$ref": "#/definitions/doi"
+        allOf:
           - type: array
             items:
-            - "$ref": "#/definitions/doi"
+              anyOf:
+              - "$ref": "#/definitions/doi"
+              - "$ref": "#/definitions/notapplicable"
 
   access:
     "$id": "#/definitions/access"
@@ -767,15 +778,12 @@ definitions:
         "$id": "#/properties/accessibility/access/accessRights"
         title: Access Rights
         "$comment": 'dct:access_rights NOTE: need to ensure that this is consistent across the organisation info and the dataset info'
-        anyOf:
-        - type: string
-          pattern: "^In Progress$"
-        - type: string
-          format: uri
+        allOf:
         - type: array
           items:
-            type: string
-            format: uri
+            anyOf:
+            - "$ref": "#/definitions/url"
+            - "$ref": "#/definitions/inprogress"
 
       accessService:
         "$id": "#/properties/accessibility/access/accessService"
@@ -859,8 +867,9 @@ definitions:
         allOf:
         - type: array
           items:
-            allOf:
+            anyOf:
             - "$ref": "#/definitions/controlledVocabulary"
+            - "$ref": "#/definitions/notapplicable"
           minItems: 0
 
 
@@ -878,7 +887,9 @@ definitions:
         allOf:
         - type: array
           items:
-           - "$ref": "#/definitions/standardisedDataModels"
+            anyOf:
+            - "$ref": "#/definitions/standardisedDataModels"
+            - "$ref": "#/definitions/notapplicable"
 
       language:
         "$id": "#/properties/accessibility/formatAndStandards/language"
@@ -934,16 +945,18 @@ definitions:
         allOf:
         - type: array
           items:
-            allOf:
+            anyOf:
             - "$ref": "#/definitions/url"
+            - "$ref": "#/definitions/notapplicable"
 
       linkageOpportunity:
         title: linkageOpportunity
         "$comment": 'no standard identified'
         description: 'If applicable, please provide the a description of further linkage opportunities for the datasets and 
                       if possible the specific variables that can be used to link to other datasets.'
-        allOf:
+        aanyOf:
         - "$ref": "#/definitions/shortDescription"
+        - "$ref": "#/definitions/notapplicable"
             
 
       derivation:
@@ -955,8 +968,9 @@ definitions:
         allOf:
         - type: array
           items:
-            allOf:
+            anyOf:
             - "$ref": "#/definitions/abstractText"
+            - "$ref": "#/definitions/notapplicable"
 
 
       tools:
@@ -971,8 +985,9 @@ definitions:
         allOf:
         - type: array
           items:
-            allOf:
+            anyOf:
              - "$ref": "#/definitions/url"
+             - "$ref": "#/definitions/notapplicable"
           minItems: 0
 
   observation:
@@ -1099,6 +1114,16 @@ definitions:
     "$comment": 'FIXME: Add ISO 3166-2 Subdivision code pattern'
     type: string
     pattern: "^[A-Z]{2}(-[A-Z]{2,3})?$"
+
+  notapplicable:
+    type: string
+    enum:
+    - NOT APPLICABLE
+  
+  inprogress:
+    type: string
+    enum:
+    - IN PROGRESS
 
   memberOf:
     type: string
