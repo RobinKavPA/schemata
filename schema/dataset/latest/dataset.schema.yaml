@@ -256,8 +256,9 @@ definitions:
           description: All HDR UK registered datasets should either have a Digital Object
               Identifier (DOI) or be working towards obtaining one. If a DOI is available,
               please provide the DOI.
-          allOf:
+          anyOf:
             - "$ref": "#/definitions/doi"
+            - "$ref": "#/definitions/gatewaypid"
           "$comment": 'Vocabulary: DOI Data Dictionary '
           examples:
             - 10.3399/bjgp17X692645
@@ -1099,6 +1100,10 @@ definitions:
   doi:
     type: string
     pattern: "^10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+$"
+
+  gatewaypid:
+    type: string
+    pattern: "^https:\/\/web\.www\.healthdatagateway\.org\/dataset\/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
 
   ageRange:
     type: string
