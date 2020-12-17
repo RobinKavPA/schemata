@@ -954,7 +954,7 @@ definitions:
         "$comment": 'no standard identified'
         description: 'If applicable, please provide the a description of further linkage opportunities for the datasets and 
                       if possible the specific variables that can be used to link to other datasets.'
-        aanyOf:
+        anyOf:
         - "$ref": "#/definitions/shortDescription"
         - "$ref": "#/definitions/notapplicable"
             
