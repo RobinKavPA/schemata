@@ -1,8 +1,8 @@
-# HDR UK - V2 Specification Dataset Properties
+# HDR UK - V2 Specification
 
 
 
-Table of contents
+Dataset Properties
 -----------------
 
 <!--ts-->
