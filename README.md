@@ -16,7 +16,7 @@
 
 ### 2. Dataset Properties Breakdown
 
-Below is the breakdown of the HDR UK V2 Dataset Schema by it's properties and sub properties as defined in the [JSON Schema](https://github.com/HDRUK/schemata/blob/develop/schema/dataset/latest/dataset.schema.json). Each property has its own Schema with a description of its corresponding sub properties, including their data type and whether it is a required field.
+Below is the breakdown of the HDR UK V2 Dataset Schema by its properties and sub properties as defined in the [JSON Schema](https://github.com/HDRUK/schemata/blob/develop/schema/dataset/latest/dataset.schema.json). Each property from 1-7 has its own Schema with a description of its corresponding sub properties, including their data type and whether it is a required field.
 
 <!--ts-->
 
