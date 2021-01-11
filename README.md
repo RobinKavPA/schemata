@@ -20,7 +20,7 @@ Below is the breakdown of the HDR UK V2 Dataset Schema by it's properties and su
 
 <!--ts-->
 
-#### 0. [Metadata] (properties generated when dataset is entered into the system)
+#### 0. Metadata: Properties generated when dataset is entered into the system.
 
    * [identifier](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-identifier.md#dataset-identifier-schema)
    * [version](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-version.md#dataset-version-schema)
