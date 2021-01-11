@@ -16,47 +16,59 @@
 
 ### 2. Dataset Properties Breakdown
 
-[ADD DESCRIPTION]
+Below is the breakdown of the HDR UK V2 Dataset Schema as defined in the [JSON Schema](https://github.com/HDRUK/schemata/blob/develop/schema/dataset/latest/dataset.schema.json) by it's properties and sub properties. Each property 
 
 <!--ts-->
 
-   * [summary](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#summary-schema)
-      * [title](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#title)
-      * [abstract](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#abstract)
-      * [publisher](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#publisher)
-      * [contactPoint](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#contactpoint)
-      * [keywords](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#keywords)
-      * [alternateIdentifiers](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#alternateidentifiers)
-      * [doiName](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#doiname)
-   * [documentation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#documentation-schema)
-      * [description](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#description)
-      * [associatedMedia](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#associatedmedia)
-      * [isPartOf](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#ispartof)
-   * [coverage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#coverage-schema)
-      * [spatial](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#spatial)
-      * [typicalAgeRange](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#typicalagerange)
-      * [physicalSampleAvailability](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#physicalsampleavailability)
-      * [followup](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#followup)
-      * [pathway](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#pathway)
-   * [provenance](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-provenance.md#provenance-schema)
-      * [origin](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-provenance.md#origin)
-      * [temporal](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-provenance.md#temporal)
-   * [accessibility](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#accessibility-schema)
-      * [usage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#usage)
-      * [access](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#access)
-      * [formatAndStandards](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#formatandstandards)
-   * [enrichmentAndLinkage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#enrichment-and-linkage-schema)
-      * [qualifiedRelation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#qualifiedrelation)
-      * [derivation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#derivation)
-      * [tools](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#tools)
-   * [observations](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-observations.md#observations-schema)
-
-<!--te-->
-
-
+#### 0. [Metadata]
 
    * [identifier](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-identifier.md#dataset-identifier-schema)
    * [version](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-version.md#dataset-version-schema)
  * [revisions](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-revisions.md#dataset-revisions-schema)
  * [issued](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-creation-date.md#creation-date-schema)
  * [modified](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-modification-date.md#modification-date-schema)
+
+#### 1. [summary](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#summary-schema)
+
+ * [title](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#title)
+ * [abstract](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#abstract)
+ * [publisher](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#publisher)
+ * [contactPoint](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#contactpoint)
+ * [keywords](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#keywords)
+ * [alternateIdentifiers](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#alternateidentifiers)
+ * [doiName](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#doiname)
+
+#### 2. [documentation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#documentation-schema)
+
+ * [description](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#description)
+ * [associatedMedia](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#associatedmedia)
+ * [isPartOf](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#ispartof)
+
+#### 3. [coverage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#coverage-schema)
+
+ * [spatial](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#spatial)
+ * [typicalAgeRange](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#typicalagerange)
+ * [physicalSampleAvailability](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#physicalsampleavailability)
+ * [followup](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#followup)
+ * [pathway](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#pathway)
+
+#### 4. [provenance](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-provenance.md#provenance-schema)
+
+ * [origin](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-provenance.md#origin)
+ * [temporal](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-provenance.md#temporal)
+
+#### 5. [accessibility](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#accessibility-schema)
+
+ * [usage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#usage)
+ * [access](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#access)
+ * [formatAndStandards](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#formatandstandards)
+
+#### 6. [enrichmentAndLinkage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#enrichment-and-linkage-schema)
+
+ * [qualifiedRelation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#qualifiedrelation)
+ * [derivation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#derivation)
+ * [tools](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#tools)
+
+#### 7. [observations](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-observations.md#observations-schema)
+
+<!--te-->
