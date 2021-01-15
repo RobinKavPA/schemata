@@ -72,3 +72,8 @@ Below is the breakdown of the HDR UK V2 Dataset Schema by its properties and sub
 #### 7. [observations](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-observations.md#observations-schema): Multiple observations about the dataset may be provided and users are expected to provide at least one observation (1..*). We will be supporting the schema.org observation model (https://schema.org/Observation) with default values. Users will be encouraged to provide their own statistical populations as the project progresses.
 
 <!--te-->
+
+
+### 3. [Metadata Quality Scoring](https://github.com/JakeBGitHub/datasets/tree/dataset-v2-scores/reports#hdr-uk-data-documentation-scores)
+
+Once a dataset is onboarded onto the Gateway, a quality check is run on its corresponding json schema to produce a weighted quality score based on weighted field completeness and weighted field error percentage. Weights of each field can be found here (https://github.com/HDRUK/datasets/tree/dataset-v2-scores/config/weights) and details of the quality score calculation can be found here (https://github.com/HDRUK/datasets/tree/dataset-v2-scores/reports).
