@@ -6,13 +6,11 @@
 
 Please indicate if the organisation is an Alliance Member or a Hub.
 
-
 > <https://schema.org/memberOf>
->
 
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                         |
-| :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | -------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json\*](../../../schema/dataset/latest/dataset.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                        |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json*](../../../schema/dataset/latest/dataset.schema.json "open original schema") |
 
 ## memberOf Type
 
@@ -20,4 +18,4 @@ merged type ([Organisation Membership](dataset-definitions-organisation-metadata
 
 all of
 
--   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-membership-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-membership-allof-0.md "check type definition")

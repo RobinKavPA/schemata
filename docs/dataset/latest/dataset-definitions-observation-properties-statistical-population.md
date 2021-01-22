@@ -6,13 +6,11 @@
 
 Please select one of the following statistical populations for you observation
 
-
 > <https://schema.org/observedNode>
->
 
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                         |
-| :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | -------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json\*](../../../schema/dataset/latest/dataset.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                        |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json*](../../../schema/dataset/latest/dataset.schema.json "open original schema") |
 
 ## observedNode Type
 
@@ -20,7 +18,7 @@ merged type ([Statistical Population](dataset-definitions-observation-properties
 
 all of
 
--   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
 
 ## observedNode Examples
 
