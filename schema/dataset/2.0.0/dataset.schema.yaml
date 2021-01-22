@@ -1121,6 +1121,7 @@ definitions:
     - HUB
     - ALLIANCE
     - OTHER
+    - NCS
 
   physicalSampleAvailability:
     type: string
