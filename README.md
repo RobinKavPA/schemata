@@ -2,14 +2,14 @@
 
 # HDR UK Schemata - Dataset V2.0.1
 
-### 1. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md)
+### 1. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md)
 
 The latest version specification required for datasets to be onboarded onto the Gateway are shown in this repository and is comprised of the following:
 
- - The latest json schema and yaml which can be found here: https://github.com/HDRUK/schemata/blob/develop/schema/dataset/latest. They represent the V2 metadata specification for onboarding datasets onto the Gateway presented in the [descriptive metadata documentation](https://github.com/HDRUK/schemata/tree/develop/docs/dataset/2.0.0/distribution).
- - Example json files which can be found here: https://github.com/HDRUK/schemata/blob/develop/examples. It includes a current mapped dataset, a minimum json example and a full example of the metadata for onboarding to the Gateway.
- - The latest word documentation, change log and mapping file which can be found here: https://github.com/HDRUK/schemata/tree/develop/docs/dataset/2.0.0/distribution. The documentation provides details of the descriptive metadata needed for the Gateway including their definitions and user stories to illustrate its purpose.
- - An impact assessment and indicative mapping files which can be found here: https://github.com/HDRUK/schemata/tree/develop/docs/dataset/2.0.0/impact-assessment. It contains the following files:
+ - The latest json schema and yaml which can be found here: https://github.com/HDRUK/schemata/blob/master/schema/dataset/latest. They represent the V2 metadata specification for onboarding datasets onto the Gateway presented in the [descriptive metadata documentation](https://github.com/HDRUK/schemata/tree/master/docs/dataset/2.0.0/distribution).
+ - Example json files which can be found here: https://github.com/HDRUK/schemata/blob/master/examples. It includes a current mapped dataset, a minimum json example and a full example of the metadata for onboarding to the Gateway.
+ - The latest word documentation, change log and mapping file which can be found here: https://github.com/HDRUK/schemata/tree/master/docs/dataset/2.0.0/distribution. The documentation provides details of the descriptive metadata needed for the Gateway including their definitions and user stories to illustrate its purpose.
+ - An impact assessment and indicative mapping files which can be found here: https://github.com/HDRUK/schemata/tree/master/docs/dataset/2.0.0/impact-assessment. It contains the following files:
    - *aggregated_errors.xlsx*: aggregated validation errors with an overview on the most common errors per attribute that will need to be resolved during migration.
    - *generated_mapping.py*: the mapping algorithm that generates v2 data-models, (basically a mapping function for all fields in the new v2 specs).
    - *v1_to_v2.json*: for each data-model (key is the UUID) v1: old schema, v2: new schema, which is the mapping result (*generated_mapping.py*) of all data-models in the gateway.
@@ -20,91 +20,91 @@ The latest version specification required for datasets to be onboarded onto the 
 
 ### 2. Dataset Properties Breakdown
 
-Below is the breakdown of the HDR UK V2 Dataset Schema by its properties and sub properties as defined in the [JSON Schema](https://github.com/HDRUK/schemata/blob/develop/schema/dataset/latest/dataset.schema.json). Each property from 1-7 has its own Schema with a description of its corresponding sub properties, including their data type and whether it is a required field.
+Below is the breakdown of the HDR UK V2 Dataset Schema by its properties and sub properties as defined in the [JSON Schema](https://github.com/HDRUK/schemata/blob/master/schema/dataset/latest/dataset.schema.json). Each property from 1-7 has its own Schema with a description of its corresponding sub properties, including their data type and whether it is a required field.
 
 <!--ts-->
 
 #### 0. Metadata: Properties generated when dataset is entered into the system.
 
-   * [identifier](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-identifier.md#dataset-identifier-schema)
-   * [version](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-version.md#dataset-version-schema)
- * [revisions](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-dataset-revisions.md#dataset-revisions-schema)
- * [issued](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-creation-date.md#creation-date-schema)
- * [modified](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-modification-date.md#modification-date-schema)
+   * [identifier](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-dataset-identifier.md#dataset-identifier-schema)
+   * [version](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-dataset-version.md#dataset-version-schema)
+ * [revisions](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-dataset-revisions.md#dataset-revisions-schema)
+ * [issued](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-creation-date.md#creation-date-schema)
+ * [modified](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-modification-date.md#modification-date-schema)
 
-#### 1. [summary](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-summary.md#summary-schema): Summary metadata must be completed by Data Custodians onboarding metadata into the Innovation Gateway MVP.
+#### 1. [summary](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-summary.md#summary-schema): Summary metadata must be completed by Data Custodians onboarding metadata into the Innovation Gateway MVP.
 
- * [title](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#title)
- * [abstract](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#abstract)
- * [publisher](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#publisher)
- * [contactPoint](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#contactpoint)
- * [keywords](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#keywords)
- * [alternateIdentifiers](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#alternateidentifiers)
- * [doiName](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#doiname)
+ * [title](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#title)
+ * [abstract](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#abstract)
+ * [publisher](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#publisher)
+ * [contactPoint](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#contactpoint)
+ * [keywords](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#keywords)
+ * [alternateIdentifiers](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#alternateidentifiers)
+ * [doiName](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#doiname)
 
-#### 2. [documentation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-documentation.md#documentation-schema): Documentation can include a rich text description of the dataset or links to media such as documents, images, presentations, videos or links to data dictionaries, profiles or dashboards. Organisations are required to confirm that they have permission to distribute any additional media.
+#### 2. [documentation](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-documentation.md#documentation-schema): Documentation can include a rich text description of the dataset or links to media such as documents, images, presentations, videos or links to data dictionaries, profiles or dashboards. Organisations are required to confirm that they have permission to distribute any additional media.
 
- * [description](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#description-1)
- * [associatedMedia](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#associatedmedia)
- * [isPartOf](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#ispartof)
+ * [description](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#description-1)
+ * [associatedMedia](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#associatedmedia)
+ * [isPartOf](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#ispartof)
 
-#### 3. [coverage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-coverage.md#coverage-schema): This information includes attributes for geographical and temporal coverage, cohort details etc. to enable a deeper understanding of the dataset content so that researchers can make decisions about the relevance of the underlying data.
+#### 3. [coverage](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-coverage.md#coverage-schema): This information includes attributes for geographical and temporal coverage, cohort details etc. to enable a deeper understanding of the dataset content so that researchers can make decisions about the relevance of the underlying data.
 
- * [spatial](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#spatial)
- * [typicalAgeRange](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#typicalagerange)
- * [physicalSampleAvailability](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#physicalsampleavailability)
- * [followup](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#followup)
- * [pathway](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#pathway)
+ * [spatial](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#spatial)
+ * [typicalAgeRange](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#typicalagerange)
+ * [physicalSampleAvailability](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#physicalsampleavailability)
+ * [followup](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#followup)
+ * [pathway](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#pathway)
 
-#### 4. [provenance](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-provenance.md#provenance-schema): Provenance information allows researchers to understand data within the context of its origins and can be an indicator of quality, authenticity and timeliness.
+#### 4. [provenance](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-provenance.md#provenance-schema): Provenance information allows researchers to understand data within the context of its origins and can be an indicator of quality, authenticity and timeliness.
 
- * [origin](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#origin)
-    * [purpose](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#purpose)
-    * [source](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#source)
-    * [collectionSituation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#collectionsituation)
- * [temporal](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#temporal)
-    * [accrualPeriodicity](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#accrualperiodicity)
-    * [distributionReleaseDate](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#distributionreleasedate)
-    * [startDate](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#startdate)
-    * [endDate](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#enddate)
-    * [timeLag](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#timelag)
+ * [origin](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#origin)
+    * [purpose](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#purpose)
+    * [source](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#source)
+    * [collectionSituation](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#collectionsituation)
+ * [temporal](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#temporal)
+    * [accrualPeriodicity](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#accrualperiodicity)
+    * [distributionReleaseDate](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#distributionreleasedate)
+    * [startDate](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#startdate)
+    * [endDate](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#enddate)
+    * [timeLag](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#timelag)
 
-#### 5. [accessibility](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-accessibility.md#accessibility-schema): Accessibility information allows researchers to understand access, usage, limitations, formats, standards and linkage or interoperability with toolsets.
+#### 5. [accessibility](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-accessibility.md#accessibility-schema): Accessibility information allows researchers to understand access, usage, limitations, formats, standards and linkage or interoperability with toolsets.
 
- * [usage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#usage)
-    * [dataUseLimitation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#datauselimitation-1)
-    * [dataUseRequirements](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#datauserequirements-1)
-    * [resourceCreator](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#resourcecreator)
-    * [investigations](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#investigations)
-    * [isReferencedBy](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#isreferencedby)
- * [access](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#access)
-    * [accessRights](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#accessrights-1)
-    * [accessService](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#accessservice-1)
-    * [accessRequestCost](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#accessrequestcost-1)
-    * [deliveryLeadTime](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#deliveryleadtime-1)
-    * [jurisdiction](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#jurisdiction)
-    * [dataController](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#datacontroller)
-    * [dataProcessor](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#dataprocessor)
- * [formatAndStandards](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#formatandstandards)
-    * [vocabularyEncodingScheme](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#vocabularyencodingscheme)
-    * [conformsTo](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#conformsto)
-    * [language](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#language)
-    * [format](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#format)
+ * [usage](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#usage)
+    * [dataUseLimitation](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#datauselimitation-1)
+    * [dataUseRequirements](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#datauserequirements-1)
+    * [resourceCreator](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#resourcecreator)
+    * [investigations](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#investigations)
+    * [isReferencedBy](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#isreferencedby)
+ * [access](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#access)
+    * [accessRights](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#accessrights-1)
+    * [accessService](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#accessservice-1)
+    * [accessRequestCost](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#accessrequestcost-1)
+    * [deliveryLeadTime](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#deliveryleadtime-1)
+    * [jurisdiction](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#jurisdiction)
+    * [dataController](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#datacontroller)
+    * [dataProcessor](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#dataprocessor)
+ * [formatAndStandards](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#formatandstandards)
+    * [vocabularyEncodingScheme](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#vocabularyencodingscheme)
+    * [conformsTo](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#conformsto)
+    * [language](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#language)
+    * [format](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#format)
 
-#### 6. [enrichmentAndLinkage](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#enrichment-and-linkage-schema): This section includes information about related datasets that may have previously been linked, as well as indicating if there is the opportunity to link to other datasets in the future. If a dataset has been enriched and/or derivations, scores and existing tools are available this section allows providers to indicate this to researchers.
+#### 6. [enrichmentAndLinkage](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-enrichment-and-linkage.md#enrichment-and-linkage-schema): This section includes information about related datasets that may have previously been linked, as well as indicating if there is the opportunity to link to other datasets in the future. If a dataset has been enriched and/or derivations, scores and existing tools are available this section allows providers to indicate this to researchers.
 
- * [qualifiedRelation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#qualifiedrelation)
- * [derivation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#derivation)
- * [tools](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#tools)
+ * [qualifiedRelation](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#qualifiedrelation)
+ * [derivation](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#derivation)
+ * [tools](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#tools)
 
-#### 7. [observations](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset-properties-observations.md#observations-schema): Multiple observations about the dataset may be provided and users are expected to provide at least one observation (1..*). We will be supporting the schema.org observation model (https://schema.org/Observation) with default values. Users will be encouraged to provide their own statistical populations as the project progresses.
+#### 7. [observations](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset-properties-observations.md#observations-schema): Multiple observations about the dataset may be provided and users are expected to provide at least one observation (1..*). We will be supporting the schema.org observation model (https://schema.org/Observation) with default values. Users will be encouraged to provide their own statistical populations as the project progresses.
 
-- [observation](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#definitions-group-observation)
-  - [observedNode](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#observednode)
-  - [measuredValue](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#measuredvalue)
-  - [disambiguatingDescription](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#disambiguatingdescription)
-  - [observationDate](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#observationdate)
-  - [measuredProperty](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md#measuredproperty)
+- [observation](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#definitions-group-observation)
+  - [observedNode](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#observednode)
+  - [measuredValue](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#measuredvalue)
+  - [disambiguatingDescription](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#disambiguatingdescription)
+  - [observationDate](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#observationdate)
+  - [measuredProperty](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md#measuredproperty)
 
 <!--te-->
 
