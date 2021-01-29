@@ -1,6 +1,6 @@
 ![generate-markdown](https://github.com/HDRUK/schemata/workflows/generate-markdown/badge.svg)
 
-# HDR UK Schemata - Dataset V2.0.0
+# HDR UK Schemata - Dataset V2.0.1
 
 ### 1. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/blob/develop/docs/dataset/latest/dataset.md)
 
