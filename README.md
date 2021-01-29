@@ -116,8 +116,8 @@ Once a dataset is onboarded onto the Gateway, a quality check is run on its corr
 
 Based on the weighted quality score, a dataset is given a medallion rating as follows:
 
-- <img src="https://render.githubusercontent.com/render/math?math=\leq 50"> is "Not rated",
-- <img src="https://render.githubusercontent.com/render/math?math=> 50"> & <img src="https://render.githubusercontent.com/render/math?math=\leq 70"> is "Bronze",
+- <img src="https://render.githubusercontent.com/render/math?math=\leq 60"> is "Not rated",
+- <img src="https://render.githubusercontent.com/render/math?math=> 60"> & <img src="https://render.githubusercontent.com/render/math?math=\leq 70"> is "Bronze",
 - <img src="https://render.githubusercontent.com/render/math?math=> 70"> & <img src="https://render.githubusercontent.com/render/math?math=\leq 80"> is "Silver",
 - <img src="https://render.githubusercontent.com/render/math?math=> 80"> & <img src="https://render.githubusercontent.com/render/math?math=\leq 90"> is "Gold",
 - <img src="https://render.githubusercontent.com/render/math?math=\geq 90"> is "Platinum".
