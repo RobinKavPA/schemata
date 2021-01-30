@@ -29,11 +29,10 @@ jobs:
       with:
         node-version: '13.x'
     
-    - name: Install spectral package
-      run: npm install -g @stoplight/spectral
-    
-    - name: Lint Latest Dataset YAML
-      run: spectral lint schema/dataset/latest/dataset.schema.yaml
+   # Run Spectral on latest schemas
+    - uses: stoplightio/spectral-action@v0.5.5
+      with:
+        file_glob: 'schema/*/latest/*.yaml'
     
     - name: Install jsonschema2md package
       run: npm install -g @adobe/jsonschema2md
