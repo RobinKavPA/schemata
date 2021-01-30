@@ -4,7 +4,7 @@
 #/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost
 ```
 
-Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian.
+Please provide link(s) to a webpage or a short description detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian.
 
 > No standard identified
 

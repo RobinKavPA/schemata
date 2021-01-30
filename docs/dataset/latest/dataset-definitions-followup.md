@@ -1,7 +1,7 @@
 # Untitled string in HDR UK Dataset Schema
 
 ```txt
-https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/followup
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/followup
 ```
 
 
@@ -20,9 +20,10 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 
 | Value             | Explanation |
 | :---------------- | :---------- |
-| `"0-6 MONTHS"`    |             |
-| `"6-12 MONTHS"`   |             |
-| `"1-10 YEARS"`    |             |
-| `"MORE 10 YEARS"` |             |
+| `"0 - 6 MONTHS"`  |             |
+| `"6 - 12 MONTHS"` |             |
+| `"1 - 10 YEARS"`  |             |
+| `"> 10 YEARS"`    |             |
 | `"UNKNOWN"`       |             |
+| `"CONTINUOUS"`    |             |
 | `"OTHER"`         |             |

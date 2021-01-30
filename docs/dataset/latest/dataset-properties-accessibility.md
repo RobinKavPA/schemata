@@ -14,7 +14,7 @@ Accessibility information allows researchers to understand access, usage, limita
 
 unknown ([Accessibility](dataset-properties-accessibility.md))
 
-# Accessibility Properties
+# accessibility Properties
 
 | Property                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                       |
 | :---------------------------------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

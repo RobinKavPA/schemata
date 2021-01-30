@@ -4,7 +4,7 @@
 #/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate
 ```
 
-The end of the time period that the dataset provides coverage for. If the dataset is “Continuous” and has no known end date, please leave blank. If there are multiple cohorts in the dataset with varying end dates, please provide the latest date and use the description or the media attribute to provide more information.
+The end of the time period that the dataset provides coverage for. If the dataset is “Continuous” and has no known end date, please state continuous. If there are multiple cohorts in the dataset with varying end dates, please provide the latest date and use the description or the media attribute to provide more information.
 
 > dcat:endDate
 

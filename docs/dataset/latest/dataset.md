@@ -1,7 +1,7 @@
 # HDR UK Dataset Schema
 
 ```txt
-https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml
 ```
 
 HDR UK Dataset Schema
@@ -61,7 +61,8 @@ any of
 
 ```json
 [
-  "226fb3f1-4471-400a-8c39-2b66d46a39b6"
+  "226fb3f1-4471-400a-8c39-2b66d46a39b6",
+  "https://web.www.healthdatagateway.org/dataset/226fb3f1-4471-400a-8c39-2b66d46a39b6"
 ]
 ```
 
@@ -823,7 +824,7 @@ all of
 
 ### accessRequestCost
 
-Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian.
+Please provide link(s) to a webpage or a short description detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian.
 
 > No standard identified
 
@@ -1332,7 +1333,7 @@ Reference this group by using
 
 ### accrualPeriodicity
 
-Please indicate the frequency of publishing. If a dataset is published regularly please choose a publishing periodicity from the constrained list and indicate the next release date. When the release date becomes historical, a new release date will be calculated based on the publishing periodicity. If a dataset has been published and will remain static please indicate that it is static and indicated when it was released. If a dataset is released on an irregular basis or “on-demand” please indicate that it is Irregular and leave release date as null. If a dataset can be published in real-time or near-real-time please indicate that it is continuous and leave release date as null. Notes: see <https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/>
+Please indicate the frequency of distribution release. If a dataset is distributed regularly please choose a distribution release periodicity from the constrained list and indicate the next release date. When the release date becomes historical, a new release date will be calculated based on the publishing periodicity. If a dataset has been published and will remain static please indicate that it is static and indicated when it was released. If a dataset is released on an irregular basis or “on-demand” please indicate that it is Irregular and leave release date as null. If a dataset can be published in real-time or near-real-time please indicate that it is continuous and leave release date as null. Notes: see <https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/>
 
 > dct:accrualPeriodicity
 
@@ -1408,7 +1409,7 @@ any of
 
 ### endDate
 
-The end of the time period that the dataset provides coverage for. If the dataset is “Continuous” and has no known end date, please leave blank. If there are multiple cohorts in the dataset with varying end dates, please provide the latest date and use the description or the media attribute to provide more information.
+The end of the time period that the dataset provides coverage for. If the dataset is “Continuous” and has no known end date, please state continuous. If there are multiple cohorts in the dataset with varying end dates, please provide the latest date and use the description or the media attribute to provide more information.
 
 > dcat:endDate
 
@@ -1646,7 +1647,7 @@ any of
 
 ### isReferencedBy
 
-Please provide the keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced. Please provide multiple entries, or if you are using a csv upload please provide them as a tab separated list. \[Author] (\[Year]) \[Title] . \[DOI] . \[Source]
+Please provide the keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced. Please provide multiple entries, or if you are using a csv upload please provide them as a tab separated list.
 
 > dct:isReferencedBy
 
@@ -2203,7 +2204,7 @@ all of
 
 ### observationDate
 
-Please provide the date of the observation
+Please provide the date that the observation was made. Some datasets may be continuously updated and the number of records will change regularly, so the observation date provides users with the date that the analysis or query was run to generate the particular observation. Multiple observations can be made i.e. an observation of cumulative COVID positive cases by specimen on the 1/1/2021 could be 2M. On the 8/1/2021 a new observation could be 2.1M. Users can add multiple observations.
 
 > <https://schema.org/observationDate>
 
@@ -2272,7 +2273,7 @@ The default value is:
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/uuidv4"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/uuidv4"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2283,7 +2284,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/semver"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/semver"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2294,7 +2295,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/url"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/url"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2305,7 +2306,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/eightyCharacters"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/eightyCharacters"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2316,7 +2317,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/abstractText"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/abstractText"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2327,7 +2328,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/emailAddress"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/emailAddress"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2338,7 +2339,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/shortDescription"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/shortDescription"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2349,7 +2350,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/description"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/description"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2360,7 +2361,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/longDescription"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/longDescription"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2371,7 +2372,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/commaSeparatedValues"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/commaSeparatedValues"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2382,7 +2383,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/doi"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/doi"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2393,7 +2394,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/ageRange"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/ageRange"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2404,7 +2405,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/format"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/format"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2415,7 +2416,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/isocountrycode"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/isocountrycode"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2426,7 +2427,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/memberOf"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/memberOf"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2437,7 +2438,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/physicalSampleAvailability"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/physicalSampleAvailability"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2448,7 +2449,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/followup"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/followup"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2459,7 +2460,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/periodicity"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/periodicity"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2470,7 +2471,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/purpose"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/purpose"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2481,7 +2482,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/source"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/source"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2492,7 +2493,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/setting"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/setting"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2503,7 +2504,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/timeLag"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/timeLag"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2514,7 +2515,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/dataUseLimitation"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/dataUseLimitation"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2525,7 +2526,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/dataUseRequirements"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/dataUseRequirements"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2536,7 +2537,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/deliveryLeadTime"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/deliveryLeadTime"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2547,7 +2548,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/standardisedDataModels"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/standardisedDataModels"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2558,7 +2559,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/controlledVocabulary"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/controlledVocabulary"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2569,7 +2570,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/language"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/language"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2580,7 +2581,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/statisticalPopulationConstrained"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/statisticalPopulationConstrained"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |

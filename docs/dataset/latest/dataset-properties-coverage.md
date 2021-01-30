@@ -14,7 +14,7 @@ This information includes attributes for geographical and temporal coverage, coh
 
 unknown ([Coverage](dataset-properties-coverage.md))
 
-# Coverage Properties
+# coverage Properties
 
 | Property                                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                                               |
 | :-------------------------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

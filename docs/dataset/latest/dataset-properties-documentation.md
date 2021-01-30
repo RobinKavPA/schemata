@@ -14,7 +14,7 @@ Documentation can include a rich text description of the dataset or links to med
 
 unknown ([Documentation](dataset-properties-documentation.md))
 
-# Documentation Properties
+# documentation Properties
 
 | Property                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                            |
 | :---------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

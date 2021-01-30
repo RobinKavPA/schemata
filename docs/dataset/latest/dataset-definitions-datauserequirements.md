@@ -1,7 +1,7 @@
 # Untitled string in HDR UK Dataset Schema
 
 ```txt
-https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/dataUseRequirements
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/dataUseRequirements
 ```
 
 
@@ -21,13 +21,14 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 | Value                                 | Explanation |
 | :------------------------------------ | :---------- |
 | `"COLLABORATION REQUIRED"`            |             |
-| `"ETHICS APPROVAL REQUIRED"`          |             |
-| `"GEOGRAPHICAL RESTRICTIONS"`         |             |
-| `"INSTITUTION SPECIFIC RESTRICTIONS"` |             |
-| `"NOT FOR PROFIT USE"`                |             |
 | `"PROJECT SPECIFIC RESTRICTIONS"`     |             |
+| `"ETHICS APPROVAL REQUIRED"`          |             |
+| `"INSTITUTION SPECIFIC RESTRICTIONS"` |             |
+| `"GEOGRAPHICAL RESTRICTIONS"`         |             |
 | `"PUBLICATION MORATORIUM"`            |             |
 | `"PUBLICATION REQUIRED"`              |             |
 | `"RETURN TO DATABASE OR RESOURCE"`    |             |
 | `"TIME LIMIT ON USE"`                 |             |
+| `"DISCLOSURE CONTROL"`                |             |
+| `"NOT FOR PROFIT USE"`                |             |
 | `"USER SPECIFIC RESTRICTION"`         |             |

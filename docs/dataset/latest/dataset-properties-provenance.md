@@ -14,7 +14,7 @@ Provenance information allows researchers to understand data within the context 
 
 unknown ([Provenance](dataset-properties-provenance.md))
 
-# Provenance Properties
+# provenance Properties
 
 | Property              | Type   | Required | Nullable       | Defined by                                                                                                                                              |
 | :-------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |

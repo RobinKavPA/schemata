@@ -26,6 +26,7 @@ any of
 
 ```json
 [
-  "226fb3f1-4471-400a-8c39-2b66d46a39b6"
+  "226fb3f1-4471-400a-8c39-2b66d46a39b6",
+  "https://web.www.healthdatagateway.org/dataset/226fb3f1-4471-400a-8c39-2b66d46a39b6"
 ]
 ```

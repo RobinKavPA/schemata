@@ -1,7 +1,7 @@
 # Untitled string in HDR UK Dataset Schema
 
 ```txt
-https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/source
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/source
 ```
 
 
@@ -18,12 +18,13 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value                 | Explanation |
-| :-------------------- | :---------- |
-| `"EPR"`               |             |
-| `"ELECTRONIC SURVEY"` |             |
-| `"LIMS"`              |             |
-| `"PAPER BASED"`       |             |
-| `"FREETEXT NLP"`      |             |
-| `"MACHINE GENERATED"` |             |
-| `"OTHER"`             |             |
+| Value                        | Explanation |
+| :--------------------------- | :---------- |
+| `"EPR"`                      |             |
+| `"ELECTRONIC SURVEY"`        |             |
+| `"LIMS"`                     |             |
+| `"OTHER INFORMATION SYSTEM"` |             |
+| `"PAPER BASED"`              |             |
+| `"FREETEXT NLP"`             |             |
+| `"MACHINE GENERATED"`        |             |
+| `"OTHER"`                    |             |

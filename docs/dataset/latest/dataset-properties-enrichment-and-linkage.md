@@ -14,7 +14,7 @@ This section includes information about related datasets that may have previousl
 
 unknown ([Enrichment and Linkage](dataset-properties-enrichment-and-linkage.md))
 
-# Enrichment and Linkage Properties
+# enrichmentAndLinkage Properties
 
 | Property                                | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                    |
 | :-------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
