@@ -21,3 +21,5 @@
 | Value     | Explanation |
 | :-------- | :---------- |
 | `"COUNT"` |             |
+| `"Count"` |             |
+| `"count"` |             |

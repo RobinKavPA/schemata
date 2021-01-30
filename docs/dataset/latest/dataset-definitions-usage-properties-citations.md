@@ -4,7 +4,7 @@
 #/definitions/usage#/definitions/usage/properties/isReferencedBy
 ```
 
-Please provide the keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced. Please provide multiple entries, or if you are using a csv upload please provide them as a tab separated list. \[Author] (\[Year]) \[Title] . \[DOI] . \[Source]
+Please provide the keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced. Please provide multiple entries, or if you are using a csv upload please provide them as a tab separated list.
 
 > dct:isReferencedBy
 

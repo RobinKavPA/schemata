@@ -14,7 +14,7 @@
 
 unknown
 
-# undefined Properties
+# observation Properties
 
 | Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                    |
 | :------------------------------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -100,7 +100,7 @@ all of
 
 ## observationDate
 
-Please provide the date of the observation
+Please provide the date that the observation was made. Some datasets may be continuously updated and the number of records will change regularly, so the observation date provides users with the date that the analysis or query was run to generate the particular observation. Multiple observations can be made i.e. an observation of cumulative COVID positive cases by specimen on the 1/1/2021 could be 2M. On the 8/1/2021 a new observation could be 2.1M. Users can add multiple observations.
 
 > <https://schema.org/observationDate>
 

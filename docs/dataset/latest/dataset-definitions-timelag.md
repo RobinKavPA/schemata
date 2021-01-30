@@ -1,7 +1,7 @@
 # Untitled string in HDR UK Dataset Schema
 
 ```txt
-https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions/timeLag
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/timeLag
 ```
 
 
@@ -27,5 +27,6 @@ https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.s
 | `"2-6 MONTHS"`     |             |
 | `"MORE 6 MONTHS"`  |             |
 | `"VARIABLE"`       |             |
+| `"NO TIMELAG"`     |             |
 | `"NOT APPLICABLE"` |             |
 | `"OTHER"`          |             |

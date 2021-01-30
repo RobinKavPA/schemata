@@ -1,7 +1,7 @@
 # Untitled undefined type in HDR UK Dataset Schema
 
 ```txt
-https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json#/definitions
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions
 ```
 
 

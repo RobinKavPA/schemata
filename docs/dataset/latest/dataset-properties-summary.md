@@ -14,7 +14,7 @@ Summary metadata must be completed by Data Custodians onboarding metadata into t
 
 unknown ([Summary](dataset-properties-summary.md))
 
-# Summary Properties
+# summary Properties
 
 | Property                                      | Type   | Required | Nullable       | Defined by                                                                                                                                                                      |
 | :-------------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

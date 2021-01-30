@@ -14,7 +14,7 @@ Describes an organisation for purposes of discovery and identification.
 
 `object` ([Organisation Metadata](dataset-definitions-organisation-metadata.md))
 
-# Organisation Metadata Properties
+# organisation Properties
 
 | Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                                     |
 | :------------------------------------------ | :----- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -259,7 +259,7 @@ all of
 
 ## accessRequestCost
 
-Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian.
+Please provide link(s) to a webpage or a short description detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian.
 
 > No standard identified
 
