@@ -1,7 +1,7 @@
 # HDR UK Dataset Schema
 
 ```txt
-https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json
 ```
 
 HDR UK Dataset Schema
@@ -2273,7 +2273,7 @@ The default value is:
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/uuidv4"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/uuidv4"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2284,7 +2284,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/semver"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/semver"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2295,7 +2295,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/url"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/url"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2306,7 +2306,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/eightyCharacters"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/eightyCharacters"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2317,7 +2317,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/abstractText"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/abstractText"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2328,7 +2328,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/emailAddress"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/emailAddress"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2339,7 +2339,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/shortDescription"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/shortDescription"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2350,7 +2350,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/description"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/description"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2361,7 +2361,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/longDescription"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/longDescription"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2372,7 +2372,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/commaSeparatedValues"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/commaSeparatedValues"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2383,7 +2383,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/doi"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/doi"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2394,7 +2394,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/ageRange"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/ageRange"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2405,7 +2405,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/format"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/format"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2416,7 +2416,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/isocountrycode"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/isocountrycode"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2427,7 +2427,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/memberOf"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/memberOf"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2438,7 +2438,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/physicalSampleAvailability"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/physicalSampleAvailability"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2449,7 +2449,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/followup"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/followup"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2460,7 +2460,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/periodicity"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/periodicity"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2471,7 +2471,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/purpose"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/purpose"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2482,7 +2482,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/source"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/source"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2493,7 +2493,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/setting"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/setting"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2504,7 +2504,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/timeLag"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/timeLag"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2515,7 +2515,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/dataUseLimitation"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/dataUseLimitation"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2526,7 +2526,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/dataUseRequirements"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/dataUseRequirements"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2537,7 +2537,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/deliveryLeadTime"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/deliveryLeadTime"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2548,7 +2548,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/standardisedDataModels"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/standardisedDataModels"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2559,7 +2559,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/controlledVocabulary"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/controlledVocabulary"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2570,7 +2570,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/language"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/language"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |
@@ -2581,7 +2581,7 @@ Reference this group by using
 Reference this group by using
 
 ```json
-{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/statisticalPopulationConstrained"}
+{"$ref":"https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/statisticalPopulationConstrained"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |

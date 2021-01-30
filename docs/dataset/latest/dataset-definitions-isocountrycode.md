@@ -1,7 +1,7 @@
 # Untitled string in HDR UK Dataset Schema
 
 ```txt
-https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/isocountrycode
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/isocountrycode
 ```
 
 

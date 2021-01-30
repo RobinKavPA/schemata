@@ -1,7 +1,7 @@
 # Untitled string in HDR UK Dataset Schema
 
 ```txt
-https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml#/definitions/standardisedDataModels
+https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/standardisedDataModels
 ```
 
 
