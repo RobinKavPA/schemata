@@ -1354,7 +1354,8 @@
       "enum": [
         "HUB",
         "ALLIANCE",
-        "OTHER"
+        "OTHER",
+        "NCS"
       ]
     },
     "physicalSampleAvailability": {
