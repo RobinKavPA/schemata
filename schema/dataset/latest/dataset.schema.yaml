@@ -1,10 +1,9 @@
 "$schema": "http://json-schema.org/draft-07/schema"
-"$id": "https://raw.githubusercontent.com/HDRUK/schemata/master/schema/dataset/dataset.schema.json"
+"$id": "https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml"
 type: object
 title: HDR UK Dataset
 description: HDR UK Dataset Schema
-version: "2.0.0"
-
+version: 2.0.1
 required:
 - identifier
 - version
@@ -23,7 +22,7 @@ properties:
     title: Dataset identifier
     "$comment": "http://purl.org/dc/terms/identifier"
     examples:
-      - ["226fb3f1-4471-400a-8c39-2b66d46a39b6"]
+    - [ "226fb3f1-4471-400a-8c39-2b66d46a39b6", "https://web.www.healthdatagateway.org/dataset/226fb3f1-4471-400a-8c39-2b66d46a39b6"]
     description: System dataset identifier
     anyOf:
     - "$ref": "#/definitions/uuidv4"
@@ -49,7 +48,7 @@ properties:
   issued:
     "$id": "#/properties/issued"
     title: Creation Date
-    "$comment": 'dcat:issued'
+    "$comment": "dcat:issued"
     description: Dataset Metadata Creation Date
     type: string
     format: date-time
@@ -57,7 +56,7 @@ properties:
   modified:
     "$id": "#/properties/modified"
     title: Modification Date
-    "$comment": 'dcat:modified'
+    "$comment": "dcat:modified"
     description: Dataset Metadata Creation Date
     type: string
     format: date-time
@@ -74,8 +73,8 @@ properties:
     title: Documentation
     description: Documentation can include a rich text description of the dataset
       or links to media such as documents, images, presentations, videos or links
-      to data dictionaries, profiles or dashboards. Organisations are required
-      to confirm that they have permission to distribute any additional media.
+      to data dictionaries, profiles or dashboards. Organisations are required to
+      confirm that they have permission to distribute any additional media.
     "$ref": "#/definitions/documentation"
 
   coverage:
@@ -83,15 +82,15 @@ properties:
     title: Coverage
     description: This information includes attributes for geographical and temporal
       coverage, cohort details etc. to enable a deeper understanding of the dataset
-      content so that researchers can make decisions about the relevance of the
-      underlying data.
+      content so that researchers can make decisions about the relevance of the underlying
+      data.
     "$ref": "#/definitions/coverage"
 
   provenance:
     "$id": "#/properties/provenance"
     title: Provenance
-    description: Provenance information allows researchers to understand data
-      within the context of its origins and can be an indicator of quality, authenticity
+    description: Provenance information allows researchers to understand data within
+      the context of its origins and can be an indicator of quality, authenticity
       and timeliness.
     "$ref": "#/definitions/provenance"
 
@@ -106,27 +105,28 @@ properties:
   enrichmentAndLinkage:
     "$id": "#/properties/enrichmentAndLinkage"
     title: Enrichment and Linkage
-    description: 'This section includes information about related datasets that may have previously been linked, as well as indicating if there is the opportunity
-    to link to other datasets in the future. If a dataset has been enriched and/or derivations, scores and existing tools are available this section allows
-    providers to indicate this to researchers.'
+    description: This section includes information about related datasets that may
+      have previously been linked, as well as indicating if there is the opportunity
+      to link to other datasets in the future. If a dataset has been enriched and/or
+      derivations, scores and existing tools are available this section allows providers
+      to indicate this to researchers.
     "$ref": "#/definitions/enrichmentAndLinkage"
 
   observations:
     "$id": "#/properties/observations"
     title: Observations
     "$comment": https://schema.org/observation
-    description: 'Multiple observations about the dataset may be provided and
-      users are expected to provide at least one observation (1..*). We will
-      be supporting the schema.org observation model (https://schema.org/Observation)
-      with default values. Users will be encouraged to provide their own statistical
-      populations as the project progresses. Example: &lt;b&gt; Statistical
-      Population 1 &lt;/b&gt; type: StatisticalPopulation populationType: Persons
-      numConstraints: 0 &lt;b&gt; Statistical Population 2 &lt;/b&gt; type:
-      StatisticalPopulation populationType: Events numConstraints: 0 &lt;b&gt;
-      Statistical Population 3 &lt;/b&gt; type: StatisticalPopulation populationType:
-      Findings numConstraints: 0 typeOf: Observation observedNode: &lt;b&gt;
-      Statistical Population 1 &lt;/b&gt; measuredProperty: count measuredValue:
-      32937 observationDate: “2017”'
+    description: 'Multiple observations about the dataset may be provided and users
+      are expected to provide at least one observation (1..*). We will be supporting
+      the schema.org observation model (https://schema.org/Observation) with default
+      values. Users will be encouraged to provide their own statistical populations
+      as the project progresses. Example: &lt;b&gt; Statistical Population 1 &lt;/b&gt;
+      type: StatisticalPopulation populationType: Persons numConstraints: 0 &lt;b&gt;
+      Statistical Population 2 &lt;/b&gt; type: StatisticalPopulation populationType:
+      Events numConstraints: 0 &lt;b&gt; Statistical Population 3 &lt;/b&gt; type:
+      StatisticalPopulation populationType: Findings numConstraints: 0 typeOf: Observation
+      observedNode: &lt;b&gt; Statistical Population 1 &lt;/b&gt; measuredProperty:
+      count measuredValue: 32937 observationDate: “2017”'
     type: array
     items:
       allOf:
@@ -160,110 +160,113 @@ definitions:
     - keywords
     additionalProperties: false
     properties:
-        title:
-          "$id": "#/summary/title"
-          "$comment": "dct:title. title is reserved word in json schema"
-          title: Title
-          description: Title of the dataset limited to 80 characters. It should provide a
-            short description of the dataset and be unique across the gateway. If your title
-            is not unique, please add a prefix with your organisation name or identifier
-            to differentiate it from other datasets within the Gateway. Please avoid acronyms
-            wherever possible. Good titles should summarise the content of the dataset and
-            if relevant, the region the dataset covers.
-          examples:
-            - ["North West London COVID-19 Patient Level Situation Report"]
-          allOf:
+      title:
+        "$id": "#/summary/title"
+        "$comment": dct:title. title is reserved word in json schema
+        title: Title
+        description: Title of the dataset limited to 80 characters. It should provide
+          a short description of the dataset and be unique across the gateway. If
+          your title is not unique, please add a prefix with your organisation name
+          or identifier to differentiate it from other datasets within the Gateway.
+          Please avoid acronyms wherever possible. Good titles should summarise the
+          content of the dataset and if relevant, the region the dataset covers.
+        examples:
+        - - North West London COVID-19 Patient Level Situation Report
+        allOf:
+        - "$ref": "#/definitions/eightyCharacters"
+
+      abstract:
+        "$id": "#/summary/abstract"
+        title: Dataset Abstract
+        description: Provide a clear and brief descriptive signpost for researchers
+          who are searching for data that may be relevant to their research. The abstract
+          should allow the reader to determine the scope of the data collection and
+          accurately summarise its content. The optimal length is one paragraph (limited
+          to 255 characters) and effective abstracts should avoid long sentences and
+          abbreviations where possible
+        "$comment": dct:abstract
+        examples:
+        - CPRD Aurum contains primary care data contributed by General Practitioner
+          (GP) practices using EMIS Web® including patient registration information
+          and all care events that GPs have chosen to record as part of their usual
+          medical practice.
+        allOf:
+        - "$ref": "#/definitions/abstractText"
+
+      publisher:
+        "$id": "#/summary/publisher"
+        "$comment": Conforms to spec, but this MAY be an an object of organisation.
+          https://schema.org/publisher
+        title: Dataset publisher
+        description: This is the organisation responsible for running or supporting
+          the data access request process, as well as publishing and maintaining the
+          metadata. In most this will be the same as the HDR UK Organisation (Hub
+          or Alliance Member). However, in some cases this will be different i.e.
+          Tissue Directory are an HDR UK Gateway organisation but coordinate activities
+          across a number of data publishers i.e. Cambridge Blood and Stem Cell Biobank.
+        allOf:
+        - "$ref": "#/definitions/organisation"
+
+      contactPoint:
+        "$id": "#/summary/contactPoint"
+        title: Contact Point
+        "$comment": dcat:contactPoint
+        default: Defaulted to the contact point of the primary organisation of the
+          user however, can be overridden for specific datasets
+        examples:
+        - SAILDatabank@swansea.ac.uk
+        description: 'Please provide a valid email address that can be used to coordinate
+          data access requests with the publisher. Organisations are expected to provide
+          a dedicated email address associated with the data access request process.
+          Notes: An employee’s email address can only be provided on a temporary basis
+          and if one is provided an explicit consent must be obtained for this purpose.'
+        allOf:
+        - "$ref": "#/definitions/emailAddress"
+
+      keywords:
+        "$id": "#/summary/keywords"
+        "$comment": dcat:keyword. May be an array of strings or comma seperated list.
+        title: Keywords
+        description: 'Please provide relevant and specific keywords that can improve
+          the SEO of your dataset as a comma separated list. Notes: Onboarding portal
+          will suggest keywords based on title, abstract and description. We are compiling
+          a standardised list of keywords and synonyms across datasets to make filtering
+          easier for users.'
+        anyOf:
+        - "$ref": "#/definitions/commaSeparatedValues"
+        - type: array
+          items:
+            allOf:
             - "$ref": "#/definitions/eightyCharacters"
+          uniqueItems: true
+          minItems: 1
 
-        abstract:
-          "$id": "#/summary/abstract"
-          title: Dataset Abstract
-          description: Provide a clear and brief descriptive signpost for researchers who
-            are searching for data that may be relevant to their research. The abstract
-            should allow the reader to determine the scope of the data collection and accurately
-            summarise its content. The optimal length is one paragraph (limited to 255 characters)
-            and effective abstracts should avoid long sentences and abbreviations where
-            possible
-          "$comment": dct:abstract
-          examples:
-            - CPRD Aurum contains primary care data contributed by General Practitioner
-              (GP) practices using EMIS Web® including patient registration information
-              and all care events that GPs have chosen to record as part of their usual
-              medical practice.
-          allOf:
-            - "$ref": "#/definitions/abstractText"
+      alternateIdentifiers:
+        "$id": "#/summary/alternateIdentifiers"
+        "$comment": DATA-CITE alternate-identifiers used. Note, will support comma
+          separated list for backwards compatibility with other systems
+        title: Alternate dataset identifiers
+        description: Alternate dataset identifiers or local identifiers
+        anyOf:
+        - "$ref": "#/definitions/commaSeparatedValues"
+        - type: array
+          items:
+            allOf:
+            - "$ref": "#/definitions/shortDescription"
+          uniqueItems: true
+          minItems: 1
 
-        publisher:
-          "$id": "#/summary/publisher"
-          "$comment": Conforms to spec, but this MAY be an an object of organisation. https://schema.org/publisher
-          title: Dataset publisher
-          description: This is the organisation responsible for running or supporting the
-            data access request process, as well as publishing and maintaining the metadata.
-            In most this will be the same as the HDR UK Organisation (Hub or Alliance Member).
-            However, in some cases this will be different i.e. Tissue Directory are an HDR
-            UK Gateway organisation but coordinate activities across a number of data publishers
-            i.e. Cambridge Blood and Stem Cell Biobank.
-          allOf:
-            - "$ref": "#/definitions/organisation"
-
-        contactPoint:
-          "$id": "#/summary/contactPoint"
-          title: Contact Point
-          "$comment": dcat:contactPoint
-          default: Defaulted to the contact point of the primary organisation of the user however, can be overridden for specific datasets
-          examples:
-           - SAILDatabank@swansea.ac.uk
-          description: 'Please provide a valid email address that can be used to coordinate
-              data access requests with the publisher. Organisations are expected to provide
-              a dedicated email address associated with the data access request process.
-              Notes: An employee’s email address can only be provided on a temporary basis
-              and if one is provided an explicit consent must be obtained for this purpose.'
-          allOf:
-           - "$ref": "#/definitions/emailAddress"
-
-        keywords:
-          "$id": "#/summary/keywords"
-          "$comment": dcat:keyword. May be an array of strings or comma seperated list.
-          title: Keywords
-          description: 'Please provide relevant and specific keywords that can improve
-              the SEO of your dataset as a comma separated list. Notes: Onboarding portal
-              will suggest keywords based on title, abstract and description. We are compiling
-              a standardised list of keywords and synonyms across datasets to make filtering
-              easier for users.'
-          anyOf:
-          - "$ref": "#/definitions/commaSeparatedValues"
-          - type: array
-            items:
-              allOf:
-              - "$ref": "#/definitions/eightyCharacters"
-            uniqueItems: true
-            minItems: 1
-
-        alternateIdentifiers:
-          "$id": "#/summary/alternateIdentifiers"
-          "$comment": 'DATA-CITE alternate-identifiers used. Note, will support comma separated list for backwards compatibility with other systems'
-          title: Alternate dataset identifiers
-          description: Alternate dataset identifiers or local identifiers
-          anyOf:
-          - "$ref": "#/definitions/commaSeparatedValues"
-          - type: array
-            items:
-              allOf:
-              - "$ref": "#/definitions/shortDescription"
-            uniqueItems: true
-            minItems: 1
-
-        doiName:
-          "$id": "#/summary/doiName"
-          title: Digital Object Identifier
-          description: All HDR UK registered datasets should either have a Digital Object
-              Identifier (DOI) or be working towards obtaining one. If a DOI is available,
-              please provide the DOI.
-          allOf:
-            - "$ref": "#/definitions/doi"
-          "$comment": 'Vocabulary: DOI Data Dictionary '
-          examples:
-            - 10.3399/bjgp17X692645
+      doiName:
+        "$id": "#/summary/doiName"
+        title: Digital Object Identifier
+        description: All HDR UK registered datasets should either have a Digital Object
+          Identifier (DOI) or be working towards obtaining one. If a DOI is available,
+          please provide the DOI.
+        allOf:
+        - "$ref": "#/definitions/doi"
+        "$comment": 'Vocabulary: DOI Data Dictionary '
+        examples:
+        - 10.3399/bjgp17X692645
 
   organisation:
     "$id": "#/definitions/organisation"
@@ -277,9 +280,9 @@ definitions:
       identifier:
         "$id": "#/organisation/identifier"
         title: Organisation Identifier
-        description: "Please provide a Grid.ac identifier (see https://www.grid.ac/institutes)
-          for your organisation. If your organisation does not have a Grid.ac identifier please
-          use the “suggest and institute” function here: https://www.grid.ac/institutes#"
+        description: 'Please provide a Grid.ac identifier (see https://www.grid.ac/institutes)
+          for your organisation. If your organisation does not have a Grid.ac identifier
+          please use the “suggest and institute” function here: https://www.grid.ac/institutes#'
         "$comment": https://schema.org/identifier
         allOf:
         - "$ref": "#/definitions/url"
@@ -295,8 +298,9 @@ definitions:
       logo:
         "$id": "#/organisation/logo"
         title: Organisation Logo
-        description: Please provide a logo associated with the Gateway Organisation using a
-          valid URL. The following formats will be accepted .jpg, .png or .svg.
+        description: Please provide a logo associated with the Gateway Organisation
+          using a valid URL. The following formats will be accepted .jpg, .png or
+          .svg.
         "$comment": https://schema.org/logo
         allOf:
         - "$ref": "#/definitions/url"
@@ -324,7 +328,8 @@ definitions:
       memberOf:
         "$id": "#/organisation/memberOf"
         title: Organisation Membership
-        description: Please indicate if the organisation is an Alliance Member or a Hub.
+        description: Please indicate if the organisation is an Alliance Member or
+          a Hub.
         "$comment": https://schema.org/memberOf
         allOf:
         - "$ref": "#/definitions/memberOf"
@@ -334,24 +339,25 @@ definitions:
         title: Organisation Default Access Rights
         "$comment": dct:access_rights
         description: The URL of a webpage where the data access request process and/or
-            guidance is provided. If there is more than one access process i.e. industry
-            vs academic please provide both.
+          guidance is provided. If there is more than one access process i.e. industry
+          vs academic please provide both.
         anyOf:
-          - type: string
+        - type: string
+          format: uri
+        - type: array
+          items:
+            type: string
             format: uri
-          - type: array
-            items:
-              type: string
-              format: uri
 
       deliveryLeadTime:
         "$id": "#/member/deliveryLeadTime"
         title: Access Request Duration
         "$comment": https://schema.org/deliveryLeadTime
-        description: "Please provide an indication of the typical processing times based
-              on the types of requests typically received. Note: This value will be used as
-              default access request duration for all datasets submitted by the organisation.
-              However, there will be the opportunity to overwrite this value for each dataset."
+        description: 'Please provide an indication of the typical processing times
+          based on the types of requests typically received. Note: This value will
+          be used as default access request duration for all datasets submitted by
+          the organisation. However, there will be the opportunity to overwrite this
+          value for each dataset.'
         allOf:
         - "$ref": "#/definitions/deliveryLeadTime"
 
@@ -361,32 +367,40 @@ definitions:
         "$comment": dcat:accessService
         examples:
         - https://cnfl.extge.co.uk/display/GERE/Research+Environment+User+Guide
-        description: 'Please provide a brief description of the data access services that are available including: environment that is currently available to researchers;additional consultancy and services;any indication of costs associated.
-                      If no environment is currently available, please indicate the current plans and timelines when and how data will be made available to researchers
-                      Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite this value for each dataset.'
-
+        description: 'Please provide a brief description of the data access services
+          that are available including: environment that is currently available to
+          researchers;additional consultancy and services;any indication of costs
+          associated. If no environment is currently available, please indicate the
+          current plans and timelines when and how data will be made available to
+          researchers Note: This value will be used as default access environment
+          for all datasets submitted by the organisation. However, there will be the
+          opportunity to overwrite this value for each dataset.'
         allOf:
-          - "$ref": "#/definitions/longDescription"
+        - "$ref": "#/definitions/longDescription"
 
       accessRequestCost:
         "$id": "#/member/accessRequestCost"
         title: Organisation Access Request Cost
         "$comment": No standard identified
-        description: "Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian."
+        description: 'Please provide link(s) to a webpage or a short description detailing
+          the commercial model for processing data access requests for the organisation
+          (if available) Definition: Indication of commercial model or cost (in GBP)
+          for processing each data access request by the data custodian.'
         allOf:
-          - "$ref": "#/definitions/longDescription"
+        - "$ref": "#/definitions/shortDescription"
 
       dataUseLimitation:
         "$id": "#/member/dataUseLimitation"
         title: Data Use Limitation
         "$comment": https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001
-        description: "Please provide an indication of consent permissions for datasets and/or
-              materials, and relates to the purposes for which datasets and/or material might be
-              removed, stored or used. Notes: where there are existing data-sharing arrangements
-              such as the HDR UK HUB data sharing agreement or the NIHR HIC data sharing agreement
-              this should be indicated within access rights. This value will be used as terms for
-              all datasets submitted by the organisation. However, there will be the opportunity
-              to overwrite this value for each dataset."
+        description: 'Please provide an indication of consent permissions for datasets
+          and/or materials, and relates to the purposes for which datasets and/or
+          material might be removed, stored or used. Notes: where there are existing
+          data-sharing arrangements such as the HDR UK HUB data sharing agreement
+          or the NIHR HIC data sharing agreement this should be indicated within access
+          rights. This value will be used as terms for all datasets submitted by the
+          organisation. However, there will be the opportunity to overwrite this value
+          for each dataset.'
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -399,9 +413,9 @@ definitions:
       dataUseRequirements:
         "$id": "#/member/dataUseRequirements"
         title: Data Use Requirements
-        description: Please indicate fit here are any additional conditions set
-              for use if any, multiple requirements may be provided. Please ensure that
-              these restrictions are documented in access rights information.
+        description: Please indicate fit here are any additional conditions set for
+          use if any, multiple requirements may be provided. Please ensure that these
+          restrictions are documented in access rights information.
         "$comment": https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
@@ -429,19 +443,19 @@ definitions:
         title: Associated Media
         "$comment": https://schema.org/associatedMedia
         examples:
-         - PDF Document that describes study protocol
+        - PDF Document that describes study protocol
         description: 'Please provide any media associated with the Gateway Organisation
-                using a valid URI for the content. This is an opportunity to provide additional
-                context that could be useful for researchers wanting to understand more
-                about the dataset and its relevance to their research question. The following
-                formats will be accepted .jpg, .png or .svg, .pdf, .xslx or .docx. Note:
-                media asset can be hosted by the organisation or uploaded using the onboarding
-                portal.'
+          using a valid URI for the content. This is an opportunity to provide additional
+          context that could be useful for researchers wanting to understand more
+          about the dataset and its relevance to their research question. The following
+          formats will be accepted .jpg, .png or .svg, .pdf, .xslx or .docx. Note:
+          media asset can be hosted by the organisation or uploaded using the onboarding
+          portal.'
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
           items:
-           allOf:
+            allOf:
             - "$ref": "#/definitions/url"
           uniqueItems: true
           minItems: 1
@@ -449,7 +463,8 @@ definitions:
       isPartOf:
         "$id": "#/properties/documentation/isPartOf"
         title: Group
-        "$comment": "https://schema.org/isPartOf NOTE: we may make Groups first class citizens so the are navigable"
+        "$comment": 'https://schema.org/isPartOf NOTE: we may make Groups first class
+          citizens so the are navigable'
         default: NOT APPLICABLE
         examples:
         - Hospital Episodes Statistics datasets (A&E, APC, OP, AC MSDS).
@@ -458,7 +473,7 @@ definitions:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
           items:
-           anyOf:
+            anyOf:
             - "$ref": "#/definitions/url"
             - "$ref": "#/definitions/eightyCharacters"
             - type: string
@@ -466,7 +481,6 @@ definitions:
               - NOT APPLICABLE
           uniqueItems: true
           minItems: 1
-
 
   coverage:
     "$id": "#/definitions/coverage"
@@ -476,9 +490,11 @@ definitions:
         "$id": "#/properties/coverage/spatial"
         title: Geographic Coverage
         "$comment": dct:spatial
-        description: The geographical area covered by the dataset. It is recommended that links are to entries in a well-maintained gazetteer such as https://www.geonames.org/ or https://what3words.com/daring.lion.race.
+        description: The geographical area covered by the dataset. It is recommended
+          that links are to entries in a well-maintained gazetteer such as https://www.geonames.org/
+          or https://what3words.com/daring.lion.race.
         examples:
-        - 'https://www.geonames.org/2635167/united-kingdom-of-great-britain-and-northern-ireland.html'
+        - https://www.geonames.org/2635167/united-kingdom-of-great-britain-and-northern-ireland.html
         allOf:
         - "$ref": "#/definitions/url"
 
@@ -486,9 +502,9 @@ definitions:
         "$id": "#/properties/coverage/typicalAgeRange"
         title: Age Range
         "$comment": https://schema.org/typicalAgeRange
-        description: Please indicate the age range in whole years of participants in the
-          dataset. Please provide range in the following format ‘[min age] – [max age]’
-          where both the minimum and maximum are whole numbers (integers).
+        description: Please indicate the age range in whole years of participants
+          in the dataset. Please provide range in the following format ‘[min age]
+          – [max age]’ where both the minimum and maximum are whole numbers (integers).
         allOf:
         - "$ref": "#/definitions/ageRange"
 
@@ -526,11 +542,11 @@ definitions:
         title: Pathway
         "$comment": No standard identified
         description: Please indicate if the dataset is representative of the patient
-            pathway and any limitations the dataset may have with respect to pathway
-            coverage. This could include if the dataset is from a single speciality
-            or area, a single tier of care, linked across two tiers (e.g. primary and
-            secondary care), or an integrated care record covering the whole patient
-            pathway.
+          pathway and any limitations the dataset may have with respect to pathway
+          coverage. This could include if the dataset is from a single speciality
+          or area, a single tier of care, linked across two tiers (e.g. primary and
+          secondary care), or an integrated care record covering the whole patient
+          pathway.
         allOf:
         - "$ref": "#/definitions/description"
 
@@ -584,7 +600,7 @@ definitions:
         title: Setting
         "$comment": https://ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/
         description: Pleases indicate the setting(s) where data was collected. Multiple
-              settings may be provided
+          settings may be provided
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -606,16 +622,16 @@ definitions:
         title: Periodicity
         "$comment": dct:accrualPeriodicity
         default: ''
-        description: 'Please indicate the frequency of publishing. If a dataset is
-            published regularly please choose a publishing periodicity from the constrained
-            list and indicate the next release date. When the release date becomes historical,
-            a new release date will be calculated based on the publishing periodicity.
-            If a dataset has been published and will remain static please indicate that
-            it is static and indicated when it was released. If a dataset is released
-            on an irregular basis or “on-demand” please indicate that it is Irregular
-            and leave release date as null. If a dataset can be published in real-time
-            or near-real-time please indicate that it is continuous and leave release
-            date as null. Notes: see https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/'
+        description: 'Please indicate the frequency of distribution release. If a
+          dataset is distributed regularly please choose a distribution release periodicity
+          from the constrained list and indicate the next release date. When the release
+          date becomes historical, a new release date will be calculated based on
+          the publishing periodicity. If a dataset has been published and will remain
+          static please indicate that it is static and indicated when it was released.
+          If a dataset is released on an irregular basis or “on-demand” please indicate
+          that it is Irregular and leave release date as null. If a dataset can be
+          published in real-time or near-real-time please indicate that it is continuous
+          and leave release date as null. Notes: see https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/'
         allOf:
         - "$ref": "#/definitions/periodicity"
 
@@ -624,12 +640,12 @@ definitions:
         title: Release Date
         "$comment": dcat:distribution_release_date
         description: 'Date of the latest release of the dataset. If this is a regular
-            release i.e. quarterly, or this is a static dataset please complete this
-            alongside Periodicity. If this is Irregular or Continuously released please
-            leave this blank. Notes: Periodicity and release date will be used to determine
-            when the next release is expected. E.g. if the release date is documented as 01/01/2020
-            and it is now 20/04/2020 and there is a quarterly release schedule, the
-            latest release will be calculated as 01/04/2020.'
+          release i.e. quarterly, or this is a static dataset please complete this
+          alongside Periodicity. If this is Irregular or Continuously released please
+          leave this blank. Notes: Periodicity and release date will be used to determine
+          when the next release is expected. E.g. if the release date is documented
+          as 01/01/2020 and it is now 20/04/2020 and there is a quarterly release
+          schedule, the latest release will be calculated as 01/04/2020.'
         anyOf:
         - type: string
           format: date
@@ -641,9 +657,9 @@ definitions:
         title: Start Date
         "$comment": dcat:startDate
         description: The start of the time period that the dataset provides coverage
-            for. If there are multiple cohorts in the dataset with varying start dates,
-            please provide the earliest date and use the description or the media attribute
-            to provide more information.
+          for. If there are multiple cohorts in the dataset with varying start dates,
+          please provide the earliest date and use the description or the media attribute
+          to provide more information.
         anyOf:
         - type: string
           format: date
@@ -655,10 +671,10 @@ definitions:
         title: End Date
         "$comment": dcat:endDate
         description: The end of the time period that the dataset provides coverage
-            for. If the dataset is “Continuous” and has no known end date, please leave
-            blank. If there are multiple cohorts in the dataset with varying end dates,
-            please provide the latest date and use the description or the media attribute
-            to provide more information.
+          for. If the dataset is “Continuous” and has no known end date, please state
+          continuous. If there are multiple cohorts in the dataset with varying end
+          dates, please provide the latest date and use the description or the media
+          attribute to provide more information.
         anyOf:
         - type: string
           format: date
@@ -666,14 +682,14 @@ definitions:
           format: date-time
         - type: string
           enum:
-          - NOT APPLICABLE
+          - CONTINUOUS
 
       timeLag:
         "$id": "#/properties/provenance/temporal/timeLag"
         title: Time Lag
         "$comment": No standard identified
         description: Please indicate the typical time-lag between an event and the
-            data for that event appearing in the dataset
+          data for that event appearing in the dataset
         allOf:
         - "$ref": "#/definitions/timeLag"
 
@@ -686,17 +702,22 @@ definitions:
       usage:
         "$id": "#/definitions/accessibility/usage"
         title: Usage
-        description: This section includes information about how the data can be used and how it is currently being used
+        description: This section includes information about how the data can be used
+          and how it is currently being used
         "$ref": "#/definitions/usage"
+
       access:
         "$id": "#/definitions/accessibility/access"
         title: Access
         description: This section includes information about data access
         "$ref": "#/definitions/access"
+
       formatAndStandards:
         "$id": "#/definitions/accessibility/formatAndStandards"
         title: Format and Standards
-        description: Section includes technical attributes for language vocabularies, sizes etc. and gives researchers facts about and processing the underlying data in the dataset.
+        description: Section includes technical attributes for language vocabularies,
+          sizes etc. and gives researchers facts about and processing the underlying
+          data in the dataset.
         "$ref": "#/definitions/formatAndStandards"
 
   usage:
@@ -708,9 +729,9 @@ definitions:
         title: Data Use Limitation
         "$comment": https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001
         description: 'Please provide an indication of consent permissions for datasets
-        and/or materials, and relates to the purposes for which datasets and/or
-        material might be removed, stored or used. NOTE: we have extended the DUO
-        to include a value for NO LINKAGE'
+          and/or materials, and relates to the purposes for which datasets and/or
+          material might be removed, stored or used. NOTE: we have extended the DUO
+          to include a value for NO LINKAGE'
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -723,9 +744,9 @@ definitions:
       dataUseRequirements:
         "$id": "#/properties/accessibility/usage/dataUseRequirements"
         title: Data Use Requirements
-        description: Please indicate fit here are any additional conditions set
-          for use if any, multiple requirements may be provided. Please ensure that
-          these restrictions are documented in access rights information.
+        description: Please indicate fit here are any additional conditions set for
+          use if any, multiple requirements may be provided. Please ensure that these
+          restrictions are documented in access rights information.
         "$comment": https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FDUO_0000001
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
@@ -740,9 +761,11 @@ definitions:
         "$id": "#/properties/accessibility/usage/resourceCreator"
         title: Citation Requirements
         "$comment": dct:creator
-        description: Please provide the text that you would like included as part of any citation that credits this dataset. This is typically just the name of the publisher.   No employee details should be provided.
+        description: Please provide the text that you would like included as part
+          of any citation that credits this dataset. This is typically just the name
+          of the publisher.   No employee details should be provided.
         allOf:
-          - "$ref": "#/definitions/shortDescription"
+        - "$ref": "#/definitions/shortDescription"
 
       investigations:
         title: Investigations
@@ -761,12 +784,12 @@ definitions:
           Also include a list of known citations, if available and should be links
           to existing resources where the dataset has been used or referenced. Please
           provide multiple entries, or if you are using a csv upload please provide
-          them as a tab separated list. [Author] ([Year]) [Title] . [DOI] . [Source]
+          them as a tab separated list.
         anyOf:
+        - "$ref": "#/definitions/doi"
+        - type: array
+          items:
           - "$ref": "#/definitions/doi"
-          - type: array
-            items:
-            - "$ref": "#/definitions/doi"
 
   access:
     "$id": "#/definitions/access"
@@ -779,7 +802,8 @@ definitions:
       accessRights:
         "$id": "#/properties/accessibility/access/accessRights"
         title: Access Rights
-        "$comment": 'dct:access_rights NOTE: need to ensure that this is consistent across the organisation info and the dataset info'
+        "$comment": 'dct:access_rights NOTE: need to ensure that this is consistent
+          across the organisation info and the dataset info'
         anyOf:
         - type: string
           pattern: "^In Progress$"
@@ -796,9 +820,14 @@ definitions:
         "$comment": 'dcat:accessService '
         examples:
         - https://cnfl.extge.co.uk/display/GERE/Research+Environment+User+Guide
-        description: 'Please provide a brief description of the data access services that are available including: environment that is currently available to researchers;additional consultancy and services;any indication of costs associated.
-                      If no environment is currently available, please indicate the current plans and timelines when and how data will be made available to researchers
-                      Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite this value for each dataset.'
+        description: 'Please provide a brief description of the data access services
+          that are available including: environment that is currently available to
+          researchers;additional consultancy and services;any indication of costs
+          associated. If no environment is currently available, please indicate the
+          current plans and timelines when and how data will be made available to
+          researchers Note: This value will be used as default access environment
+          for all datasets submitted by the organisation. However, there will be the
+          opportunity to overwrite this value for each dataset.'
         allOf:
         - "$ref": "#/definitions/longDescription"
 
@@ -806,15 +835,19 @@ definitions:
         "$id": "#/member/accessRequestCost"
         title: Organisation Access Request Cost
         "$comment": No standard identified
-        description: "Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian."
+        description: 'Please provide link(s) to a webpage detailing the commercial
+          model for processing data access requests for the organisation (if available)
+          Definition: Indication of commercial model or cost (in GBP) for processing
+          each data access request by the data custodian.'
         allOf:
-          - "$ref": "#/definitions/longDescription"
+        - "$ref": "#/definitions/longDescription"
 
       deliveryLeadTime:
         "$id": "#/properties/accessibility/access/deliveryLeadTime"
         title: Access Request Duration
         "$comment": https://schema.org/deliveryLeadTime
-        description: Please provide an indication of the typical processing times based on the types of requests typically received.
+        description: Please provide an indication of the typical processing times
+          based on the types of requests typically received.
         allOf:
         - "$ref": "#/definitions/deliveryLeadTime"
 
@@ -822,10 +855,11 @@ definitions:
         "$id": "#/properties/accessibility/access/jurisdiction"
         title: Jurisdiction
         default: GB-ENG
-        "$comment": 'http://purl.org/dc/terms/Jurisdiction FIXME: Add ISO 3166-2 Subdivision code pattern'
-        description: 'Please use country code from ISO 3166-1 country codes and the associated
-              ISO 3166-2 for regions, cities, states etc. for the country/state under whose
-              laws the data subjects’ data is collected, processed and stored.'
+        "$comment": 'http://purl.org/dc/terms/Jurisdiction FIXME: Add ISO 3166-2 Subdivision
+          code pattern'
+        description: Please use country code from ISO 3166-1 country codes and the
+          associated ISO 3166-2 for regions, cities, states etc. for the country/state
+          under whose laws the data subjects’ data is collected, processed and stored.
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -837,7 +871,10 @@ definitions:
         "$id": "#/properties/accessibility/access/dataController"
         title: Data Controller
         "$comment": " dpv:DataController"
-        description: Data Controller means a person/entity who (either alone or jointly or in common with other persons/entities) determines the purposes for which and the way any Data Subject data, specifically personal data or are to be processed.
+        description: Data Controller means a person/entity who (either alone or jointly
+          or in common with other persons/entities) determines the purposes for which
+          and the way any Data Subject data, specifically personal data or are to
+          be processed.
         allOf:
         - "$ref": "#/definitions/longDescription"
 
@@ -845,7 +882,9 @@ definitions:
         "$id": "#/properties/accessibility/access/dataProcessor"
         title: Data Processor
         "$comment": dpv:DataProcessor
-        description: A Data Processor, in relation to any Data Subject data, specifically personal data, means any person/entity (other than an employee of the data controller) who processes the data on behalf of the data controller.
+        description: A Data Processor, in relation to any Data Subject data, specifically
+          personal data, means any person/entity (other than an employee of the data
+          controller) who processes the data on behalf of the data controller.
         allOf:
         - "$ref": "#/definitions/longDescription"
 
@@ -861,15 +900,14 @@ definitions:
       vocabularyEncodingScheme:
         "$id": "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme"
         title: Controlled Vocabulary
-        "$comment": 'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/dcam/VocabularyEncodingScheme'
+        "$comment": https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/dcam/VocabularyEncodingScheme
         default: LOCAL
-        description: 'List any relevant terminologies / ontologies / controlled
-                  vocabularies, such as ICD 10 Codes, NHS Data Dictionary National Codes
-                  or SNOMED CT International, that are being used by the dataset. If the
-                  controlled vocabularies are local standards, please make that explicit.
-                  If you are using a standard that has not been included in the list, please
-                  use “other” and contact support desk to ask for an addition. Notes: More
-                  than one vocabulary may be provided.'
+        description: 'List any relevant terminologies / ontologies / controlled vocabularies,
+          such as ICD 10 Codes, NHS Data Dictionary National Codes or SNOMED CT International,
+          that are being used by the dataset. If the controlled vocabularies are local
+          standards, please make that explicit. If you are using a standard that has
+          not been included in the list, please use “other” and contact support desk
+          to ask for an addition. Notes: More than one vocabulary may be provided.'
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -878,33 +916,31 @@ definitions:
             - "$ref": "#/definitions/controlledVocabulary"
           minItems: 0
 
-
-
       conformsTo:
         "$id": "#/properties/accessibility/formatAndStandards/conformsTo"
         title: Conforms To
-        "$comment": 'dct:conformsTo'
+        "$comment": dct:conformsTo
         default: LOCAL
-        description: 'List standardised data models that the dataset has been stored
-        in or transformed to, such as OMOP or FHIR. If the data is only available
-        in a local format, please make that explicit. If you are using a standard
-        that has not been included in the list, please use “other” and contact support
-        desk to ask for an addition.'
+        description: List standardised data models that the dataset has been stored
+          in or transformed to, such as OMOP or FHIR. If the data is only available
+          in a local format, please make that explicit. If you are using a standard
+          that has not been included in the list, please use “other” and contact support
+          desk to ask for an addition.
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
           items:
-           - "$ref": "#/definitions/standardisedDataModels"
+          - "$ref": "#/definitions/standardisedDataModels"
 
       language:
         "$id": "#/properties/accessibility/formatAndStandards/language"
         title: Language
         description: This should list all the languages in which the dataset metadata
-                  and underlying data is made available.
+          and underlying data is made available.
         default: en
-        "$comment": 'dct:language. FIXME: Conforms to spec, but may be a list of strings given cardinality
-        1:*. Validate against external list of languages. Resources defined by the Library
-        of Congress (ISO 639-1, ISO 639-2) SHOULD be used.'
+        "$comment": 'dct:language. FIXME: Conforms to spec, but may be a list of strings
+          given cardinality 1:*. Validate against external list of languages. Resources
+          defined by the Library of Congress (ISO 639-1, ISO 639-2) SHOULD be used.'
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -913,19 +949,17 @@ definitions:
             - "$ref": "#/definitions/language"
           minItems: 1
 
-
-
       format:
         "$id": "#/properties/accessibility/formatAndStandards/format"
         title: Format
         description: 'If multiple formats are available please specify. See application,
-        audio, image, message, model, multipart, text, video, https://www.iana.org/assignments/media-types/media-types.xhtml
-        Note: If your file format is not included in the current list of formats,
-        please indicate other. If you are using the HOP you will be directed to
-        a service desk page where you can request your additional format. If not
-        please go to: https://metadata.atlassian.net/servicedesk/customer/portal/4
-        to request your format.'
-        "$comment": 'http://purl.org/dc/terms/format'
+          audio, image, message, model, multipart, text, video, https://www.iana.org/assignments/media-types/media-types.xhtml
+          Note: If your file format is not included in the current list of formats,
+          please indicate other. If you are using the HOP you will be directed to
+          a service desk page where you can request your additional format. If not
+          please go to: https://metadata.atlassian.net/servicedesk/customer/portal/4
+          to request your format.'
+        "$comment": http://purl.org/dc/terms/format
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -941,14 +975,14 @@ definitions:
       qualifiedRelation:
         "$id": "#/properties/enrichmentAndLinkage/qualifiedRelation"
         title: Linked Datasets
-        "$comment": 'dcat:qualifiedRelation'
+        "$comment": dcat:qualifiedRelation
         description: 'If applicable, please provide the DOI of other datasets that
-              have previously been linked to this dataset and their availability. If
-              no DOI is available, please provide the title of the datasets that can
-              be linked, where possible using the same title of a dataset previously
-              onboarded to the HOP. Note: If all the datasets from Gateway organisation
-              can be linked please indicate “ALL” and the onboarding portal will automate
-              linkage across the datasets submitted.'
+          have previously been linked to this dataset and their availability. If no
+          DOI is available, please provide the title of the datasets that can be linked,
+          where possible using the same title of a dataset previously onboarded to
+          the HOP. Note: If all the datasets from Gateway organisation can be linked
+          please indicate “ALL” and the onboarding portal will automate linkage across
+          the datasets submitted.'
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -958,10 +992,10 @@ definitions:
 
       derivation:
         title: Derivations
-        "$comment": 'prov:Derivation'
-        description: 'Indicate if derived datasets or predefined extracts are available
+        "$comment": prov:Derivation
+        description: Indicate if derived datasets or predefined extracts are available
           and the type of derivation available. Notes. Single or multiple dimensions
-          can be provided as a derived extract alongside the dataset.'
+          can be provided as a derived extract alongside the dataset.
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
@@ -969,31 +1003,30 @@ definitions:
             allOf:
             - "$ref": "#/definitions/abstractText"
 
-
       tools:
         "$id": "#/properties/enrichmentAndLinkage/tools"
         title: Tools
-        "$comment": 'No standard identified. We encourage users to adopt a model along
-            the lines of https://www.ga4gh.org/news/tool-registry-service-api-enabling-an-interoperable-library-of-genomics-analysis-tools/'
+        "$comment": No standard identified. We encourage users to adopt a model along
+          the lines of https://www.ga4gh.org/news/tool-registry-service-api-enabling-an-interoperable-library-of-genomics-analysis-tools/
         description: 'Please provide the URL of any analysis tools or models that
-                    have been created for this dataset and are available for further use.
-                    Multiple tools may be provided. Note: We encourage users to adopt a model
-                    along the lines of https://www.ga4gh.org/news/tool-registry-service-api-enabling-an-interoperable-library-of-genomics-analysis-tools/'
+          have been created for this dataset and are available for further use. Multiple
+          tools may be provided. Note: We encourage users to adopt a model along the
+          lines of https://www.ga4gh.org/news/tool-registry-service-api-enabling-an-interoperable-library-of-genomics-analysis-tools/'
         anyOf:
         - "$ref": "#/definitions/commaSeparatedValues"
         - type: array
           items:
             allOf:
-             - "$ref": "#/definitions/url"
+            - "$ref": "#/definitions/url"
           minItems: 0
 
   observation:
     "$id": "#/definitions/observation"
     required:
-      - observedNode
-      - measuredValue
-      - observationDate
-      - measuredProperty
+    - observedNode
+    - measuredValue
+    - observationDate
+    - measuredProperty
     additionalProperties: false
     properties:
       observedNode:
@@ -1001,9 +1034,9 @@ definitions:
         title: Statistical Population
         "$comment": https://schema.org/observedNode
         examples:
-        - 'PERSONS'
-        description: 'Please select one of the following statistical populations for
-          you observation'
+        - PERSONS
+        description: Please select one of the following statistical populations for
+          you observation
         allOf:
         - "$ref": "#/definitions/statisticalPopulationConstrained"
 
@@ -1012,17 +1045,17 @@ definitions:
         title: Measured Value
         "$comment": https://schema.org/measuredValue
         description: 'Please provide the population size associated with the population
-        type the dataset i.e. 1000 people in a study, or 87 images (MRI) of Knee
-        Usage Note: Used with Statistical Population, which specifies the type of
-        the population in the dataset.'
+          type the dataset i.e. 1000 people in a study, or 87 images (MRI) of Knee
+          Usage Note: Used with Statistical Population, which specifies the type of
+          the population in the dataset.'
         type: integer
 
       disambiguatingDescription:
         "$id": "#/properties/observation/disambiguatingDescription"
         title: Disambiguating Description
         "$comment": 'https://schema.org/disambiguatingDescription '
-        description: 'If SNOMED CT term does not provide sufficient detail, please
-        provide a description that disambiguates the population type.'
+        description: If SNOMED CT term does not provide sufficient detail, please
+          provide a description that disambiguates the population type.
         allOf:
         - "$ref": "#/definitions/abstractText"
 
@@ -1031,7 +1064,13 @@ definitions:
         title: Observation Date
         "$comment": https://schema.org/observationDate
         default: release date
-        description: Please provide the date of the observation
+        description: Please provide the date that the observation was made. Some datasets
+          may be continuously updated and the number of records will change regularly,
+          so the observation date provides users with the date that the analysis or
+          query was run to generate the particular observation. Multiple observations
+          can be made i.e. an observation of cumulative COVID positive cases by specimen
+          on the 1/1/2021 could be 2M. On the 8/1/2021 a new observation could be
+          2.1M. Users can add multiple observations.
         anyOf:
         - type: string
           format: date
@@ -1048,6 +1087,8 @@ definitions:
         - type: string
           enum:
           - COUNT
+          - Count
+          - count
 
   uuidv4:
     type: string
@@ -1106,7 +1147,7 @@ definitions:
 
   format:
     "$comment": 'FIXME: Conforms to spec, but may be a list of strings given cardinality
-        1:*. Validate against external list of formats, e.g. https://www.iana.org/assignments/media-types/media-types.xhtml'
+      1:*. Validate against external list of formats, e.g. https://www.iana.org/assignments/media-types/media-types.xhtml'
     type: string
     minLength: 1
 
@@ -1121,41 +1162,43 @@ definitions:
     - HUB
     - ALLIANCE
     - OTHER
+    - NCS
 
   physicalSampleAvailability:
     type: string
     enum:
-    - 'NOT AVAILABLE'
-    - 'BONE MARROW'
-    - 'CANCER CELL LINES'
-    - 'CORE BIOPSY'
-    - 'CDNA OR MRNA'
-    - 'DNA'
-    - 'FAECES'
-    - 'IMMORTALIZED CELL LINES'
-    - 'MICRORNA'
-    - 'PERIPHERAL BLOOD CELLS'
-    - 'PLASMA'
-    - 'PM TISSUE'
-    - 'PRIMARY CELLS'
-    - 'RNA'
-    - 'SALIVA'
-    - 'SERUM'
-    - 'SWABS'
-    - 'TISSUE'
-    - 'URINE'
-    - 'WHOLE BLOOD'
-    - 'AVAILABILITY TO BE CONFIRMED'
-    - 'OTHER'
+    - NOT AVAILABLE
+    - BONE MARROW
+    - CANCER CELL LINES
+    - CORE BIOPSY
+    - CDNA OR MRNA
+    - DNA
+    - FAECES
+    - IMMORTALIZED CELL LINES
+    - MICRORNA
+    - PERIPHERAL BLOOD CELLS
+    - PLASMA
+    - PM TISSUE
+    - PRIMARY CELLS
+    - RNA
+    - SALIVA
+    - SERUM
+    - SWABS
+    - TISSUE
+    - URINE
+    - WHOLE BLOOD
+    - AVAILABILITY TO BE CONFIRMED
+    - OTHER
 
   followup:
     type: string
     enum:
-    - 0-6 MONTHS
-    - 6-12 MONTHS
-    - 1-10 YEARS
-    - MORE 10 YEARS
+    - 0 - 6 MONTHS
+    - 6 - 12 MONTHS
+    - 1 - 10 YEARS
+    - "> 10 YEARS"
     - UNKNOWN
+    - CONTINUOUS
     - OTHER
 
   periodicity:
@@ -1186,6 +1229,7 @@ definitions:
     - AUDIT
     - ADMINISTRATIVE
     - FINANCIAL
+    - STATUTORY
     - OTHER
 
   source:
@@ -1194,6 +1238,7 @@ definitions:
     - EPR
     - ELECTRONIC SURVEY
     - LIMS
+    - OTHER INFORMATION SYSTEM
     - PAPER BASED
     - FREETEXT NLP
     - MACHINE GENERATED
@@ -1212,6 +1257,9 @@ definitions:
     - HOME
     - PRIVATE
     - PHARMACY
+    - SOCIAL CARE
+    - LOCAL AUTHORITY
+    - NATIONAL GOVERNMENT
     - OTHER
 
   timeLag:
@@ -1224,6 +1272,7 @@ definitions:
     - 2-6 MONTHS
     - MORE 6 MONTHS
     - VARIABLE
+    - NO TIMELAG
     - NOT APPLICABLE
     - OTHER
 
@@ -1231,10 +1280,16 @@ definitions:
     type: string
     enum:
     - GENERAL RESEARCH USE
+    - COMMERCIAL RESEARCH USE
     - GENETIC STUDIES ONLY
     - NO GENERAL METHODS RESEARCH
     - NO RESTRICTION
+    - GEOGRAPHICAL RESTRICTIONS
+    - INSTITUTION SPECIFIC RESTRICTIONS
+    - NOT FOR PROFIT USE
+    - PROJECT SPECIFIC RESTRICTIONS
     - RESEARCH SPECIFIC RESTRICTIONS
+    - USER SPECIFIC RESTRICTION
     - RESEARCH USE ONLY
     - NO LINKAGE
 
@@ -1242,15 +1297,16 @@ definitions:
     type: string
     enum:
     - COLLABORATION REQUIRED
-    - ETHICS APPROVAL REQUIRED
-    - GEOGRAPHICAL RESTRICTIONS
-    - INSTITUTION SPECIFIC RESTRICTIONS
-    - NOT FOR PROFIT USE
     - PROJECT SPECIFIC RESTRICTIONS
+    - ETHICS APPROVAL REQUIRED
+    - INSTITUTION SPECIFIC RESTRICTIONS
+    - GEOGRAPHICAL RESTRICTIONS
     - PUBLICATION MORATORIUM
     - PUBLICATION REQUIRED
     - RETURN TO DATABASE OR RESOURCE
     - TIME LIMIT ON USE
+    - DISCLOSURE CONTROL
+    - NOT FOR PROFIT USE
     - USER SPECIFIC RESTRICTION
 
   deliveryLeadTime:
@@ -1297,6 +1353,7 @@ definitions:
     - SNOMED CT
     - SNOMED RT
     - DM PLUS D
+    - DM+D
     - NHS NATIONAL CODES
     - NHS SCOTLAND NATIONAL CODES
     - NHS WALES NATIONAL CODES
@@ -1449,7 +1506,7 @@ definitions:
     - ng
     - nl
     - nn
-    - "no"
+    - 'no'
     - nr
     - nv
     - ny
@@ -1523,4 +1580,3 @@ definitions:
     - PERSONS
     - EVENTS
     - FINDINGS
-
