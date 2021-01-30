@@ -2,7 +2,7 @@
 
 # HDR UK Schemata - Dataset V2.0.1
 
-### 1. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md) [YAML](https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml) [JSON](https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json)
+### 1. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/blob/master/docs/dataset/latest/dataset.md) - [YAML](https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.yaml) - [JSON](https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json)
 
 The latest version specification required for datasets to be onboarded onto the Gateway are shown in this repository and is comprised of the following:
 
