@@ -112,7 +112,7 @@ Below is the breakdown of the HDR UK V2 Dataset Schema by its properties and sub
 
 ### 3. [Metadata Quality Scoring](https://github.com/JakeBGitHub/datasets/tree/dataset-v2-scores/reports#hdr-uk-data-documentation-scores)
 
-Once a dataset is onboarded onto the Gateway, a quality check is run on its corresponding json schema to produce a weighted quality score based on weighted field completeness and weighted field error percentage. Weights of each field can be found here (https://github.com/HDRUK/datasets/tree/dataset-v2-scores/config/weights) and details of the quality score calculation can be found here (https://github.com/HDRUK/datasets/tree/dataset-v2-scores/reports).
+Once a dataset is onboarded onto the Gateway, a quality check is run on its corresponding json schema to produce a weighted quality score based on weighted field completeness and weighted field error percentage. Weights of each field can be found here (https://github.com/HDRUK/datasets/tree/master/config/weights) and details of the quality score calculation can be found here (https://github.com/HDRUK/datasets/tree/master/reports#how-scores-are-calculated).
 
 Based on the weighted quality score, a dataset is given a medallion rating as follows:
 
