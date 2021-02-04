@@ -120,5 +120,5 @@ Based on the weighted quality score, a dataset is given a medallion rating as fo
 - <img src="https://render.githubusercontent.com/render/math?math=> 60"> & <img src="https://render.githubusercontent.com/render/math?math=\leq 70"> is "Bronze",
 - <img src="https://render.githubusercontent.com/render/math?math=> 70"> & <img src="https://render.githubusercontent.com/render/math?math=\leq 80"> is "Silver",
 - <img src="https://render.githubusercontent.com/render/math?math=> 80"> & <img src="https://render.githubusercontent.com/render/math?math=\leq 90"> is "Gold",
-- <img src="https://render.githubusercontent.com/render/math?math=\geq 90"> is "Platinum".
+- <img src="https://render.githubusercontent.com/render/math?math=> 90"> is "Platinum".
 
