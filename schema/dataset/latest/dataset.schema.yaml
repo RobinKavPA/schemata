@@ -26,8 +26,7 @@ properties:
     description: System dataset identifier
     anyOf:
     - "$ref": "#/definitions/uuidv4"
-    - type: string
-      format: uri
+    - "$ref": "#/definitions/url"
 
   version:
     "$id": "#/properties/version"
@@ -343,12 +342,10 @@ definitions:
           guidance is provided. If there is more than one access process i.e. industry
           vs academic please provide both.
         anyOf:
-        - type: string
-          format: uri
+        - "$ref": "#/definitions/url"
         - type: array
           items:
-            type: string
-            format: uri
+            "$ref": "#/definitions/url"
 
       deliveryLeadTime:
         "$id": "#/member/deliveryLeadTime"
@@ -808,12 +805,10 @@ definitions:
         anyOf:
         - type: string
           pattern: "^In Progress$"
-        - type: string
-          format: uri
+        - "$ref": "#/definitions/url"
         - type: array
           items:
-            type: string
-            format: uri
+            "$ref": "#/definitions/url"
 
       accessService:
         "$id": "#/properties/accessibility/access/accessService"
