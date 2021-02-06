@@ -16,10 +16,10 @@ unknown ([Provenance](dataset-properties-provenance.md))
 
 # provenance Properties
 
-| Property              | Type   | Required | Nullable       | Defined by                                                                                                                                              |
-| :-------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [origin](#origin)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")       |
-| [temporal](#temporal) | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal") |
+| Property              | Type   | Required | Nullable       | Defined by                                                                                                                                                     |
+| :-------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [origin](#origin)     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")       |
+| [temporal](#temporal) | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal") |
 
 ## origin
 
@@ -33,7 +33,7 @@ unknown ([Provenance](dataset-properties-provenance.md))
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")
 
 ### origin Type
 
@@ -41,7 +41,7 @@ merged type ([Details](dataset-definitions-provenance-properties-origin.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-provenance-properties-origin-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-provenance-properties-origin-allof-0.md "check type definition")
 
 ## temporal
 
@@ -55,7 +55,7 @@ all of
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal")
 
 ### temporal Type
 
@@ -63,4 +63,4 @@ merged type ([Details](dataset-definitions-provenance-properties-temporal.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-provenance-properties-temporal-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-provenance-properties-temporal-allof-0.md "check type definition")

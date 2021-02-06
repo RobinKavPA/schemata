@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/observation#/definitions/observation
@@ -16,13 +16,13 @@ unknown
 
 # observation Properties
 
-| Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                    |
-| :------------------------------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [observedNode](#observednode)                           | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")                               |
-| [measuredValue](#measuredvalue)                         | `integer` | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")                                     |
-| [disambiguatingDescription](#disambiguatingdescription) | Merged    | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription") |
-| [observationDate](#observationdate)                     | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")                               |
-| [measuredProperty](#measuredproperty)                   | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")                            |
+| Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                           |
+| :------------------------------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [observedNode](#observednode)                           | Merged    | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")                               |
+| [measuredValue](#measuredvalue)                         | `integer` | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")                                     |
+| [disambiguatingDescription](#disambiguatingdescription) | Merged    | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription") |
+| [observationDate](#observationdate)                     | Merged    | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")                               |
+| [measuredProperty](#measuredproperty)                   | Merged    | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")                            |
 
 ## observedNode
 
@@ -38,7 +38,7 @@ Please select one of the following statistical populations for you observation
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")
 
 ### observedNode Type
 
@@ -46,7 +46,7 @@ merged type ([Statistical Population](dataset-definitions-observation-properties
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
 
 ### observedNode Examples
 
@@ -68,7 +68,7 @@ Please provide the population size associated with the population type the datas
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")
 
 ### measuredValue Type
 
@@ -88,7 +88,7 @@ If SNOMED CT term does not provide sufficient detail, please provide a descripti
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription")
 
 ### disambiguatingDescription Type
 
@@ -96,7 +96,7 @@ merged type ([Disambiguating Description](dataset-definitions-observation-proper
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-observation-properties-disambiguating-description-allof-0.md "check type definition")
 
 ## observationDate
 
@@ -112,7 +112,7 @@ Please provide the date that the observation was made. Some datasets may be cont
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")
 
 ### observationDate Type
 
@@ -120,9 +120,9 @@ merged type ([Observation Date](dataset-definitions-observation-properties-obser
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-observation-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-observation-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date-anyof-1.md "check type definition")
 
 ### observationDate Default Value
 
@@ -146,7 +146,7 @@ Initially this will be defaulted to "COUNT"
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")
 
 ### measuredProperty Type
 
@@ -154,7 +154,7 @@ merged type ([Measured Property](dataset-definitions-observation-properties-meas
 
 all of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-measured-property-allof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-property-allof-0.md "check type definition")
 
 ### measuredProperty Default Value
 

@@ -18,4 +18,4 @@ merged type ([Age Range](dataset-definitions-coverage-properties-age-range.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-age-range-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-age-range-allof-0.md "check type definition")

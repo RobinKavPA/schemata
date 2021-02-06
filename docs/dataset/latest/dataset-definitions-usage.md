@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/usage#/definitions/usage
@@ -16,13 +16,13 @@ unknown
 
 # usage Properties
 
-| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                               |
-| :------------------------------------------ | :----- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [dataUseLimitation](#datauselimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
-| [dataUseRequirements](#datauserequirements) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
-| [resourceCreator](#resourcecreator)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
-| [investigations](#investigations)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")                                              |
-| [isReferencedBy](#isreferencedby)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
+| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                                      |
+| :------------------------------------------ | :----- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [dataUseLimitation](#datauselimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
+| [dataUseRequirements](#datauserequirements) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
+| [resourceCreator](#resourcecreator)         | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
+| [investigations](#investigations)           | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")                                              |
+| [isReferencedBy](#isreferencedby)           | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
 
 ## dataUseLimitation
 
@@ -38,7 +38,7 @@ Please provide an indication of consent permissions for datasets and/or material
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")
 
 ### dataUseLimitation Type
 
@@ -46,9 +46,9 @@ merged type ([Data Use Limitation](dataset-definitions-usage-properties-data-use
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation-anyof-1.md "check type definition")
 
 ## dataUseRequirements
 
@@ -64,7 +64,7 @@ Please indicate fit here are any additional conditions set for use if any, multi
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements")
 
 ### dataUseRequirements Type
 
@@ -72,9 +72,9 @@ merged type ([Data Use Requirements](dataset-definitions-usage-properties-data-u
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements-anyof-1.md "check type definition")
 
 ## resourceCreator
 
@@ -90,7 +90,7 @@ Please provide the text that you would like included as part of any citation tha
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")
 
 ### resourceCreator Type
 
@@ -98,7 +98,7 @@ merged type ([Citation Requirements](dataset-definitions-usage-properties-citati
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-citation-requirements-allof-0.md "check type definition")
 
 ## investigations
 
@@ -114,7 +114,7 @@ all of
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")
 
 ### investigations Type
 
@@ -122,9 +122,9 @@ merged type ([Investigations](dataset-definitions-usage-properties-investigation
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-investigations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-investigations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations-anyof-1.md "check type definition")
 
 ## isReferencedBy
 
@@ -140,7 +140,7 @@ Please provide the keystone paper associated with the dataset. Also include a li
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")
 
 ### isReferencedBy Type
 
@@ -148,6 +148,6 @@ merged type ([Citations](dataset-definitions-usage-properties-citations.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-citations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-citations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-citations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-citations-anyof-1.md "check type definition")

@@ -18,6 +18,6 @@ merged type ([Organisation Default Access Rights](dataset-definitions-organisati
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-1.md "check type definition")

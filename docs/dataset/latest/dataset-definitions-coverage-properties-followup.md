@@ -18,7 +18,7 @@ merged type ([Followup](dataset-definitions-coverage-properties-followup.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-followup-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-followup-allof-0.md "check type definition")
 
 ## followup Default Value
 

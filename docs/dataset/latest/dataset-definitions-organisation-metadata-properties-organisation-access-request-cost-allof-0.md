@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost/allOf/0

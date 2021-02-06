@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/summary/keywords#/definitions/summary/properties/keywords/anyOf/1

@@ -16,13 +16,13 @@ unknown ([Coverage](dataset-properties-coverage.md))
 
 # coverage Properties
 
-| Property                                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                                               |
-| :-------------------------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [spatial](#spatial)                                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")                                                |
-| [typicalAgeRange](#typicalagerange)                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")                                          |
-| [physicalSampleAvailability](#physicalsampleavailability) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability") |
-| [followup](#followup)                                     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")                                                         |
-| [pathway](#pathway)                                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")                                                            |
+| Property                                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                      |
+| :-------------------------------------------------------- | :----- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [spatial](#spatial)                                       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")                                                |
+| [typicalAgeRange](#typicalagerange)                       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")                                          |
+| [physicalSampleAvailability](#physicalsampleavailability) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability") |
+| [followup](#followup)                                     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")                                                         |
+| [pathway](#pathway)                                       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")                                                            |
 
 ## spatial
 
@@ -38,7 +38,7 @@ The geographical area covered by the dataset. It is recommended that links are t
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")
 
 ### spatial Type
 
@@ -46,7 +46,7 @@ merged type ([Geographic Coverage](dataset-definitions-coverage-properties-geogr
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-geographic-coverage-allof-0.md "check type definition")
 
 ### spatial Examples
 
@@ -68,7 +68,7 @@ Please indicate the age range in whole years of participants in the dataset. Ple
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")
 
 ### typicalAgeRange Type
 
@@ -76,7 +76,7 @@ merged type ([Age Range](dataset-definitions-coverage-properties-age-range.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-age-range-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-age-range-allof-0.md "check type definition")
 
 ## physicalSampleAvailability
 
@@ -92,7 +92,7 @@ Availability of physical samples associated with the dataset. If samples are ava
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability")
 
 ### physicalSampleAvailability Type
 
@@ -100,9 +100,9 @@ merged type ([Physical Sample Availability](dataset-definitions-coverage-propert
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability-anyof-1.md "check type definition")
 
 ### physicalSampleAvailability Examples
 
@@ -124,7 +124,7 @@ If known, what is the typical time span that a patient appears in the dataset (f
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")
 
 ### followup Type
 
@@ -132,7 +132,7 @@ merged type ([Followup](dataset-definitions-coverage-properties-followup.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-followup-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-followup-allof-0.md "check type definition")
 
 ### followup Default Value
 
@@ -156,7 +156,7 @@ Please indicate if the dataset is representative of the patient pathway and any 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")
 
 ### pathway Type
 
@@ -164,4 +164,4 @@ merged type ([Pathway](dataset-definitions-coverage-properties-pathway.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-pathway-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-pathway-allof-0.md "check type definition")

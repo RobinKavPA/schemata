@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/accessibility/formatAndStandards/format#/definitions/formatAndStandards/properties/format/anyOf/1/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-formatandstandards-properties-format-
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-format-anyof-1-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-format-anyof-1-items-allof-0.md "check type definition")

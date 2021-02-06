@@ -18,7 +18,7 @@ merged type ([Title](dataset-definitions-summary-properties-title.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-title-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-title-allof-0.md "check type definition")
 
 ## title Examples
 

@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/revision#/definitions/revision
@@ -16,10 +16,10 @@ unknown
 
 # revision Properties
 
-| Property            | Type          | Required | Nullable       | Defined by                                                                                                                                     |
-| :------------------ | :------------ | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| [version](#version) | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version") |
-| [url](#url)         | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")             |
+| Property            | Type          | Required | Nullable       | Defined by                                                                                                                                            |
+| :------------------ | :------------ | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [version](#version) | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version") |
+| [url](#url)         | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")             |
 
 ## version
 
@@ -33,7 +33,7 @@ Semantic Version
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version")
 
 ### version Type
 
@@ -51,7 +51,7 @@ URL endpoint to obtain the version
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")
 
 ### url Type
 

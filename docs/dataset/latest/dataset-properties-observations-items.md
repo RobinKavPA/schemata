@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/observations#/properties/observations/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-properties-observations-items.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-properties-observations-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-properties-observations-items-allof-0.md "check type definition")

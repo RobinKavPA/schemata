@@ -1,4 +1,4 @@
-# Untitled string in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/identifier#/properties/identifier/anyOf/1
@@ -12,8 +12,4 @@
 
 ## 1 Type
 
-`string`
-
-## 1 Constraints
-
-**URI**: the string must be a URI, according to [RFC 3986](https://tools.ietf.org/html/rfc3986 "check the specification")
+unknown

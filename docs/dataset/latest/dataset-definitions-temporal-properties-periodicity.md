@@ -18,4 +18,4 @@ merged type ([Periodicity](dataset-definitions-temporal-properties-periodicity.m
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-temporal-properties-periodicity-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-temporal-properties-periodicity-allof-0.md "check type definition")

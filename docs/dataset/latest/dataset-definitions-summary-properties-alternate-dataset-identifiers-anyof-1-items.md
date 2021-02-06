@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers/anyOf/1/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-summary-properties-alternate-dataset-
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-1-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-1-items-allof-0.md "check type definition")

@@ -18,4 +18,4 @@ merged type ([Organisation Access Request Cost](dataset-definitions-organisation
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost-allof-0.md "check type definition")

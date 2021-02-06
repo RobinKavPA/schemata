@@ -18,7 +18,7 @@ merged type ([Access Service](dataset-definitions-access-properties-access-servi
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-access-service-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-access-service-allof-0.md "check type definition")
 
 ## accessService Examples
 

@@ -18,9 +18,9 @@ merged type ([Dataset identifier](dataset-properties-dataset-identifier.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-properties-dataset-identifier-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-properties-dataset-identifier-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-properties-dataset-identifier-anyof-1.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-properties-dataset-identifier-anyof-1.md "check type definition")
 
 ## identifier Examples
 

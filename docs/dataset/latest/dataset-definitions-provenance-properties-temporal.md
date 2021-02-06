@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/provenance/temporal#/definitions/provenance/properties/temporal
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-provenance-properties-temporal.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-provenance-properties-temporal-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-provenance-properties-temporal-allof-0.md "check type definition")

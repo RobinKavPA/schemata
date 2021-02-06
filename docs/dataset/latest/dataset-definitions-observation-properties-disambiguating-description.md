@@ -18,4 +18,4 @@ merged type ([Disambiguating Description](dataset-definitions-observation-proper
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-observation-properties-disambiguating-description-allof-0.md "check type definition")

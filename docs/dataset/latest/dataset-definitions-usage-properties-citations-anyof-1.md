@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/usage#/definitions/usage/properties/isReferencedBy/anyOf/1
@@ -14,4 +14,4 @@
 
 an array where each item follows the corresponding schema in the following list:
 
-1.  [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-citations-anyof-1-items-0.md "check type definition")
+1.  [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-citations-anyof-1-items-0.md "check type definition")

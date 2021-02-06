@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation/anyOf/1/items/allOf/0

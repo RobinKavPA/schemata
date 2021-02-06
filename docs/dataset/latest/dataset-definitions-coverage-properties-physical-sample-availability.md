@@ -18,9 +18,9 @@ merged type ([Physical Sample Availability](dataset-definitions-coverage-propert
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability-anyof-1.md "check type definition")
 
 ## physicalSampleAvailability Examples
 

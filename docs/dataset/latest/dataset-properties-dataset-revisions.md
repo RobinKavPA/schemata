@@ -12,6 +12,4 @@ Revisions of Dataset metadata
 
 ## revisions Type
 
-an array where each item follows the corresponding schema in the following list:
-
-1.  [Untitled undefined type in HDR UK Dataset](dataset-properties-dataset-revisions-items-0.md "check type definition")
+an array of merged types ([Details](dataset-properties-dataset-revisions-items.md))

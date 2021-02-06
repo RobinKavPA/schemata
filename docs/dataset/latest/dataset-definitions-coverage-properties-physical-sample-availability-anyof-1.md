@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability/anyOf/1

@@ -18,6 +18,6 @@ merged type ([Citations](dataset-definitions-usage-properties-citations.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-citations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-citations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-citations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-citations-anyof-1.md "check type definition")

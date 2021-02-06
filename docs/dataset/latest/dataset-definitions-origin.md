@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/origin#/definitions/origin
@@ -16,11 +16,11 @@ unknown
 
 # origin Properties
 
-| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                 |
-| :------------------------------------------ | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [purpose](#purpose)                         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")                         |
-| [source](#source)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")                            |
-| [collectionSituation](#collectionsituation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
+| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                        |
+| :------------------------------------------ | :----- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [purpose](#purpose)                         | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")                         |
+| [source](#source)                           | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")                            |
+| [collectionSituation](#collectionsituation) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
 
 ## purpose
 
@@ -36,7 +36,7 @@ Pleases indicate the purpose(s) that the dataset was collected.
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")
 
 ### purpose Type
 
@@ -44,9 +44,9 @@ merged type ([Purpose](dataset-definitions-origin-properties-purpose.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-origin-properties-purpose-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-origin-properties-purpose-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose-anyof-1.md "check type definition")
 
 ## source
 
@@ -62,7 +62,7 @@ Pleases indicate the source of the data extraction
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")
 
 ### source Type
 
@@ -70,9 +70,9 @@ merged type ([Source](dataset-definitions-origin-properties-source.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-origin-properties-source-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-origin-properties-source-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-origin-properties-source-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-origin-properties-source-anyof-1.md "check type definition")
 
 ## collectionSituation
 
@@ -88,7 +88,7 @@ Pleases indicate the setting(s) where data was collected. Multiple settings may 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation")
 
 ### collectionSituation Type
 
@@ -96,6 +96,6 @@ merged type ([Setting](dataset-definitions-origin-properties-setting.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-origin-properties-setting-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-origin-properties-setting-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-origin-properties-setting-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-origin-properties-setting-anyof-1.md "check type definition")

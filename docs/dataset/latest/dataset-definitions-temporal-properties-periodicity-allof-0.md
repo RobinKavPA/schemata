@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity/allOf/0

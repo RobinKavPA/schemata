@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/provenance/origin#/definitions/provenance/properties/origin
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-provenance-properties-origin.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-provenance-properties-origin-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-provenance-properties-origin-allof-0.md "check type definition")

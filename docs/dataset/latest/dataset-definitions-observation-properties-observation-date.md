@@ -18,9 +18,9 @@ merged type ([Observation Date](dataset-definitions-observation-properties-obser
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-observation-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-observation-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date-anyof-1.md "check type definition")
 
 ## observationDate Default Value
 

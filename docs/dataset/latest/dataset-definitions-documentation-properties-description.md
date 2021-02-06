@@ -18,4 +18,4 @@ merged type ([Description](dataset-definitions-documentation-properties-descript
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-description-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-description-allof-0.md "check type definition")

@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation/anyOf/1

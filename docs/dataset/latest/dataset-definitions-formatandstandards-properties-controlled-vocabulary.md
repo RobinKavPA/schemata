@@ -18,9 +18,9 @@ merged type ([Controlled Vocabulary](dataset-definitions-formatandstandards-prop
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-1.md "check type definition")
 
 ## vocabularyEncodingScheme Default Value
 

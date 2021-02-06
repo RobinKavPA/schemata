@@ -1,4 +1,4 @@
-# Untitled string in HDR UK Dataset Schema
+# Untitled string in HDR UK Dataset Schema Schema
 
 ```txt
 https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json#/definitions/url

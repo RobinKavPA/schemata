@@ -18,6 +18,6 @@ merged type ([Linked Datasets](dataset-definitions-enrichmentandlinkage-properti
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1.md "check type definition")

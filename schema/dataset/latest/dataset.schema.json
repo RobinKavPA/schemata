@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json",
   "type": "object",
-  "title": "HDR UK Dataset",
-  "description": "HDR UK Dataset Schema",
+  "title": "HDR UK Dataset Schema",
+  "description": "HDR UK Dataset Metadata JSONSchema",
   "version": "2.0.1",
   "required": [
     "identifier",
@@ -32,8 +32,7 @@
           "$ref": "#/definitions/uuidv4"
         },
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/url"
         }
       ]
     },
@@ -51,11 +50,13 @@
       "title": "Dataset Revisions",
       "description": "Revisions of Dataset metadata",
       "type": "array",
-      "items": [
-        {
-          "$ref": "#/definitions/revision"
-        }
-      ]
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/revision"
+          }
+        ]
+      }
     },
     "issued": {
       "$id": "#/properties/issued",
@@ -367,14 +368,12 @@
           "description": "The URL of a webpage where the data access request process and/or guidance is provided. If there is more than one access process i.e. industry vs academic please provide both.",
           "anyOf": [
             {
-              "type": "string",
-              "format": "uri"
+              "$ref": "#/definitions/url"
             },
             {
               "type": "array",
               "items": {
-                "type": "string",
-                "format": "uri"
+                "$ref": "#/definitions/url"
               }
             }
           ]
@@ -946,14 +945,12 @@
               "pattern": "^In Progress$"
             },
             {
-              "type": "string",
-              "format": "uri"
+              "$ref": "#/definitions/url"
             },
             {
               "type": "array",
               "items": {
-                "type": "string",
-                "format": "uri"
+                "$ref": "#/definitions/url"
               }
             }
           ]

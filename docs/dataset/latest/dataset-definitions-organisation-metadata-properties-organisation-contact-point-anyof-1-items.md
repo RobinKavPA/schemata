@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/organisation/contactPoint#/definitions/organisation/properties/contactPoint/anyOf/1/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-organisation-metadata-properties-orga
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-contact-point-anyof-1-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-contact-point-anyof-1-items-allof-0.md "check type definition")

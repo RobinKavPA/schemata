@@ -18,6 +18,6 @@ merged type ([Data Use Limitation](dataset-definitions-usage-properties-data-use
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation-anyof-1.md "check type definition")

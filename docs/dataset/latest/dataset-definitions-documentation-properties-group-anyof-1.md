@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf/anyOf/1

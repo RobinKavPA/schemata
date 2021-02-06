@@ -18,4 +18,4 @@ merged type ([Data Controller](dataset-definitions-access-properties-data-contro
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-data-controller-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-data-controller-allof-0.md "check type definition")

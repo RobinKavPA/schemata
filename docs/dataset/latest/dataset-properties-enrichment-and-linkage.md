@@ -16,11 +16,11 @@ unknown ([Enrichment and Linkage](dataset-properties-enrichment-and-linkage.md))
 
 # enrichmentAndLinkage Properties
 
-| Property                                | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                    |
-| :-------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [qualifiedRelation](#qualifiedrelation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation") |
-| [derivation](#derivation)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")                             |
-| [tools](#tools)                         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")                                   |
+| Property                                | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                           |
+| :-------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [qualifiedRelation](#qualifiedrelation) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation") |
+| [derivation](#derivation)               | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")                             |
+| [tools](#tools)                         | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")                                   |
 
 ## qualifiedRelation
 
@@ -36,7 +36,7 @@ If applicable, please provide the DOI of other datasets that have previously bee
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation")
 
 ### qualifiedRelation Type
 
@@ -44,9 +44,9 @@ merged type ([Linked Datasets](dataset-definitions-enrichmentandlinkage-properti
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1.md "check type definition")
 
 ## derivation
 
@@ -62,7 +62,7 @@ Indicate if derived datasets or predefined extracts are available and the type o
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")
 
 ### derivation Type
 
@@ -70,9 +70,9 @@ merged type ([Derivations](dataset-definitions-enrichmentandlinkage-properties-d
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-1.md "check type definition")
 
 ## tools
 
@@ -88,7 +88,7 @@ Please provide the URL of any analysis tools or models that have been created fo
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")
 
 ### tools Type
 
@@ -96,6 +96,6 @@ merged type ([Tools](dataset-definitions-enrichmentandlinkage-properties-tools.m
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-1.md "check type definition")

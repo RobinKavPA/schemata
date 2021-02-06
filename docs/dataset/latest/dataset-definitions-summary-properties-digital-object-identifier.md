@@ -18,7 +18,7 @@ merged type ([Digital Object Identifier](dataset-definitions-summary-properties-
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-digital-object-identifier-allof-0.md "check type definition")
 
 ## doiName Examples
 

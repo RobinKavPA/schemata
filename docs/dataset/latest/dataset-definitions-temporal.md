@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/temporal#/definitions/temporal
@@ -16,13 +16,13 @@ unknown
 
 # temporal Properties
 
-| Property                                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                                    |
-| :-------------------------------------------------- | :----- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [accrualPeriodicity](#accrualperiodicity)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")            |
-| [distributionReleaseDate](#distributionreleasedate) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate") |
-| [startDate](#startdate)                             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")                               |
-| [endDate](#enddate)                                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")                                     |
-| [timeLag](#timelag)                                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")                                     |
+| Property                                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                                           |
+| :-------------------------------------------------- | :----- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [accrualPeriodicity](#accrualperiodicity)           | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")            |
+| [distributionReleaseDate](#distributionreleasedate) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate") |
+| [startDate](#startdate)                             | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")                               |
+| [endDate](#enddate)                                 | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")                                     |
+| [timeLag](#timelag)                                 | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")                                     |
 
 ## accrualPeriodicity
 
@@ -38,7 +38,7 @@ Please indicate the frequency of distribution release. If a dataset is distribut
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")
 
 ### accrualPeriodicity Type
 
@@ -46,7 +46,7 @@ merged type ([Periodicity](dataset-definitions-temporal-properties-periodicity.m
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-temporal-properties-periodicity-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-temporal-properties-periodicity-allof-0.md "check type definition")
 
 ## distributionReleaseDate
 
@@ -62,7 +62,7 @@ Date of the latest release of the dataset. If this is a regular release i.e. qua
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate")
 
 ### distributionReleaseDate Type
 
@@ -70,9 +70,9 @@ merged type ([Release Date](dataset-definitions-temporal-properties-release-date
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-release-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-release-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date-anyof-1.md "check type definition")
 
 ## startDate
 
@@ -88,7 +88,7 @@ The start of the time period that the dataset provides coverage for. If there ar
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")
 
 ### startDate Type
 
@@ -96,9 +96,9 @@ merged type ([Start Date](dataset-definitions-temporal-properties-start-date.md)
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-start-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-start-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date-anyof-1.md "check type definition")
 
 ## endDate
 
@@ -114,7 +114,7 @@ The end of the time period that the dataset provides coverage for. If the datase
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")
 
 ### endDate Type
 
@@ -122,11 +122,11 @@ merged type ([End Date](dataset-definitions-temporal-properties-end-date.md))
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-end-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-end-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date-anyof-1.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-end-date-anyof-2.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date-anyof-2.md "check type definition")
 
 ## timeLag
 
@@ -142,7 +142,7 @@ Please indicate the typical time-lag between an event and the data for that even
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")
 
 ### timeLag Type
 
@@ -150,4 +150,4 @@ merged type ([Time Lag](dataset-definitions-temporal-properties-time-lag.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-temporal-properties-time-lag-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-temporal-properties-time-lag-allof-0.md "check type definition")

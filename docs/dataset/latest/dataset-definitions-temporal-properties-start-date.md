@@ -18,6 +18,6 @@ merged type ([Start Date](dataset-definitions-temporal-properties-start-date.md)
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-start-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-start-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date-anyof-1.md "check type definition")

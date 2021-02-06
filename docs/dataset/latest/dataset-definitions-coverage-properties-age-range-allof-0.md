@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange/allOf/0

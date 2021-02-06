@@ -18,7 +18,7 @@ merged type ([Geographic Coverage](dataset-definitions-coverage-properties-geogr
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-geographic-coverage-allof-0.md "check type definition")
 
 ## spatial Examples
 

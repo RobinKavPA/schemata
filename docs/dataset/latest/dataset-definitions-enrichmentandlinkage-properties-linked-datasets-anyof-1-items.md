@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation/anyOf/1/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-enrichmentandlinkage-properties-linke
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1-items-allof-0.md "check type definition")

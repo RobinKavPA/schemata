@@ -18,6 +18,6 @@ merged type ([Derivations](dataset-definitions-enrichmentandlinkage-properties-d
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-1.md "check type definition")

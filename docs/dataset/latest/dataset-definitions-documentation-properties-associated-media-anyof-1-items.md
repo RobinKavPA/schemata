@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia/anyOf/1/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-documentation-properties-associated-m
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-associated-media-anyof-1-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-associated-media-anyof-1-items-allof-0.md "check type definition")

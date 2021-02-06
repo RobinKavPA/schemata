@@ -18,4 +18,4 @@ merged type ([Dataset publisher](dataset-definitions-summary-properties-dataset-
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-dataset-publisher-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-publisher-allof-0.md "check type definition")

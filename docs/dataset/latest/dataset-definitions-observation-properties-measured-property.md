@@ -18,7 +18,7 @@ merged type ([Measured Property](dataset-definitions-observation-properties-meas
 
 all of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-measured-property-allof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-property-allof-0.md "check type definition")
 
 ## measuredProperty Default Value
 

@@ -1,4 +1,4 @@
-# Untitled string in HDR UK Dataset Schema
+# Untitled string in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf/anyOf/1/items/anyOf/2

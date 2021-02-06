@@ -18,9 +18,9 @@ merged type ([Jurisdiction](dataset-definitions-access-properties-jurisdiction.m
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-jurisdiction-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-jurisdiction-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-access-properties-jurisdiction-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-access-properties-jurisdiction-anyof-1.md "check type definition")
 
 ## jurisdiction Default Value
 

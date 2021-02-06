@@ -18,7 +18,7 @@ merged type ([Statistical Population](dataset-definitions-observation-properties
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
 
 ## observedNode Examples
 

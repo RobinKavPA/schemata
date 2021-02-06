@@ -18,9 +18,9 @@ merged type ([Associated Media](dataset-definitions-documentation-properties-ass
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-associated-media-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-associated-media-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-documentation-properties-associated-media-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-documentation-properties-associated-media-anyof-1.md "check type definition")
 
 ## associatedMedia Examples
 

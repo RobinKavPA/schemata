@@ -18,6 +18,6 @@ merged type ([Alternate dataset identifiers](dataset-definitions-summary-propert
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-1.md "check type definition")

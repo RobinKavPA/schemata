@@ -18,4 +18,4 @@ merged type ([Data Processor](dataset-definitions-access-properties-data-process
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-data-processor-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-data-processor-allof-0.md "check type definition")

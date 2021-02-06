@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/organisation/accessRights#/definitions/organisation/properties/accessRights/anyOf/1
@@ -12,4 +12,4 @@
 
 ## 1 Type
 
-`string[]`
+unknown\[]

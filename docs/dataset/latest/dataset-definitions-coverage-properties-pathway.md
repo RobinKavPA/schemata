@@ -18,4 +18,4 @@ merged type ([Pathway](dataset-definitions-coverage-properties-pathway.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-pathway-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-pathway-allof-0.md "check type definition")

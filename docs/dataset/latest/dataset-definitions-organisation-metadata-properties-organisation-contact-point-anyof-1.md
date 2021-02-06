@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/organisation/contactPoint#/definitions/organisation/properties/contactPoint/anyOf/1

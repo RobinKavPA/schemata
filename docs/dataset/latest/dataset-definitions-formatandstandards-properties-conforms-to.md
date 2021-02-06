@@ -18,9 +18,9 @@ merged type ([Conforms To](dataset-definitions-formatandstandards-properties-con
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-conforms-to-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-conforms-to-anyof-1.md "check type definition")
 
 ## conformsTo Default Value
 

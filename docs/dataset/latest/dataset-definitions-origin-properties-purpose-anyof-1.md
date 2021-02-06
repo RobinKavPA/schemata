@@ -1,4 +1,4 @@
-# Untitled array in HDR UK Dataset Schema
+# Untitled array in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/provenance/origin/purpose#/definitions/origin/properties/purpose/anyOf/1
@@ -14,7 +14,7 @@
 
 an array where each item follows the corresponding schema in the following list:
 
-1.  [Untitled undefined type in HDR UK Dataset](dataset-definitions-origin-properties-purpose-anyof-1-items-0.md "check type definition")
+1.  [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose-anyof-1-items-0.md "check type definition")
 
 ## 1 Constraints
 

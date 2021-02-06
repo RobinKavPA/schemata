@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation/anyOf/1/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-organisation-metadata-properties-data
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-limitation-anyof-1-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-limitation-anyof-1-items-allof-0.md "check type definition")

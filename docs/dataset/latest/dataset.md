@@ -1,35 +1,35 @@
-# HDR UK Dataset Schema
+# HDR UK Dataset Schema Schema
 
 ```txt
 https://hdruk.github.io/schemata/schema/dataset/latest/dataset.schema.json
 ```
 
-HDR UK Dataset Schema
+HDR UK Dataset Metadata JSONSchema
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                       |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------- |
 | Can be instantiated | Yes        | Unknown status | No           | Forbidden         | Forbidden             | none                | [dataset.schema.json](../../../schema/dataset/latest/dataset.schema.json "open original schema") |
 
-## HDR UK Dataset Type
+## HDR UK Dataset Schema Type
 
-`object` ([HDR UK Dataset](dataset.md))
+`object` ([HDR UK Dataset Schema](dataset.md))
 
-# HDR UK Dataset Properties
+# HDR UK Dataset Schema Properties
 
-| Property                                      | Type          | Required | Nullable       | Defined by                                                                                                                           |
-| :-------------------------------------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| [identifier](#identifier)                     | Merged        | Required | cannot be null | [HDR UK Dataset](dataset-properties-dataset-identifier.md "#/properties/identifier#/properties/identifier")                          |
-| [version](#version)                           | `string`      | Required | cannot be null | [HDR UK Dataset](dataset-properties-dataset-version.md "#/properties/version#/properties/version")                                   |
-| [revisions](#revisions)                       | `array`       | Required | cannot be null | [HDR UK Dataset](dataset-properties-dataset-revisions.md "#/properties/revisions#/properties/revisions")                             |
-| [issued](#issued)                             | `string`      | Required | cannot be null | [HDR UK Dataset](dataset-properties-creation-date.md "#/properties/issued#/properties/issued")                                       |
-| [modified](#modified)                         | `string`      | Required | cannot be null | [HDR UK Dataset](dataset-properties-modification-date.md "#/properties/modified#/properties/modified")                               |
-| [summary](#summary)                           | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-properties-summary.md "#/definitions/summary#/properties/summary")                                          |
-| [documentation](#documentation)               | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-documentation.md "#/definitions/member#/properties/documentation")                               |
-| [coverage](#coverage)                         | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-coverage.md "#/definitions/coverage#/properties/coverage")                                       |
-| [provenance](#provenance)                     | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-provenance.md "#/definitions/provenance#/properties/provenance")                                 |
-| [accessibility](#accessibility)               | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-properties-accessibility.md "#/definitions/accessibility#/properties/accessibility")                        |
-| [enrichmentAndLinkage](#enrichmentandlinkage) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-properties-enrichment-and-linkage.md "#/definitions/enrichmentAndLinkage#/properties/enrichmentAndLinkage") |
-| [observations](#observations)                 | `array`       | Optional | cannot be null | [HDR UK Dataset](dataset-properties-observations.md "#/properties/observations#/properties/observations")                            |
+| Property                                      | Type          | Required | Nullable       | Defined by                                                                                                                                  |
+| :-------------------------------------------- | :------------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| [identifier](#identifier)                     | Merged        | Required | cannot be null | [HDR UK Dataset Schema](dataset-properties-dataset-identifier.md "#/properties/identifier#/properties/identifier")                          |
+| [version](#version)                           | `string`      | Required | cannot be null | [HDR UK Dataset Schema](dataset-properties-dataset-version.md "#/properties/version#/properties/version")                                   |
+| [revisions](#revisions)                       | `array`       | Required | cannot be null | [HDR UK Dataset Schema](dataset-properties-dataset-revisions.md "#/properties/revisions#/properties/revisions")                             |
+| [issued](#issued)                             | `string`      | Required | cannot be null | [HDR UK Dataset Schema](dataset-properties-creation-date.md "#/properties/issued#/properties/issued")                                       |
+| [modified](#modified)                         | `string`      | Required | cannot be null | [HDR UK Dataset Schema](dataset-properties-modification-date.md "#/properties/modified#/properties/modified")                               |
+| [summary](#summary)                           | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-properties-summary.md "#/definitions/summary#/properties/summary")                                          |
+| [documentation](#documentation)               | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-properties-documentation.md "#/definitions/member#/properties/documentation")                               |
+| [coverage](#coverage)                         | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-properties-coverage.md "#/definitions/coverage#/properties/coverage")                                       |
+| [provenance](#provenance)                     | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-properties-provenance.md "#/definitions/provenance#/properties/provenance")                                 |
+| [accessibility](#accessibility)               | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-properties-accessibility.md "#/definitions/accessibility#/properties/accessibility")                        |
+| [enrichmentAndLinkage](#enrichmentandlinkage) | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-properties-enrichment-and-linkage.md "#/definitions/enrichmentAndLinkage#/properties/enrichmentAndLinkage") |
+| [observations](#observations)                 | `array`       | Optional | cannot be null | [HDR UK Dataset Schema](dataset-properties-observations.md "#/properties/observations#/properties/observations")                            |
 
 ## identifier
 
@@ -45,7 +45,7 @@ System dataset identifier
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-dataset-identifier.md "#/properties/identifier#/properties/identifier")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-dataset-identifier.md "#/properties/identifier#/properties/identifier")
 
 ### identifier Type
 
@@ -53,9 +53,9 @@ merged type ([Dataset identifier](dataset-properties-dataset-identifier.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-properties-dataset-identifier-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-properties-dataset-identifier-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-properties-dataset-identifier-anyof-1.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-properties-dataset-identifier-anyof-1.md "check type definition")
 
 ### identifier Examples
 
@@ -78,7 +78,7 @@ Dataset metadata version
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-dataset-version.md "#/properties/version#/properties/version")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-dataset-version.md "#/properties/version#/properties/version")
 
 ### version Type
 
@@ -108,19 +108,15 @@ Revisions of Dataset metadata
 
 *   is required
 
-*   Type: an array where each item follows the corresponding schema in the following list:
-
-    1.  [Untitled undefined type in HDR UK Dataset](dataset-properties-dataset-revisions-items-0.md "check type definition")
+*   Type: an array of merged types ([Details](dataset-properties-dataset-revisions-items.md))
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-dataset-revisions.md "#/properties/revisions#/properties/revisions")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-dataset-revisions.md "#/properties/revisions#/properties/revisions")
 
 ### revisions Type
 
-an array where each item follows the corresponding schema in the following list:
-
-1.  [Untitled undefined type in HDR UK Dataset](dataset-properties-dataset-revisions-items-0.md "check type definition")
+an array of merged types ([Details](dataset-properties-dataset-revisions-items.md))
 
 ## issued
 
@@ -136,7 +132,7 @@ Dataset Metadata Creation Date
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-creation-date.md "#/properties/issued#/properties/issued")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-creation-date.md "#/properties/issued#/properties/issued")
 
 ### issued Type
 
@@ -160,7 +156,7 @@ Dataset Metadata Creation Date
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-modification-date.md "#/properties/modified#/properties/modified")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-modification-date.md "#/properties/modified#/properties/modified")
 
 ### modified Type
 
@@ -182,7 +178,7 @@ Summary metadata must be completed by Data Custodians onboarding metadata into t
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-summary.md "#/definitions/summary#/properties/summary")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-summary.md "#/definitions/summary#/properties/summary")
 
 ### summary Type
 
@@ -200,7 +196,7 @@ Documentation can include a rich text description of the dataset or links to med
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-documentation.md "#/definitions/member#/properties/documentation")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-documentation.md "#/definitions/member#/properties/documentation")
 
 ### documentation Type
 
@@ -218,7 +214,7 @@ This information includes attributes for geographical and temporal coverage, coh
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-coverage.md "#/definitions/coverage#/properties/coverage")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-coverage.md "#/definitions/coverage#/properties/coverage")
 
 ### coverage Type
 
@@ -236,7 +232,7 @@ Provenance information allows researchers to understand data within the context 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-provenance.md "#/definitions/provenance#/properties/provenance")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-provenance.md "#/definitions/provenance#/properties/provenance")
 
 ### provenance Type
 
@@ -254,7 +250,7 @@ Accessibility information allows researchers to understand access, usage, limita
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-accessibility.md "#/definitions/accessibility#/properties/accessibility")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-accessibility.md "#/definitions/accessibility#/properties/accessibility")
 
 ### accessibility Type
 
@@ -272,7 +268,7 @@ This section includes information about related datasets that may have previousl
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-enrichment-and-linkage.md "#/definitions/enrichmentAndLinkage#/properties/enrichmentAndLinkage")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-enrichment-and-linkage.md "#/definitions/enrichmentAndLinkage#/properties/enrichmentAndLinkage")
 
 ### enrichmentAndLinkage Type
 
@@ -292,13 +288,13 @@ Multiple observations about the dataset may be provided and users are expected t
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-properties-observations.md "#/properties/observations#/properties/observations")
+*   defined in: [HDR UK Dataset Schema](dataset-properties-observations.md "#/properties/observations#/properties/observations")
 
 ### observations Type
 
 an array of merged types ([Details](dataset-properties-observations-items.md))
 
-# HDR UK Dataset Definitions
+# HDR UK Dataset Schema Definitions
 
 ## Definitions group revision
 
@@ -308,10 +304,10 @@ Reference this group by using
 {"$ref":"#/definitions/revision#/definitions/revision"}
 ```
 
-| Property              | Type          | Required | Nullable       | Defined by                                                                                                                                     |
-| :-------------------- | :------------ | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| [version](#version-1) | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version") |
-| [url](#url)           | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")             |
+| Property              | Type          | Required | Nullable       | Defined by                                                                                                                                            |
+| :-------------------- | :------------ | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [version](#version-1) | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version") |
+| [url](#url)           | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")             |
 
 ### version
 
@@ -325,7 +321,7 @@ Semantic Version
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-revision-properties-version.md "#/definitions/revision/version#/definitions/revision/properties/version")
 
 #### version Type
 
@@ -343,7 +339,7 @@ URL endpoint to obtain the version
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-revision-properties-url.md "#/definitions/revision/url#/definitions/revision/properties/url")
 
 #### url Type
 
@@ -357,15 +353,15 @@ Reference this group by using
 {"$ref":"#/definitions/summary#/definitions/summary"}
 ```
 
-| Property                                      | Type   | Required | Nullable       | Defined by                                                                                                                                                                      |
-| :-------------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [title](#title)                               | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-title.md "#/summary/title#/definitions/summary/properties/title")                                                       |
-| [abstract](#abstract)                         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-dataset-abstract.md "#/summary/abstract#/definitions/summary/properties/abstract")                                      |
-| [publisher](#publisher)                       | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-dataset-publisher.md "#/summary/publisher#/definitions/summary/properties/publisher")                                   |
-| [contactPoint](#contactpoint)                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-contact-point.md "#/summary/contactPoint#/definitions/summary/properties/contactPoint")                                 |
-| [keywords](#keywords)                         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-keywords.md "#/summary/keywords#/definitions/summary/properties/keywords")                                              |
-| [alternateIdentifiers](#alternateidentifiers) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers") |
-| [doiName](#doiname)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier.md "#/summary/doiName#/definitions/summary/properties/doiName")                               |
+| Property                                      | Type   | Required | Nullable       | Defined by                                                                                                                                                                             |
+| :-------------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [title](#title)                               | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-summary-properties-title.md "#/summary/title#/definitions/summary/properties/title")                                                       |
+| [abstract](#abstract)                         | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-abstract.md "#/summary/abstract#/definitions/summary/properties/abstract")                                      |
+| [publisher](#publisher)                       | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-publisher.md "#/summary/publisher#/definitions/summary/properties/publisher")                                   |
+| [contactPoint](#contactpoint)                 | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-summary-properties-contact-point.md "#/summary/contactPoint#/definitions/summary/properties/contactPoint")                                 |
+| [keywords](#keywords)                         | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-summary-properties-keywords.md "#/summary/keywords#/definitions/summary/properties/keywords")                                              |
+| [alternateIdentifiers](#alternateidentifiers) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers") |
+| [doiName](#doiname)                           | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-summary-properties-digital-object-identifier.md "#/summary/doiName#/definitions/summary/properties/doiName")                               |
 
 ### title
 
@@ -381,7 +377,7 @@ Title of the dataset limited to 80 characters. It should provide a short descrip
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-summary-properties-title.md "#/summary/title#/definitions/summary/properties/title")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-summary-properties-title.md "#/summary/title#/definitions/summary/properties/title")
 
 #### title Type
 
@@ -389,7 +385,7 @@ merged type ([Title](dataset-definitions-summary-properties-title.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-title-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-title-allof-0.md "check type definition")
 
 #### title Examples
 
@@ -413,7 +409,7 @@ Provide a clear and brief descriptive signpost for researchers who are searching
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-summary-properties-dataset-abstract.md "#/summary/abstract#/definitions/summary/properties/abstract")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-abstract.md "#/summary/abstract#/definitions/summary/properties/abstract")
 
 #### abstract Type
 
@@ -421,7 +417,7 @@ merged type ([Dataset Abstract](dataset-definitions-summary-properties-dataset-a
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-dataset-abstract-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-abstract-allof-0.md "check type definition")
 
 #### abstract Examples
 
@@ -443,7 +439,7 @@ This is the organisation responsible for running or supporting the data access r
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-summary-properties-dataset-publisher.md "#/summary/publisher#/definitions/summary/properties/publisher")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-publisher.md "#/summary/publisher#/definitions/summary/properties/publisher")
 
 #### publisher Type
 
@@ -451,7 +447,7 @@ merged type ([Dataset publisher](dataset-definitions-summary-properties-dataset-
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-dataset-publisher-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-publisher-allof-0.md "check type definition")
 
 ### contactPoint
 
@@ -467,7 +463,7 @@ Please provide a valid email address that can be used to coordinate data access 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-summary-properties-contact-point.md "#/summary/contactPoint#/definitions/summary/properties/contactPoint")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-summary-properties-contact-point.md "#/summary/contactPoint#/definitions/summary/properties/contactPoint")
 
 #### contactPoint Type
 
@@ -475,7 +471,7 @@ merged type ([Contact Point](dataset-definitions-summary-properties-contact-poin
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-contact-point-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-contact-point-allof-0.md "check type definition")
 
 #### contactPoint Default Value
 
@@ -505,7 +501,7 @@ Please provide relevant and specific keywords that can improve the SEO of your d
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-summary-properties-keywords.md "#/summary/keywords#/definitions/summary/properties/keywords")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-summary-properties-keywords.md "#/summary/keywords#/definitions/summary/properties/keywords")
 
 #### keywords Type
 
@@ -513,9 +509,9 @@ merged type ([Keywords](dataset-definitions-summary-properties-keywords.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-keywords-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-keywords-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-summary-properties-keywords-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-summary-properties-keywords-anyof-1.md "check type definition")
 
 ### alternateIdentifiers
 
@@ -531,7 +527,7 @@ Alternate dataset identifiers or local identifiers
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-summary-properties-alternate-dataset-identifiers.md "#/summary/alternateIdentifiers#/definitions/summary/properties/alternateIdentifiers")
 
 #### alternateIdentifiers Type
 
@@ -539,9 +535,9 @@ merged type ([Alternate dataset identifiers](dataset-definitions-summary-propert
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-summary-properties-alternate-dataset-identifiers-anyof-1.md "check type definition")
 
 ### doiName
 
@@ -557,7 +553,7 @@ All HDR UK registered datasets should either have a Digital Object Identifier (D
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier.md "#/summary/doiName#/definitions/summary/properties/doiName")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-summary-properties-digital-object-identifier.md "#/summary/doiName#/definitions/summary/properties/doiName")
 
 #### doiName Type
 
@@ -565,7 +561,7 @@ merged type ([Digital Object Identifier](dataset-definitions-summary-properties-
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-digital-object-identifier-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-digital-object-identifier-allof-0.md "check type definition")
 
 #### doiName Examples
 
@@ -581,20 +577,20 @@ Reference this group by using
 {"$ref":"#/definitions/organisation#/definitions/organisation"}
 ```
 
-| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                                     |
-| :------------------------------------------ | :----- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [identifier](#identifier-1)                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-identifier.md "#/organisation/identifier#/definitions/organisation/properties/identifier")                  |
-| [name](#name)                               | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-name.md "#/organisation/name#/definitions/organisation/properties/name")                                    |
-| [logo](#logo)                               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-logo.md "#/organisation/logo#/definitions/organisation/properties/logo")                                    |
-| [description](#description)                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-description.md "#/organisation/description#/definitions/organisation/properties/description")               |
-| [contactPoint](#contactpoint-1)             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-contact-point.md "#/organisation/contactPoint#/definitions/organisation/properties/contactPoint")           |
-| [memberOf](#memberof)                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-membership.md "#/organisation/memberOf#/definitions/organisation/properties/memberOf")                      |
-| [accessRights](#accessrights)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights.md "#/organisation/accessRights#/definitions/organisation/properties/accessRights")   |
-| [deliveryLeadTime](#deliveryleadtime)       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-access-request-duration.md "#/member/deliveryLeadTime#/definitions/organisation/properties/deliveryLeadTime")            |
-| [accessService](#accessservice)             | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-service.md "#/member/accessService#/definitions/organisation/properties/accessService")              |
-| [accessRequestCost](#accessrequestcost)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost") |
-| [dataUseLimitation](#datauselimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-limitation.md "#/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation")              |
-| [dataUseRequirements](#datauserequirements) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-requirements.md "#/member/dataUseRequirements#/definitions/organisation/properties/dataUseRequirements")        |
+| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                                            |
+| :------------------------------------------ | :----- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [identifier](#identifier-1)                 | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-identifier.md "#/organisation/identifier#/definitions/organisation/properties/identifier")                  |
+| [name](#name)                               | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-name.md "#/organisation/name#/definitions/organisation/properties/name")                                    |
+| [logo](#logo)                               | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-logo.md "#/organisation/logo#/definitions/organisation/properties/logo")                                    |
+| [description](#description)                 | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-description.md "#/organisation/description#/definitions/organisation/properties/description")               |
+| [contactPoint](#contactpoint-1)             | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-contact-point.md "#/organisation/contactPoint#/definitions/organisation/properties/contactPoint")           |
+| [memberOf](#memberof)                       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-membership.md "#/organisation/memberOf#/definitions/organisation/properties/memberOf")                      |
+| [accessRights](#accessrights)               | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights.md "#/organisation/accessRights#/definitions/organisation/properties/accessRights")   |
+| [deliveryLeadTime](#deliveryleadtime)       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-access-request-duration.md "#/member/deliveryLeadTime#/definitions/organisation/properties/deliveryLeadTime")            |
+| [accessService](#accessservice)             | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-access-service.md "#/member/accessService#/definitions/organisation/properties/accessService")              |
+| [accessRequestCost](#accessrequestcost)     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost") |
+| [dataUseLimitation](#datauselimitation)     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-limitation.md "#/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation")              |
+| [dataUseRequirements](#datauserequirements) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-requirements.md "#/member/dataUseRequirements#/definitions/organisation/properties/dataUseRequirements")        |
 
 ### identifier
 
@@ -610,7 +606,7 @@ Please provide a Grid.ac identifier (see <https://www.grid.ac/institutes>) for y
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-identifier.md "#/organisation/identifier#/definitions/organisation/properties/identifier")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-identifier.md "#/organisation/identifier#/definitions/organisation/properties/identifier")
 
 #### identifier Type
 
@@ -618,7 +614,7 @@ merged type ([Organisation Identifier](dataset-definitions-organisation-metadata
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-identifier-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-identifier-allof-0.md "check type definition")
 
 ### name
 
@@ -634,7 +630,7 @@ Name of the organisation
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-name.md "#/organisation/name#/definitions/organisation/properties/name")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-name.md "#/organisation/name#/definitions/organisation/properties/name")
 
 #### name Type
 
@@ -642,7 +638,7 @@ merged type ([Organisation Name](dataset-definitions-organisation-metadata-prope
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-name-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-name-allof-0.md "check type definition")
 
 ### logo
 
@@ -658,7 +654,7 @@ Please provide a logo associated with the Gateway Organisation using a valid URL
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-logo.md "#/organisation/logo#/definitions/organisation/properties/logo")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-logo.md "#/organisation/logo#/definitions/organisation/properties/logo")
 
 #### logo Type
 
@@ -666,7 +662,7 @@ merged type ([Organisation Logo](dataset-definitions-organisation-metadata-prope
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-logo-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-logo-allof-0.md "check type definition")
 
 ### description
 
@@ -682,7 +678,7 @@ Please provide a URL that describes the organisation.
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-description.md "#/organisation/description#/definitions/organisation/properties/description")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-description.md "#/organisation/description#/definitions/organisation/properties/description")
 
 #### description Type
 
@@ -690,7 +686,7 @@ merged type ([Organisation Description](dataset-definitions-organisation-metadat
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-description-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-description-allof-0.md "check type definition")
 
 ### contactPoint
 
@@ -706,7 +702,7 @@ Organisation contact point(s)
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-contact-point.md "#/organisation/contactPoint#/definitions/organisation/properties/contactPoint")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-contact-point.md "#/organisation/contactPoint#/definitions/organisation/properties/contactPoint")
 
 #### contactPoint Type
 
@@ -714,9 +710,9 @@ merged type ([Organisation Contact Point](dataset-definitions-organisation-metad
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-contact-point-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-contact-point-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-contact-point-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-contact-point-anyof-1.md "check type definition")
 
 ### memberOf
 
@@ -732,7 +728,7 @@ Please indicate if the organisation is an Alliance Member or a Hub.
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-membership.md "#/organisation/memberOf#/definitions/organisation/properties/memberOf")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-membership.md "#/organisation/memberOf#/definitions/organisation/properties/memberOf")
 
 #### memberOf Type
 
@@ -740,7 +736,7 @@ merged type ([Organisation Membership](dataset-definitions-organisation-metadata
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-membership-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-membership-allof-0.md "check type definition")
 
 ### accessRights
 
@@ -756,7 +752,7 @@ The URL of a webpage where the data access request process and/or guidance is pr
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights.md "#/organisation/accessRights#/definitions/organisation/properties/accessRights")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights.md "#/organisation/accessRights#/definitions/organisation/properties/accessRights")
 
 #### accessRights Type
 
@@ -764,9 +760,9 @@ merged type ([Organisation Default Access Rights](dataset-definitions-organisati
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-default-access-rights-anyof-1.md "check type definition")
 
 ### deliveryLeadTime
 
@@ -782,7 +778,7 @@ Please provide an indication of the typical processing times based on the types 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-access-request-duration.md "#/member/deliveryLeadTime#/definitions/organisation/properties/deliveryLeadTime")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-access-request-duration.md "#/member/deliveryLeadTime#/definitions/organisation/properties/deliveryLeadTime")
 
 #### deliveryLeadTime Type
 
@@ -790,7 +786,7 @@ merged type ([Access Request Duration](dataset-definitions-organisation-metadata
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-access-request-duration-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-access-request-duration-allof-0.md "check type definition")
 
 ### accessService
 
@@ -806,7 +802,7 @@ Please provide a brief description of the data access services that are availabl
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-service.md "#/member/accessService#/definitions/organisation/properties/accessService")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-access-service.md "#/member/accessService#/definitions/organisation/properties/accessService")
 
 #### accessService Type
 
@@ -814,7 +810,7 @@ merged type ([Organisation Access Service](dataset-definitions-organisation-meta
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-service-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-access-service-allof-0.md "check type definition")
 
 #### accessService Examples
 
@@ -836,7 +832,7 @@ Please provide link(s) to a webpage or a short description detailing the commerc
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/organisation/properties/accessRequestCost")
 
 #### accessRequestCost Type
 
@@ -844,7 +840,7 @@ merged type ([Organisation Access Request Cost](dataset-definitions-organisation
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-organisation-access-request-cost-allof-0.md "check type definition")
 
 ### dataUseLimitation
 
@@ -860,7 +856,7 @@ Please provide an indication of consent permissions for datasets and/or material
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-limitation.md "#/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-limitation.md "#/member/dataUseLimitation#/definitions/organisation/properties/dataUseLimitation")
 
 #### dataUseLimitation Type
 
@@ -868,9 +864,9 @@ merged type ([Data Use Limitation](dataset-definitions-organisation-metadata-pro
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-limitation-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-limitation-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-limitation-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-limitation-anyof-1.md "check type definition")
 
 ### dataUseRequirements
 
@@ -886,7 +882,7 @@ Please indicate fit here are any additional conditions set for use if any, multi
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-requirements.md "#/member/dataUseRequirements#/definitions/organisation/properties/dataUseRequirements")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-requirements.md "#/member/dataUseRequirements#/definitions/organisation/properties/dataUseRequirements")
 
 #### dataUseRequirements Type
 
@@ -894,9 +890,9 @@ merged type ([Data Use Requirements](dataset-definitions-organisation-metadata-p
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-requirements-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-requirements-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-data-use-requirements-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-data-use-requirements-anyof-1.md "check type definition")
 
 ## Definitions group documentation
 
@@ -906,11 +902,11 @@ Reference this group by using
 {"$ref":"#/definitions/member#/definitions/documentation"}
 ```
 
-| Property                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                            |
-| :---------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [description](#description-1)       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-description.md "#/properties/documentation/description#/definitions/documentation/properties/description")              |
-| [associatedMedia](#associatedmedia) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-associated-media.md "#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia") |
-| [isPartOf](#ispartof)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-documentation-properties-group.md "#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")                          |
+| Property                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                                   |
+| :---------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [description](#description-1)       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-documentation-properties-description.md "#/properties/documentation/description#/definitions/documentation/properties/description")              |
+| [associatedMedia](#associatedmedia) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-documentation-properties-associated-media.md "#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia") |
+| [isPartOf](#ispartof)               | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-documentation-properties-group.md "#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")                          |
 
 ### description
 
@@ -926,7 +922,7 @@ A free-text description of the record.
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-documentation-properties-description.md "#/properties/documentation/description#/definitions/documentation/properties/description")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-documentation-properties-description.md "#/properties/documentation/description#/definitions/documentation/properties/description")
 
 #### description Type
 
@@ -934,7 +930,7 @@ merged type ([Description](dataset-definitions-documentation-properties-descript
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-description-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-description-allof-0.md "check type definition")
 
 ### associatedMedia
 
@@ -950,7 +946,7 @@ Please provide any media associated with the Gateway Organisation using a valid 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-documentation-properties-associated-media.md "#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-documentation-properties-associated-media.md "#/properties/documentation/associatedMedia#/definitions/documentation/properties/associatedMedia")
 
 #### associatedMedia Type
 
@@ -958,9 +954,9 @@ merged type ([Associated Media](dataset-definitions-documentation-properties-ass
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-associated-media-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-associated-media-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-documentation-properties-associated-media-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-documentation-properties-associated-media-anyof-1.md "check type definition")
 
 #### associatedMedia Examples
 
@@ -982,7 +978,7 @@ Please complete only if the dataset is part of a group or family
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-documentation-properties-group.md "#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-documentation-properties-group.md "#/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf")
 
 #### isPartOf Type
 
@@ -990,9 +986,9 @@ merged type ([Group](dataset-definitions-documentation-properties-group.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-group-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-group-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-documentation-properties-group-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-documentation-properties-group-anyof-1.md "check type definition")
 
 #### isPartOf Default Value
 
@@ -1016,13 +1012,13 @@ Reference this group by using
 {"$ref":"#/definitions/coverage#/definitions/coverage"}
 ```
 
-| Property                                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                                               |
-| :-------------------------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [spatial](#spatial)                                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")                                                |
-| [typicalAgeRange](#typicalagerange)                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")                                          |
-| [physicalSampleAvailability](#physicalsampleavailability) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability") |
-| [followup](#followup)                                     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")                                                         |
-| [pathway](#pathway)                                       | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")                                                            |
+| Property                                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                      |
+| :-------------------------------------------------------- | :----- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [spatial](#spatial)                                       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")                                                |
+| [typicalAgeRange](#typicalagerange)                       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")                                          |
+| [physicalSampleAvailability](#physicalsampleavailability) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability") |
+| [followup](#followup)                                     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")                                                         |
+| [pathway](#pathway)                                       | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")                                                            |
 
 ### spatial
 
@@ -1038,7 +1034,7 @@ The geographical area covered by the dataset. It is recommended that links are t
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-geographic-coverage.md "#/properties/coverage/spatial#/definitions/coverage/properties/spatial")
 
 #### spatial Type
 
@@ -1046,7 +1042,7 @@ merged type ([Geographic Coverage](dataset-definitions-coverage-properties-geogr
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-geographic-coverage-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-geographic-coverage-allof-0.md "check type definition")
 
 #### spatial Examples
 
@@ -1068,7 +1064,7 @@ Please indicate the age range in whole years of participants in the dataset. Ple
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-age-range.md "#/properties/coverage/typicalAgeRange#/definitions/coverage/properties/typicalAgeRange")
 
 #### typicalAgeRange Type
 
@@ -1076,7 +1072,7 @@ merged type ([Age Range](dataset-definitions-coverage-properties-age-range.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-age-range-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-age-range-allof-0.md "check type definition")
 
 ### physicalSampleAvailability
 
@@ -1092,7 +1088,7 @@ Availability of physical samples associated with the dataset. If samples are ava
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability.md "#/properties/coverage/physicalSampleAvailability#/definitions/coverage/properties/physicalSampleAvailability")
 
 #### physicalSampleAvailability Type
 
@@ -1100,9 +1096,9 @@ merged type ([Physical Sample Availability](dataset-definitions-coverage-propert
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-coverage-properties-physical-sample-availability-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-coverage-properties-physical-sample-availability-anyof-1.md "check type definition")
 
 #### physicalSampleAvailability Examples
 
@@ -1124,7 +1120,7 @@ If known, what is the typical time span that a patient appears in the dataset (f
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-followup.md "#/properties/coverage/followup#/definitions/coverage/properties/followup")
 
 #### followup Type
 
@@ -1132,7 +1128,7 @@ merged type ([Followup](dataset-definitions-coverage-properties-followup.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-followup-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-followup-allof-0.md "check type definition")
 
 #### followup Default Value
 
@@ -1156,7 +1152,7 @@ Please indicate if the dataset is representative of the patient pathway and any 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-coverage-properties-pathway.md "#/properties/coverage/pathway#/definitions/coverage/properties/pathway")
 
 #### pathway Type
 
@@ -1164,7 +1160,7 @@ merged type ([Pathway](dataset-definitions-coverage-properties-pathway.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-coverage-properties-pathway-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-coverage-properties-pathway-allof-0.md "check type definition")
 
 ## Definitions group provenance
 
@@ -1174,10 +1170,10 @@ Reference this group by using
 {"$ref":"#/definitions/provenance#/definitions/provenance"}
 ```
 
-| Property              | Type   | Required | Nullable       | Defined by                                                                                                                                              |
-| :-------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [origin](#origin)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")       |
-| [temporal](#temporal) | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal") |
+| Property              | Type   | Required | Nullable       | Defined by                                                                                                                                                     |
+| :-------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [origin](#origin)     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")       |
+| [temporal](#temporal) | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal") |
 
 ### origin
 
@@ -1191,7 +1187,7 @@ Reference this group by using
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-provenance-properties-origin.md "#/definitions/provenance/origin#/definitions/provenance/properties/origin")
 
 #### origin Type
 
@@ -1199,7 +1195,7 @@ merged type ([Details](dataset-definitions-provenance-properties-origin.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-provenance-properties-origin-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-provenance-properties-origin-allof-0.md "check type definition")
 
 ### temporal
 
@@ -1213,7 +1209,7 @@ all of
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-provenance-properties-temporal.md "#/definitions/provenance/temporal#/definitions/provenance/properties/temporal")
 
 #### temporal Type
 
@@ -1221,7 +1217,7 @@ merged type ([Details](dataset-definitions-provenance-properties-temporal.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-provenance-properties-temporal-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-provenance-properties-temporal-allof-0.md "check type definition")
 
 ## Definitions group origin
 
@@ -1231,11 +1227,11 @@ Reference this group by using
 {"$ref":"#/definitions/origin#/definitions/origin"}
 ```
 
-| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                 |
-| :------------------------------------------ | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [purpose](#purpose)                         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")                         |
-| [source](#source)                           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")                            |
-| [collectionSituation](#collectionsituation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
+| Property                                    | Type   | Required | Nullable       | Defined by                                                                                                                                                                        |
+| :------------------------------------------ | :----- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [purpose](#purpose)                         | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")                         |
+| [source](#source)                           | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")                            |
+| [collectionSituation](#collectionsituation) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation") |
 
 ### purpose
 
@@ -1251,7 +1247,7 @@ Pleases indicate the purpose(s) that the dataset was collected.
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose.md "#/properties/provenance/origin/purpose#/definitions/origin/properties/purpose")
 
 #### purpose Type
 
@@ -1259,9 +1255,9 @@ merged type ([Purpose](dataset-definitions-origin-properties-purpose.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-origin-properties-purpose-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-origin-properties-purpose-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-origin-properties-purpose-anyof-1.md "check type definition")
 
 ### source
 
@@ -1277,7 +1273,7 @@ Pleases indicate the source of the data extraction
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-origin-properties-source.md "#/properties/provenance/origin/source#/definitions/origin/properties/source")
 
 #### source Type
 
@@ -1285,9 +1281,9 @@ merged type ([Source](dataset-definitions-origin-properties-source.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-origin-properties-source-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-origin-properties-source-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-origin-properties-source-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-origin-properties-source-anyof-1.md "check type definition")
 
 ### collectionSituation
 
@@ -1303,7 +1299,7 @@ Pleases indicate the setting(s) where data was collected. Multiple settings may 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-origin-properties-setting.md "#/properties/provenance/origin/collectionSituation#/definitions/origin/properties/collectionSituation")
 
 #### collectionSituation Type
 
@@ -1311,9 +1307,9 @@ merged type ([Setting](dataset-definitions-origin-properties-setting.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-origin-properties-setting-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-origin-properties-setting-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-origin-properties-setting-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-origin-properties-setting-anyof-1.md "check type definition")
 
 ## Definitions group temporal
 
@@ -1323,13 +1319,13 @@ Reference this group by using
 {"$ref":"#/definitions/temporal#/definitions/temporal"}
 ```
 
-| Property                                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                                    |
-| :-------------------------------------------------- | :----- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [accrualPeriodicity](#accrualperiodicity)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")            |
-| [distributionReleaseDate](#distributionreleasedate) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate") |
-| [startDate](#startdate)                             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")                               |
-| [endDate](#enddate)                                 | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")                                     |
-| [timeLag](#timelag)                                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")                                     |
+| Property                                            | Type   | Required | Nullable       | Defined by                                                                                                                                                                                           |
+| :-------------------------------------------------- | :----- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [accrualPeriodicity](#accrualperiodicity)           | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")            |
+| [distributionReleaseDate](#distributionreleasedate) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate") |
+| [startDate](#startdate)                             | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")                               |
+| [endDate](#enddate)                                 | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")                                     |
+| [timeLag](#timelag)                                 | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")                                     |
 
 ### accrualPeriodicity
 
@@ -1345,7 +1341,7 @@ Please indicate the frequency of distribution release. If a dataset is distribut
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-periodicity.md "#/properties/provenance/temporal/accrualPeriodicity#/definitions/temporal/properties/accrualPeriodicity")
 
 #### accrualPeriodicity Type
 
@@ -1353,7 +1349,7 @@ merged type ([Periodicity](dataset-definitions-temporal-properties-periodicity.m
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-temporal-properties-periodicity-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-temporal-properties-periodicity-allof-0.md "check type definition")
 
 ### distributionReleaseDate
 
@@ -1369,7 +1365,7 @@ Date of the latest release of the dataset. If this is a regular release i.e. qua
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date.md "#/properties/provenance/temporal/distributionReleaseDate#/definitions/temporal/properties/distributionReleaseDate")
 
 #### distributionReleaseDate Type
 
@@ -1377,9 +1373,9 @@ merged type ([Release Date](dataset-definitions-temporal-properties-release-date
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-release-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-release-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-release-date-anyof-1.md "check type definition")
 
 ### startDate
 
@@ -1395,7 +1391,7 @@ The start of the time period that the dataset provides coverage for. If there ar
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date.md "#/properties/provenance/temporal/startDate#/definitions/temporal/properties/startDate")
 
 #### startDate Type
 
@@ -1403,9 +1399,9 @@ merged type ([Start Date](dataset-definitions-temporal-properties-start-date.md)
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-start-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-start-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-start-date-anyof-1.md "check type definition")
 
 ### endDate
 
@@ -1421,7 +1417,7 @@ The end of the time period that the dataset provides coverage for. If the datase
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date.md "#/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate")
 
 #### endDate Type
 
@@ -1429,11 +1425,11 @@ merged type ([End Date](dataset-definitions-temporal-properties-end-date.md))
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-end-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-end-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date-anyof-1.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-temporal-properties-end-date-anyof-2.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-temporal-properties-end-date-anyof-2.md "check type definition")
 
 ### timeLag
 
@@ -1449,7 +1445,7 @@ Please indicate the typical time-lag between an event and the data for that even
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-temporal-properties-time-lag.md "#/properties/provenance/temporal/timeLag#/definitions/temporal/properties/timeLag")
 
 #### timeLag Type
 
@@ -1457,7 +1453,7 @@ merged type ([Time Lag](dataset-definitions-temporal-properties-time-lag.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-temporal-properties-time-lag-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-temporal-properties-time-lag-allof-0.md "check type definition")
 
 ## Definitions group accessibility
 
@@ -1467,11 +1463,11 @@ Reference this group by using
 {"$ref":"#/definitions/accessibility#/definitions/accessibility"}
 ```
 
-| Property                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                       |
-| :---------------------------------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [usage](#usage)                           | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")                                          |
-| [access](#access)                         | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")                                       |
-| [formatAndStandards](#formatandstandards) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
+| Property                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                              |
+| :---------------------------------------- | :------------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [usage](#usage)                           | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")                                          |
+| [access](#access)                         | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")                                       |
+| [formatAndStandards](#formatandstandards) | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
 
 ### usage
 
@@ -1485,7 +1481,7 @@ This section includes information about how the data can be used and how it is c
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")
 
 #### usage Type
 
@@ -1503,7 +1499,7 @@ This section includes information about data access
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")
 
 #### access Type
 
@@ -1521,7 +1517,7 @@ Section includes technical attributes for language vocabularies, sizes etc. and 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards")
 
 #### formatAndStandards Type
 
@@ -1535,13 +1531,13 @@ Reference this group by using
 {"$ref":"#/definitions/usage#/definitions/usage"}
 ```
 
-| Property                                      | Type   | Required | Nullable       | Defined by                                                                                                                                                                               |
-| :-------------------------------------------- | :----- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [dataUseLimitation](#datauselimitation-1)     | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
-| [dataUseRequirements](#datauserequirements-1) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
-| [resourceCreator](#resourcecreator)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
-| [investigations](#investigations)             | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")                                              |
-| [isReferencedBy](#isreferencedby)             | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
+| Property                                      | Type   | Required | Nullable       | Defined by                                                                                                                                                                                      |
+| :-------------------------------------------- | :----- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [dataUseLimitation](#datauselimitation-1)     | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")       |
+| [dataUseRequirements](#datauserequirements-1) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements") |
+| [resourceCreator](#resourcecreator)           | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")         |
+| [investigations](#investigations)             | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")                                              |
+| [isReferencedBy](#isreferencedby)             | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")                                                   |
 
 ### dataUseLimitation
 
@@ -1557,7 +1553,7 @@ Please provide an indication of consent permissions for datasets and/or material
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation.md "#/properties/accessibility/usage/dataUseLimitation#/definitions/usage/properties/dataUseLimitation")
 
 #### dataUseLimitation Type
 
@@ -1565,9 +1561,9 @@ merged type ([Data Use Limitation](dataset-definitions-usage-properties-data-use
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-data-use-limitation-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-limitation-anyof-1.md "check type definition")
 
 ### dataUseRequirements
 
@@ -1583,7 +1579,7 @@ Please indicate fit here are any additional conditions set for use if any, multi
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements.md "#/properties/accessibility/usage/dataUseRequirements#/definitions/usage/properties/dataUseRequirements")
 
 #### dataUseRequirements Type
 
@@ -1591,9 +1587,9 @@ merged type ([Data Use Requirements](dataset-definitions-usage-properties-data-u
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-data-use-requirements-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-data-use-requirements-anyof-1.md "check type definition")
 
 ### resourceCreator
 
@@ -1609,7 +1605,7 @@ Please provide the text that you would like included as part of any citation tha
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-citation-requirements.md "#/properties/accessibility/usage/resourceCreator#/definitions/usage/properties/resourceCreator")
 
 #### resourceCreator Type
 
@@ -1617,7 +1613,7 @@ merged type ([Citation Requirements](dataset-definitions-usage-properties-citati
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-citation-requirements-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-citation-requirements-allof-0.md "check type definition")
 
 ### investigations
 
@@ -1633,7 +1629,7 @@ all of
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations.md "#/definitions/usage#/definitions/usage/properties/investigations")
 
 #### investigations Type
 
@@ -1641,9 +1637,9 @@ merged type ([Investigations](dataset-definitions-usage-properties-investigation
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-investigations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-investigations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-investigations-anyof-1.md "check type definition")
 
 ### isReferencedBy
 
@@ -1659,7 +1655,7 @@ Please provide the keystone paper associated with the dataset. Also include a li
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-usage-properties-citations.md "#/definitions/usage#/definitions/usage/properties/isReferencedBy")
 
 #### isReferencedBy Type
 
@@ -1667,9 +1663,9 @@ merged type ([Citations](dataset-definitions-usage-properties-citations.md))
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-usage-properties-citations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-usage-properties-citations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-usage-properties-citations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-usage-properties-citations-anyof-1.md "check type definition")
 
 ## Definitions group access
 
@@ -1679,15 +1675,15 @@ Reference this group by using
 {"$ref":"#/definitions/access#/definitions/access"}
 ```
 
-| Property                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                              |
-| :---------------------------------------- | :----- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [accessRights](#accessrights-1)           | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-rights.md "#/properties/accessibility/access/accessRights#/definitions/access/properties/accessRights")                   |
-| [accessService](#accessservice-1)         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-service.md "#/properties/accessibility/access/accessService#/definitions/access/properties/accessService")                |
-| [accessRequestCost](#accessrequestcost-1) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/access/properties/accessRequestCost")               |
-| [deliveryLeadTime](#deliveryleadtime-1)   | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-access-request-duration.md "#/properties/accessibility/access/deliveryLeadTime#/definitions/access/properties/deliveryLeadTime") |
-| [jurisdiction](#jurisdiction)             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-jurisdiction.md "#/properties/accessibility/access/jurisdiction#/definitions/access/properties/jurisdiction")                    |
-| [dataController](#datacontroller)         | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-data-controller.md "#/properties/accessibility/access/dataController#/definitions/access/properties/dataController")             |
-| [dataProcessor](#dataprocessor)           | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-access-properties-data-processor.md "#/properties/accessibility/access/dataProcessor#/definitions/access/properties/dataProcessor")                |
+| Property                                  | Type   | Required | Nullable       | Defined by                                                                                                                                                                                     |
+| :---------------------------------------- | :----- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [accessRights](#accessrights-1)           | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights.md "#/properties/accessibility/access/accessRights#/definitions/access/properties/accessRights")                   |
+| [accessService](#accessservice-1)         | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-access-properties-access-service.md "#/properties/accessibility/access/accessService#/definitions/access/properties/accessService")                |
+| [accessRequestCost](#accessrequestcost-1) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-access-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/access/properties/accessRequestCost")               |
+| [deliveryLeadTime](#deliveryleadtime-1)   | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-access-properties-access-request-duration.md "#/properties/accessibility/access/deliveryLeadTime#/definitions/access/properties/deliveryLeadTime") |
+| [jurisdiction](#jurisdiction)             | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-access-properties-jurisdiction.md "#/properties/accessibility/access/jurisdiction#/definitions/access/properties/jurisdiction")                    |
+| [dataController](#datacontroller)         | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-access-properties-data-controller.md "#/properties/accessibility/access/dataController#/definitions/access/properties/dataController")             |
+| [dataProcessor](#dataprocessor)           | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-access-properties-data-processor.md "#/properties/accessibility/access/dataProcessor#/definitions/access/properties/dataProcessor")                |
 
 ### accessRights
 
@@ -1703,7 +1699,7 @@ Reference this group by using
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-access-properties-access-rights.md "#/properties/accessibility/access/accessRights#/definitions/access/properties/accessRights")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights.md "#/properties/accessibility/access/accessRights#/definitions/access/properties/accessRights")
 
 #### accessRights Type
 
@@ -1711,11 +1707,11 @@ merged type ([Access Rights](dataset-definitions-access-properties-access-rights
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-access-properties-access-rights-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-access-properties-access-rights-anyof-1.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights-anyof-1.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-access-properties-access-rights-anyof-2.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights-anyof-2.md "check type definition")
 
 ### accessService
 
@@ -1731,7 +1727,7 @@ Please provide a brief description of the data access services that are availabl
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-access-properties-access-service.md "#/properties/accessibility/access/accessService#/definitions/access/properties/accessService")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-access-properties-access-service.md "#/properties/accessibility/access/accessService#/definitions/access/properties/accessService")
 
 #### accessService Type
 
@@ -1739,7 +1735,7 @@ merged type ([Access Service](dataset-definitions-access-properties-access-servi
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-access-service-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-access-service-allof-0.md "check type definition")
 
 #### accessService Examples
 
@@ -1761,7 +1757,7 @@ Please provide link(s) to a webpage detailing the commercial model for processin
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-access-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/access/properties/accessRequestCost")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-access-properties-organisation-access-request-cost.md "#/member/accessRequestCost#/definitions/access/properties/accessRequestCost")
 
 #### accessRequestCost Type
 
@@ -1769,7 +1765,7 @@ merged type ([Organisation Access Request Cost](dataset-definitions-access-prope
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-organisation-access-request-cost-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-organisation-access-request-cost-allof-0.md "check type definition")
 
 ### deliveryLeadTime
 
@@ -1785,7 +1781,7 @@ Please provide an indication of the typical processing times based on the types 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-access-properties-access-request-duration.md "#/properties/accessibility/access/deliveryLeadTime#/definitions/access/properties/deliveryLeadTime")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-access-properties-access-request-duration.md "#/properties/accessibility/access/deliveryLeadTime#/definitions/access/properties/deliveryLeadTime")
 
 #### deliveryLeadTime Type
 
@@ -1793,7 +1789,7 @@ merged type ([Access Request Duration](dataset-definitions-access-properties-acc
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-access-request-duration-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-access-request-duration-allof-0.md "check type definition")
 
 ### jurisdiction
 
@@ -1809,7 +1805,7 @@ Please use country code from ISO 3166-1 country codes and the associated ISO 316
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-access-properties-jurisdiction.md "#/properties/accessibility/access/jurisdiction#/definitions/access/properties/jurisdiction")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-access-properties-jurisdiction.md "#/properties/accessibility/access/jurisdiction#/definitions/access/properties/jurisdiction")
 
 #### jurisdiction Type
 
@@ -1817,9 +1813,9 @@ merged type ([Jurisdiction](dataset-definitions-access-properties-jurisdiction.m
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-jurisdiction-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-jurisdiction-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-access-properties-jurisdiction-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-access-properties-jurisdiction-anyof-1.md "check type definition")
 
 #### jurisdiction Default Value
 
@@ -1843,7 +1839,7 @@ Data Controller means a person/entity who (either alone or jointly or in common 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-access-properties-data-controller.md "#/properties/accessibility/access/dataController#/definitions/access/properties/dataController")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-access-properties-data-controller.md "#/properties/accessibility/access/dataController#/definitions/access/properties/dataController")
 
 #### dataController Type
 
@@ -1851,7 +1847,7 @@ merged type ([Data Controller](dataset-definitions-access-properties-data-contro
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-data-controller-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-data-controller-allof-0.md "check type definition")
 
 ### dataProcessor
 
@@ -1867,7 +1863,7 @@ A Data Processor, in relation to any Data Subject data, specifically personal da
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-access-properties-data-processor.md "#/properties/accessibility/access/dataProcessor#/definitions/access/properties/dataProcessor")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-access-properties-data-processor.md "#/properties/accessibility/access/dataProcessor#/definitions/access/properties/dataProcessor")
 
 #### dataProcessor Type
 
@@ -1875,7 +1871,7 @@ merged type ([Data Processor](dataset-definitions-access-properties-data-process
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-access-properties-data-processor-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-data-processor-allof-0.md "check type definition")
 
 ## Definitions group formatAndStandards
 
@@ -1885,12 +1881,12 @@ Reference this group by using
 {"$ref":"#/definitions/formatAndStandards#/definitions/formatAndStandards"}
 ```
 
-| Property                                              | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                                                |
-| :---------------------------------------------------- | :----- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [vocabularyEncodingScheme](#vocabularyencodingscheme) | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary.md "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme#/definitions/formatAndStandards/properties/vocabularyEncodingScheme") |
-| [conformsTo](#conformsto)                             | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to.md "#/properties/accessibility/formatAndStandards/conformsTo#/definitions/formatAndStandards/properties/conformsTo")                                       |
-| [language](#language)                                 | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-language.md "#/properties/accessibility/formatAndStandards/language#/definitions/formatAndStandards/properties/language")                                              |
-| [format](#format)                                     | Merged | Required | cannot be null | [HDR UK Dataset](dataset-definitions-formatandstandards-properties-format.md "#/properties/accessibility/formatAndStandards/format#/definitions/formatAndStandards/properties/format")                                                    |
+| Property                                              | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                                                       |
+| :---------------------------------------------------- | :----- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [vocabularyEncodingScheme](#vocabularyencodingscheme) | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-controlled-vocabulary.md "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme#/definitions/formatAndStandards/properties/vocabularyEncodingScheme") |
+| [conformsTo](#conformsto)                             | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-conforms-to.md "#/properties/accessibility/formatAndStandards/conformsTo#/definitions/formatAndStandards/properties/conformsTo")                                       |
+| [language](#language)                                 | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-language.md "#/properties/accessibility/formatAndStandards/language#/definitions/formatAndStandards/properties/language")                                              |
+| [format](#format)                                     | Merged | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-format.md "#/properties/accessibility/formatAndStandards/format#/definitions/formatAndStandards/properties/format")                                                    |
 
 ### vocabularyEncodingScheme
 
@@ -1906,7 +1902,7 @@ List any relevant terminologies / ontologies / controlled vocabularies, such as 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary.md "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme#/definitions/formatAndStandards/properties/vocabularyEncodingScheme")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-controlled-vocabulary.md "#/properties/accessibility/formatAndStandards/vocabularyEncodingScheme#/definitions/formatAndStandards/properties/vocabularyEncodingScheme")
 
 #### vocabularyEncodingScheme Type
 
@@ -1914,9 +1910,9 @@ merged type ([Controlled Vocabulary](dataset-definitions-formatandstandards-prop
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-1.md "check type definition")
 
 #### vocabularyEncodingScheme Default Value
 
@@ -1940,7 +1936,7 @@ List standardised data models that the dataset has been stored in or transformed
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to.md "#/properties/accessibility/formatAndStandards/conformsTo#/definitions/formatAndStandards/properties/conformsTo")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-conforms-to.md "#/properties/accessibility/formatAndStandards/conformsTo#/definitions/formatAndStandards/properties/conformsTo")
 
 #### conformsTo Type
 
@@ -1948,9 +1944,9 @@ merged type ([Conforms To](dataset-definitions-formatandstandards-properties-con
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-conforms-to-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-formatandstandards-properties-conforms-to-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-conforms-to-anyof-1.md "check type definition")
 
 #### conformsTo Default Value
 
@@ -1974,7 +1970,7 @@ This should list all the languages in which the dataset metadata and underlying 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-formatandstandards-properties-language.md "#/properties/accessibility/formatAndStandards/language#/definitions/formatAndStandards/properties/language")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-language.md "#/properties/accessibility/formatAndStandards/language#/definitions/formatAndStandards/properties/language")
 
 #### language Type
 
@@ -1982,9 +1978,9 @@ merged type ([Language](dataset-definitions-formatandstandards-properties-langua
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-language-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-language-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-formatandstandards-properties-language-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-language-anyof-1.md "check type definition")
 
 #### language Default Value
 
@@ -2008,7 +2004,7 @@ If multiple formats are available please specify. See application, audio, image,
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-formatandstandards-properties-format.md "#/properties/accessibility/formatAndStandards/format#/definitions/formatAndStandards/properties/format")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-format.md "#/properties/accessibility/formatAndStandards/format#/definitions/formatAndStandards/properties/format")
 
 #### format Type
 
@@ -2016,9 +2012,9 @@ merged type ([Format](dataset-definitions-formatandstandards-properties-format.m
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-format-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-format-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-formatandstandards-properties-format-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-format-anyof-1.md "check type definition")
 
 ## Definitions group enrichmentAndLinkage
 
@@ -2028,11 +2024,11 @@ Reference this group by using
 {"$ref":"#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage"}
 ```
 
-| Property                                | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                    |
-| :-------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [qualifiedRelation](#qualifiedrelation) | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation") |
-| [derivation](#derivation)               | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")                             |
-| [tools](#tools)                         | Merged | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")                                   |
+| Property                                | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                           |
+| :-------------------------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [qualifiedRelation](#qualifiedrelation) | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation") |
+| [derivation](#derivation)               | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")                             |
+| [tools](#tools)                         | Merged | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")                                   |
 
 ### qualifiedRelation
 
@@ -2048,7 +2044,7 @@ If applicable, please provide the DOI of other datasets that have previously bee
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets.md "#/properties/enrichmentAndLinkage/qualifiedRelation#/definitions/enrichmentAndLinkage/properties/qualifiedRelation")
 
 #### qualifiedRelation Type
 
@@ -2056,9 +2052,9 @@ merged type ([Linked Datasets](dataset-definitions-enrichmentandlinkage-properti
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-linked-datasets-anyof-1.md "check type definition")
 
 ### derivation
 
@@ -2074,7 +2070,7 @@ Indicate if derived datasets or predefined extracts are available and the type o
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations.md "#/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation")
 
 #### derivation Type
 
@@ -2082,9 +2078,9 @@ merged type ([Derivations](dataset-definitions-enrichmentandlinkage-properties-d
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-derivations-anyof-1.md "check type definition")
 
 ### tools
 
@@ -2100,7 +2096,7 @@ Please provide the URL of any analysis tools or models that have been created fo
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools.md "#/properties/enrichmentAndLinkage/tools#/definitions/enrichmentAndLinkage/properties/tools")
 
 #### tools Type
 
@@ -2108,9 +2104,9 @@ merged type ([Tools](dataset-definitions-enrichmentandlinkage-properties-tools.m
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-0.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-1.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-enrichmentandlinkage-properties-tools-anyof-1.md "check type definition")
 
 ## Definitions group observation
 
@@ -2120,13 +2116,13 @@ Reference this group by using
 {"$ref":"#/definitions/observation#/definitions/observation"}
 ```
 
-| Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                    |
-| :------------------------------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [observedNode](#observednode)                           | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")                               |
-| [measuredValue](#measuredvalue)                         | `integer` | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")                                     |
-| [disambiguatingDescription](#disambiguatingdescription) | Merged    | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription") |
-| [observationDate](#observationdate)                     | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")                               |
-| [measuredProperty](#measuredproperty)                   | Merged    | Required | cannot be null | [HDR UK Dataset](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")                            |
+| Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                           |
+| :------------------------------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [observedNode](#observednode)                           | Merged    | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")                               |
+| [measuredValue](#measuredvalue)                         | `integer` | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")                                     |
+| [disambiguatingDescription](#disambiguatingdescription) | Merged    | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription") |
+| [observationDate](#observationdate)                     | Merged    | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")                               |
+| [measuredProperty](#measuredproperty)                   | Merged    | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")                            |
 
 ### observedNode
 
@@ -2142,7 +2138,7 @@ Please select one of the following statistical populations for you observation
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-statistical-population.md "#/properties/observation/observedNode#/definitions/observation/properties/observedNode")
 
 #### observedNode Type
 
@@ -2150,7 +2146,7 @@ merged type ([Statistical Population](dataset-definitions-observation-properties
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-observation-properties-statistical-population-allof-0.md "check type definition")
 
 #### observedNode Examples
 
@@ -2172,7 +2168,7 @@ Please provide the population size associated with the population type the datas
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-value.md "#/properties/observation/measuredValue#/definitions/observation/properties/measuredValue")
 
 #### measuredValue Type
 
@@ -2192,7 +2188,7 @@ If SNOMED CT term does not provide sufficient detail, please provide a descripti
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-disambiguating-description.md "#/properties/observation/disambiguatingDescription#/definitions/observation/properties/disambiguatingDescription")
 
 #### disambiguatingDescription Type
 
@@ -2200,7 +2196,7 @@ merged type ([Disambiguating Description](dataset-definitions-observation-proper
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-observation-properties-disambiguating-description-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-observation-properties-disambiguating-description-allof-0.md "check type definition")
 
 ### observationDate
 
@@ -2216,7 +2212,7 @@ Please provide the date that the observation was made. Some datasets may be cont
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date.md "#/properties/observation/observationDate#/definitions/observation/properties/observationDate")
 
 #### observationDate Type
 
@@ -2224,9 +2220,9 @@ merged type ([Observation Date](dataset-definitions-observation-properties-obser
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-observation-date-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-observation-date-anyof-1.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-observation-date-anyof-1.md "check type definition")
 
 #### observationDate Default Value
 
@@ -2250,7 +2246,7 @@ Initially this will be defaulted to "COUNT"
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-property.md "#/properties/observation/measuredProperty#/definitions/observation/properties/measuredProperty")
 
 #### measuredProperty Type
 
@@ -2258,7 +2254,7 @@ merged type ([Measured Property](dataset-definitions-observation-properties-meas
 
 all of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-observation-properties-measured-property-allof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-observation-properties-measured-property-allof-0.md "check type definition")
 
 #### measuredProperty Default Value
 

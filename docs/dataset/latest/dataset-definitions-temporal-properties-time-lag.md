@@ -18,4 +18,4 @@ merged type ([Time Lag](dataset-definitions-temporal-properties-time-lag.md))
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-temporal-properties-time-lag-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-temporal-properties-time-lag-allof-0.md "check type definition")

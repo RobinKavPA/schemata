@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/accessibility/formatAndStandards/vocabularyEncodingScheme#/definitions/formatAndStandards/properties/vocabularyEncodingScheme/anyOf/1/items
@@ -16,4 +16,4 @@ merged type ([Details](dataset-definitions-formatandstandards-properties-control
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-1-items-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-formatandstandards-properties-controlled-vocabulary-anyof-1-items-allof-0.md "check type definition")

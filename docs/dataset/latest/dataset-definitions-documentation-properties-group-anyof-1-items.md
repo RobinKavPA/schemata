@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/documentation/isPartOf#/definitions/documentation/properties/isPartOf/anyOf/1/items
@@ -16,8 +16,8 @@ merged type ([Details](dataset-definitions-documentation-properties-group-anyof-
 
 any of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-group-anyof-1-items-anyof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-group-anyof-1-items-anyof-0.md "check type definition")
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-documentation-properties-group-anyof-1-items-anyof-1.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-documentation-properties-group-anyof-1-items-anyof-1.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-documentation-properties-group-anyof-1-items-anyof-2.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-documentation-properties-group-anyof-1-items-anyof-2.md "check type definition")

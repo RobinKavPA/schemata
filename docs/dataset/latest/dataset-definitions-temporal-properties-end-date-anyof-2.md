@@ -1,4 +1,4 @@
-# Untitled string in HDR UK Dataset Schema
+# Untitled string in HDR UK Dataset Schema Schema
 
 ```txt
 #/properties/provenance/temporal/endDate#/definitions/temporal/properties/endDate/anyOf/2

@@ -18,7 +18,7 @@ merged type ([Dataset Abstract](dataset-definitions-summary-properties-dataset-a
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-summary-properties-dataset-abstract-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-summary-properties-dataset-abstract-allof-0.md "check type definition")
 
 ## abstract Examples
 

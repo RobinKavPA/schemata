@@ -18,8 +18,8 @@ merged type ([Access Rights](dataset-definitions-access-properties-access-rights
 
 any of
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-access-properties-access-rights-anyof-0.md "check type definition")
+*   [Untitled string in HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights-anyof-0.md "check type definition")
 
-*   [Untitled string in HDR UK Dataset](dataset-definitions-access-properties-access-rights-anyof-1.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights-anyof-1.md "check type definition")
 
-*   [Untitled array in HDR UK Dataset](dataset-definitions-access-properties-access-rights-anyof-2.md "check type definition")
+*   [Untitled array in HDR UK Dataset Schema](dataset-definitions-access-properties-access-rights-anyof-2.md "check type definition")

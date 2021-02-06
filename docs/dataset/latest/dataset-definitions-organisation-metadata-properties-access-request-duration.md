@@ -18,4 +18,4 @@ merged type ([Access Request Duration](dataset-definitions-organisation-metadata
 
 all of
 
-*   [Untitled undefined type in HDR UK Dataset](dataset-definitions-organisation-metadata-properties-access-request-duration-allof-0.md "check type definition")
+*   [Untitled undefined type in HDR UK Dataset Schema](dataset-definitions-organisation-metadata-properties-access-request-duration-allof-0.md "check type definition")

@@ -1,4 +1,4 @@
-# Untitled undefined type in HDR UK Dataset Schema
+# Untitled undefined type in HDR UK Dataset Schema Schema
 
 ```txt
 #/definitions/enrichmentAndLinkage#/definitions/enrichmentAndLinkage/properties/derivation/anyOf/1/items/allOf/0

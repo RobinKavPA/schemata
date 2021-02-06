@@ -16,11 +16,11 @@ unknown ([Accessibility](dataset-properties-accessibility.md))
 
 # accessibility Properties
 
-| Property                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                       |
-| :---------------------------------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [usage](#usage)                           | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")                                          |
-| [access](#access)                         | Not specified | Required | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")                                       |
-| [formatAndStandards](#formatandstandards) | Not specified | Optional | cannot be null | [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
+| Property                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                              |
+| :---------------------------------------- | :------------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [usage](#usage)                           | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")                                          |
+| [access](#access)                         | Not specified | Required | cannot be null | [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")                                       |
+| [formatAndStandards](#formatandstandards) | Not specified | Optional | cannot be null | [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards") |
 
 ## usage
 
@@ -34,7 +34,7 @@ This section includes information about how the data can be used and how it is c
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-usage.md "#/definitions/accessibility/usage#/definitions/accessibility/properties/usage")
 
 ### usage Type
 
@@ -52,7 +52,7 @@ This section includes information about data access
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-access.md "#/definitions/accessibility/access#/definitions/accessibility/properties/access")
 
 ### access Type
 
@@ -70,7 +70,7 @@ Section includes technical attributes for language vocabularies, sizes etc. and 
 
 *   cannot be null
 
-*   defined in: [HDR UK Dataset](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards")
+*   defined in: [HDR UK Dataset Schema](dataset-definitions-accessibility-properties-format-and-standards.md "#/definitions/accessibility/formatAndStandards#/definitions/accessibility/properties/formatAndStandards")
 
 ### formatAndStandards Type
 
