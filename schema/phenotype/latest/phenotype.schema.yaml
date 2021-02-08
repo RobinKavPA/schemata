@@ -1,0 +1,91 @@
+"$schema": "http://json-schema.org/draft-07/schema"
+"$id": "https://hdruk.github.io/schemata/schema/phenotype/latest/phenotype.schema.json"
+title: HDR UK Phenotype Schema
+description: HDR UK Phenotype JSONSchema
+version: 0.0.1
+type: object
+
+additionalProperties: false
+
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  type:
+    type: string
+  group:
+    type: string
+  issued:
+    type: string
+    format: date-time
+  modified:
+    type: string
+    format: date-time
+  version:
+    type: string
+    pattern: '^([0-9]+)\\.([0-9]+)\\.([0-9]+)$'
+  revisions:
+    type: array
+    items:
+      type: object
+      properties:
+        version:
+          type: string
+          pattern: '^([0-9]+)\\.([0-9]+)\\.([0-9]+)$'
+        url:
+          type: string
+          format: uri
+      required:
+        - version
+        - url
+  status:
+    type: string
+    enum:
+      - DRAFT
+      - LIVE
+  codelists:
+    type: array
+    items:
+      $ref: ./codelist.schema.yaml
+  description:
+    type: string
+  methodology:
+    type: string
+  references:
+    type: array
+    items:
+      type: string
+  attestations:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        orcid:
+          type: string
+      required:
+        - name
+  datasets:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        url:
+          type: string
+      required:
+        - name
+        - url
+required:
+  - id
+  - name
+  - issued
+  - modified
+  - version
+  - revisions
+  - status
+  - codelists
+  - attestations

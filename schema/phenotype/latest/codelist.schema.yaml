@@ -1,0 +1,36 @@
+"$schema": "http://json-schema.org/draft-07/schema"
+"$id": "https://hdruk.github.io/schemata/schema/phenotype/latest/codelist.schema.json"
+title: HDR UK Codelist Schema
+description: HDR UK Codelist JSONSchema
+version: 0.0.1
+
+oneOf:
+  - properties:
+      coding_system:
+        type: string
+      code:
+        type: string
+      label:
+        type: string
+      description:
+        type: string
+      categories:
+        type: array
+        items:
+          type: string
+    required:
+      - coding_system
+      - code
+      - label
+  - properties:
+      coding_system:
+        type: string
+      url:
+        type: string
+        format: uri
+      source:
+        type: string
+    required:
+      - coding_system
+      - url
+type: object
